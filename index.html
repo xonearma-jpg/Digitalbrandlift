@@ -3,121 +3,280 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#07120d">
-<title>Digital Brand Lift | Creative Branding</title>
-<meta name="description" content="Digital Brand Lift provides branding, logo design, social media graphics and creative marketing services in Uganda and internationally.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Digital Brand Lift | Creative Branding Agency</title>
+<meta name="description" content="Professional branding, logo design, social media graphics and marketing materials for businesses in Uganda and worldwide.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
- --bg:#07120d;--panel:#101e16;--panel2:#17291e;
- --green:#20d68b;--green2:#0caa6b;--white:#f4fff8;
- --muted:#a8b9ad;--line:#294333;--gold:#d7bd78;
+ --blue:#1A73E8;
+ --blue-dark:#1558b0;
+ --blue-soft:#E8F0FE;
+ --ink:#202124;
+ --slate:#5F6368;
+ --white:#FFFFFF;
+ --gray:#F8F9FA;
+ --line:#DADCE0;
+ --green:#18845B;
+ --shadow:0 8px 30px rgba(60,64,67,.09);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:var(--bg);color:var(--white);line-height:1.65}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+ font-family:'Inter',sans-serif;
+ color:var(--ink);background:var(--white);
+ line-height:1.6;
+}
+h1,h2,h3,h4{
+ font-family:'Plus Jakarta Sans',sans-serif;
+ letter-spacing:-.7px;line-height:1.2;
+}
+p{color:var(--slate)}
 a{text-decoration:none;color:inherit}
 button,input,select,textarea{font:inherit}
-.container{width:min(1150px,92%);margin:auto}
-header{background:#08140d;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
-.topbar{min-height:75px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.logo{font-size:20px;font-weight:900;letter-spacing:-.8px}
-.logo span{color:var(--green)}
-.menu{background:var(--panel);color:white;border:1px solid var(--line);padding:9px 13px;border-radius:8px;display:none}
-.tabs{display:flex;gap:7px;align-items:center}
-.tab{
- border:1px solid transparent;background:transparent;color:var(--muted);
- padding:11px 15px;border-radius:8px;cursor:pointer;font-weight:700;
+.container{width:min(1160px,91%);margin:auto}
+section{padding:85px 0}
+section:nth-of-type(even){background:var(--gray)}
+.eyebrow{
+ display:inline-flex;align-items:center;gap:8px;
+ background:var(--blue-soft);color:var(--blue);
+ padding:7px 14px;border-radius:999px;
+ font-size:12px;font-weight:800;letter-spacing:.5px;
 }
-.tab:hover,.tab.active{background:#153a27;color:var(--green);border-color:#286b46}
-main{min-height:70vh}
-.page{display:none;animation:appear .25s ease}
-.page.active{display:block}
-@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-section{padding:65px 0;scroll-margin-top:85px}
-.hero{padding:85px 0 55px}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
-.eyebrow{color:var(--green);font-size:12px;letter-spacing:2px;font-weight:900;text-transform:uppercase}
-h1{font-size:clamp(38px,6vw,65px);line-height:1.1;letter-spacing:-2px;margin:17px 0}
-h1 span{color:var(--green)}
-h2{font-size:clamp(27px,4vw,40px);line-height:1.2;margin:10px 0}
-h3{font-size:19px;margin-bottom:9px}
-p{color:var(--muted)}
-.hero p{font-size:17px;margin:17px 0 25px;max-width:600px}
-.hero-art{
- min-height:330px;border-radius:22px;padding:28px;
- background:linear-gradient(135deg,#16452d,#07120d 70%);
- border:1px solid #306747;display:flex;align-items:center;
+.dot{width:7px;height:7px;background:var(--blue);border-radius:50%}
+
+/* HEADER */
+header{
+ position:sticky;top:0;z-index:100;
+ background:rgba(255,255,255,.91);
+ backdrop-filter:blur(16px);
+ border-bottom:1px solid rgba(218,220,224,.8);
 }
-.art-inner{padding:30px;background:#08160de8;border:1px solid #397e56;border-radius:15px;width:100%;transform:rotate(-3deg)}
-.art-inner strong{font-size:35px;line-height:1.1}
-.art-inner strong span{color:var(--green)}
-.art-inner small{color:var(--green);letter-spacing:2px}
-.art-line{height:7px;background:#254b35;border-radius:10px;margin-top:17px;width:85%}
-.art-line:nth-of-type(2){width:65%}
-.art-line:nth-of-type(3){width:45%}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
-.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;padding:12px 19px;font-weight:800;border:1px solid var(--green);cursor:pointer}
-.primary{background:var(--green);color:#06150c}
-.outline{color:var(--green);background:transparent}
-.btn:hover{filter:brightness(1.1)}
-.section-head{max-width:720px;margin-bottom:30px}
-.section-head p{margin-top:10px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:23px}
-.card:hover{border-color:#3a8659}
-.icon{width:43px;height:43px;background:#173b28;color:var(--green);border-radius:10px;display:grid;place-items:center;font-size:21px;margin-bottom:14px}
-.card p{font-size:14px}
-.card ul{padding-left:19px;margin:13px 0;color:var(--muted);font-size:14px}
+.navbar{
+ height:76px;display:flex;align-items:center;
+ justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.brand-icon{
+ width:38px;height:38px;border-radius:12px;
+ background:var(--blue);color:white;
+ display:grid;place-items:center;font-size:19px;
+}
+.brand-name{font-family:'Plus Jakarta Sans';font-size:16px;line-height:1.2}
+.brand-name span{display:block;color:var(--slate);font-size:10px;letter-spacing:1.4px;margin-top:3px}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{font-size:13px;font-weight:600;color:var(--slate)}
+.nav-links a:hover{color:var(--blue)}
+.btn{
+ border:0;cursor:pointer;border-radius:999px;
+ padding:12px 21px;font-size:13px;font-weight:800;
+ display:inline-flex;align-items:center;justify-content:center;gap:8px;
+ transition:.2s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-primary{background:var(--blue);color:white}
+.btn-primary:hover{background:var(--blue-dark)}
+.btn-light{background:var(--blue-soft);color:var(--blue)}
+.btn-white{background:white;color:var(--blue);border:1px solid var(--line)}
+.menu-btn{
+ display:none;background:white;border:1px solid var(--line);
+ border-radius:50%;width:43px;height:43px;font-size:20px;
+}
+.mobile-drawer{
+ display:none;position:fixed;inset:0;z-index:200;
+ background:rgba(32,33,36,.35);
+}
+.mobile-drawer.open{display:block}
+.drawer-panel{
+ background:white;width:min(330px,85%);height:100%;
+ margin-left:auto;padding:25px;
+ box-shadow:var(--shadow);
+ animation:slideIn .22s ease;
+}
+@keyframes slideIn{from{transform:translateX(100%)}to{transform:translateX(0)}}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+.drawer-close{border:0;background:var(--gray);width:40px;height:40px;border-radius:50%;font-size:20px}
+.drawer-panel a{display:block;padding:14px 5px;border-bottom:1px solid var(--line);font-weight:700;color:var(--ink)}
+.drawer-panel .btn{margin-top:25px;width:100%}
+
+/* HERO */
+.hero{padding:90px 0 75px;text-align:center}
+.hero-content{max-width:850px;margin:auto}
+.hero h1{font-size:clamp(40px,6.5vw,70px);letter-spacing:-2.7px;margin:25px 0 18px}
+.hero h1 span{color:var(--blue)}
+.hero-copy{max-width:670px;margin:0 auto;font-size:17px;line-height:1.8}
+.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:28px 0 55px}
+.bento{
+ display:grid;grid-template-columns:1.1fr .9fr 1fr;
+ grid-template-rows:160px 160px;gap:15px;
+ max-width:950px;margin:auto;text-align:left;
+}
+.bento-card{
+ border:1px solid var(--line);border-radius:20px;
+ background:white;padding:18px;overflow:hidden;
+ box-shadow:0 3px 12px rgba(60,64,67,.04);
+}
+.bento-card h3{font-size:14px;margin-bottom:8px}
+.bento-card small{font-size:11px;color:var(--slate)}
+.bento-logo{grid-row:span 2;background:#E8F0FE;display:flex;flex-direction:column;justify-content:center}
+.logo-demo{font-size:38px;font-weight:900;color:#174EA6;letter-spacing:-2px}
+.logo-demo small{display:block;letter-spacing:3px;color:#4779b8}
+.social-demo{display:flex;gap:8px;align-items:center}
+.social-tile{flex:1;height:82px;border-radius:12px;display:grid;place-items:center;font-size:12px;font-weight:900;text-align:center;padding:5px}
+.tile-blue{background:#D2E3FC;color:#174EA6}
+.tile-yellow{background:#FCE8B2;color:#7A4C00}
+.tile-purple{background:#EADCF8;color:#674EA0}
+.stationery{background:#F8F9FA;display:flex;gap:10px;align-items:center}
+.paper{background:white;border:1px solid var(--line);padding:15px;width:65%;height:95px;box-shadow:0 4px 12px #0000000c}
+.paper strong{color:var(--blue);font-size:12px}
+.paper span{display:block;height:4px;background:#DADCE0;margin-top:8px;border-radius:5px}
+.poster{background:#202124;color:white;display:flex;flex-direction:column;justify-content:center}
+.poster strong{font-size:23px;color:#8AB4F8}
+.poster small{color:#dfe3eb}
+
+/* COMMON */
+.section-head{max-width:700px;margin-bottom:35px}
+.section-head.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-head h2{font-size:clamp(30px,4vw,43px);margin:13px 0}
+.section-head p{font-size:15px;line-height:1.8}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+ background:white;border:1px solid var(--line);
+ border-radius:20px;padding:25px;
+ transition:.2s;
+}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#b8cbed}
+.icon-box{
+ width:47px;height:47px;border-radius:14px;
+ background:var(--blue-soft);color:var(--blue);
+ display:grid;place-items:center;font-size:22px;margin-bottom:19px;
+}
+.card h3{font-size:17px;margin-bottom:10px}
+.card p{font-size:13px;line-height:1.8}
+.card ul{padding-left:18px;margin-top:12px;color:var(--slate);font-size:12px}
 .card li{margin:6px 0}
-.price{font-size:21px;color:var(--green);font-weight:900;margin:14px 0}
-.tag{display:inline-block;padding:5px 10px;background:#153a27;color:var(--green);border-radius:20px;font-size:11px;font-weight:800}
-.featured{border-color:var(--green);background:linear-gradient(145deg,#183523,#101e16)}
-.visual{height:175px;border-radius:10px;display:grid;place-items:center;text-align:center;padding:15px;margin-bottom:17px}
-.visual strong{font-size:25px;letter-spacing:1px}
-.visual small{display:block;font-size:10px;letter-spacing:2px}
-.restaurant{background:linear-gradient(130deg,#704126,#21130c)}
-.fashion{background:linear-gradient(130deg,#754b72,#28162b)}
-.events{background:linear-gradient(130deg,#23518a,#0b172c)}
-.note{background:#19291e;border-left:3px solid var(--gold);padding:14px;margin-top:20px;border-radius:5px;font-size:13px;color:#d9e7dd}
-.steps{margin-top:15px}
-.step{padding:8px 0 15px 47px;position:relative}
-.step:before{content:attr(data-n);position:absolute;left:0;top:8px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#153a27;color:var(--green);font-weight:900}
-.faq{border-bottom:1px solid var(--line);padding:16px 0}
-.faq summary{font-weight:800;cursor:pointer}
-.faq p{margin-top:10px;font-size:14px}
-.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}
-.contact-box,.form-box{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:14px}
-.contact-line{margin:17px 0}
-.contact-line strong{display:block;color:var(--green);font-size:12px}
-label{display:block;font-size:13px;margin:13px 0 6px}
-input,select,textarea{width:100%;background:#07140d;color:white;border:1px solid var(--line);padding:12px;border-radius:8px}
-textarea{min-height:105px;resize:vertical}
-.form-box button{width:100%;margin-top:17px}
-footer{border-top:1px solid var(--line);padding:30px 0;margin-top:20px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
-footer a{display:block;color:var(--muted);font-size:13px;margin:6px 0}
-footer a:hover{color:var(--green)}
-.small{font-size:12px;color:var(--muted)}
-.whatsapp{position:fixed;right:16px;bottom:17px;background:var(--green);color:#06150c;padding:12px 17px;border-radius:30px;font-weight:900;z-index:40;box-shadow:0 4px 20px #0008}
-.page-title{padding:55px 0 25px;background:#0b1911;border-bottom:1px solid var(--line)}
-.page-title p{margin-top:8px}
-@media(max-width:800px){
- .menu{display:block}
- .tabs{display:none;position:absolute;top:75px;left:0;right:0;background:#08140d;padding:13px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}
- .tabs.open{display:flex}
- .tab{text-align:left}
- .hero-grid,.contact-grid{grid-template-columns:1fr}
- .grid{grid-template-columns:repeat(2,1fr)}
+
+/* PACKAGES */
+.package-card{position:relative}
+.package-card.popular{border:2px solid var(--blue);box-shadow:0 8px 30px #1a73e814}
+.popular-label{
+ display:inline-block;background:var(--blue-soft);color:var(--blue);
+ padding:6px 11px;border-radius:999px;font-size:10px;
+ font-weight:900;text-transform:uppercase;letter-spacing:.6px;
+ margin-bottom:15px;
 }
-@media(max-width:540px){
- section{padding:48px 0}
- .hero{padding:55px 0 35px}
- .grid,.footer-grid{grid-template-columns:1fr}
- .hero-art{min-height:240px}
- .art-inner strong{font-size:29px}
- h1{letter-spacing:-1px}
+.package-card h3{font-size:22px}
+.package-desc{min-height:47px}
+.package-price{font-size:16px;font-weight:800;margin:18px 0;color:var(--blue)}
+.package-card ul{margin:18px 0 24px}
+.package-card .btn{width:100%}
+.package-card.popular .btn{background:var(--blue);color:white}
+
+/* PORTFOLIO */
+.portfolio-card{padding:14px}
+.mockup{
+ height:220px;border-radius:14px;padding:20px;
+ display:flex;align-items:center;justify-content:center;
+ text-align:center;overflow:hidden;margin-bottom:18px;
+}
+.mockup-inner{width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.royal{background:linear-gradient(135deg,#f7e6d2,#a85a30);color:#502a17}
+.royal .mockup-inner{background:#fff8ed;border:1px solid #c88e60;border-radius:10px}
+.royal strong{font-family:Georgia;font-size:34px}
+.zaria{background:linear-gradient(135deg,#eadcf8,#9b77b5);color:#392044}
+.zaria .mockup-inner{background:#f9f2ff;border-radius:10px;border:1px solid #b69acb}
+.zaria strong{font-size:31px;letter-spacing:3px}
+.bigcity{background:linear-gradient(135deg,#182c55,#111827);color:white}
+.bigcity .mockup-inner{border:1px solid #91b9ff;border-radius:10px}
+.bigcity strong{font-size:33px;color:#8AB4F8}
+.category{font-size:10px;color:var(--blue);font-weight:900;letter-spacing:1px;text-transform:uppercase}
+.portfolio-card h3{margin:7px 0}
+.portfolio-card .btn{margin-top:15px}
+
+/* PROCESS */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.process-step{padding:22px;border-top:2px solid var(--blue);background:white;border-radius:0 0 15px 15px}
+.number{font-size:12px;color:var(--blue);font-weight:900}
+.process-step h3{font-size:16px;margin:10px 0}
+.process-step p{font-size:12px}
+
+/* FORM */
+.contact-section{background:#F8F9FA}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px;align-items:start}
+.contact-info,.quote-form{background:white;border:1px solid var(--line);border-radius:20px;padding:28px}
+.contact-info h3,.quote-form h3{font-size:21px;margin-bottom:12px}
+.contact-info p{font-size:14px}
+.contact-detail{margin-top:24px}
+.contact-detail strong{display:block;color:var(--blue);font-size:11px;letter-spacing:1px}
+.contact-detail a,.contact-detail span{font-size:15px;font-weight:700}
+label{display:block;font-size:12px;font-weight:700;margin:14px 0 6px}
+input,select,textarea{
+ width:100%;border:1px solid var(--line);border-radius:10px;
+ padding:13px;background:white;color:var(--ink);outline:none;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1a73e81c}
+textarea{min-height:115px;resize:vertical}
+.quote-form button{width:100%;margin-top:20px}
+.form-note{font-size:11px;margin-top:12px}
+
+/* FAQ */
+.faq-list{max-width:800px;margin:auto}
+details.faq{border-bottom:1px solid var(--line);padding:20px 3px}
+details.faq summary{cursor:pointer;list-style:none;font-weight:700;font-size:14px;display:flex;justify-content:space-between;gap:15px}
+details.faq summary:after{content:"+";color:var(--blue);font-size:20px}
+details.faq[open] summary:after{content:"−"}
+details.faq p{padding:13px 20px 0 0;font-size:13px}
+
+/* FOOTER AND POLICY DRAWER */
+footer{background:#F8F9FA;border-top:1px solid var(--line);padding:50px 0 25px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer h4{font-size:13px;margin-bottom:13px}
+footer p,footer a{font-size:12px;color:var(--slate)}
+footer a{display:block;margin:8px 0}
+footer a:hover{color:var(--blue)}
+.policy{margin-top:25px;border:1px solid var(--line);border-radius:14px;background:white;padding:16px}
+.policy summary{font-weight:800;color:var(--blue);cursor:pointer;font-size:13px}
+.policy-content{padding-top:15px}
+.policy-content details{padding:12px 0;border-top:1px solid var(--line)}
+.policy-content summary{color:var(--ink)}
+.policy-content p{font-size:12px;margin-top:8px}
+.copyright{border-top:1px solid var(--line);margin-top:28px;padding-top:20px;font-size:11px;color:var(--slate)}
+.whatsapp-float{
+ position:fixed;bottom:20px;right:20px;z-index:80;
+ background:#18845B;color:white;padding:13px 19px;
+ border-radius:999px;font-size:13px;font-weight:800;
+ box-shadow:0 5px 20px #0002;
+}
+@media(max-width:900px){
+ .nav-links{gap:12px}
+ .nav-links a{font-size:11px}
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .process-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+ .nav-links,.desktop-quote{display:none}
+ .menu-btn{display:block}
+ .navbar{height:68px}
+ .hero{padding:65px 0 55px}
+ .hero h1{letter-spacing:-1.7px}
+ .bento{grid-template-columns:1fr 1fr;grid-template-rows:145px 145px 145px}
+ .bento-logo{grid-row:auto;grid-column:span 2}
+ .grid,.contact-grid,.footer-grid{grid-template-columns:1fr}
+ .process-grid{grid-template-columns:1fr 1fr}
+ section{padding:65px 0}
+}
+@media(max-width:420px){
+ .process-grid{grid-template-columns:1fr}
+ .bento{gap:9px}
+ .bento-card{padding:12px}
+ .logo-demo{font-size:30px}
+ .social-tile{font-size:10px}
+ .hero-actions .btn{width:100%}
 }
 </style>
 </head>
@@ -125,312 +284,472 @@ footer a:hover{color:var(--green)}
 <body>
 
 <header>
- <div class="container topbar">
-  <a href="#" class="logo" onclick="showPage('home');return false">DIGITAL <span>BRAND LIFT</span></a>
-  <button class="menu" id="menuButton" onclick="toggleMenu()">☰ MENU</button>
-  <nav class="tabs" id="tabs">
-   <button class="tab active" data-page="home" onclick="showPage('home')">Home</button>
-   <button class="tab" data-page="services" onclick="showPage('services')">Services & Packages</button>
-   <button class="tab" data-page="portfolio" onclick="showPage('portfolio')">Portfolio & About</button>
-   <button class="tab" data-page="contact" onclick="showPage('contact')">Contact & Information</button>
+ <div class="container navbar">
+  <a class="brand" href="#home">
+   <span class="brand-icon">D</span>
+   <span class="brand-name">Digital Brand Lift<span>CREATIVE BRANDING STUDIO</span></span>
+  </a>
+  <nav class="nav-links">
+   <a href="#services">Services</a>
+   <a href="#packages">Packages</a>
+   <a href="#portfolio">Portfolio</a>
+   <a href="#process">Process</a>
+   <a href="#faq">FAQ</a>
   </nav>
+  <a href="#contact" class="btn btn-primary desktop-quote">Get a Quote</a>
+  <button class="menu-btn" onclick="openDrawer()" aria-label="Open navigation">☰</button>
  </div>
 </header>
 
+<div class="mobile-drawer" id="mobileDrawer" onclick="drawerBackground(event)">
+ <div class="drawer-panel">
+  <div class="drawer-top">
+   <strong>Explore Digital Brand Lift</strong>
+   <button class="drawer-close" onclick="closeDrawer()">×</button>
+  </div>
+  <a href="#services" onclick="closeDrawer()">Services</a>
+  <a href="#packages" onclick="closeDrawer()">Packages</a>
+  <a href="#portfolio" onclick="closeDrawer()">Portfolio</a>
+  <a href="#process" onclick="closeDrawer()">Process</a>
+  <a href="#faq" onclick="closeDrawer()">FAQ</a>
+  <a href="#contact" onclick="closeDrawer()">Contact</a>
+  <a href="#contact" class="btn btn-primary" onclick="closeDrawer()">Get a Quote</a>
+ </div>
+</div>
+
 <main>
 
-<!-- PAGE 1: HOME -->
-<div class="page active" id="home">
- <section class="hero">
-  <div class="container hero-grid">
-   <div>
-    <div class="eyebrow">Creative design • Stronger brands</div>
-    <h1>Make your brand <span>impossible</span> to ignore.</h1>
-    <p>Digital Brand Lift helps businesses, entrepreneurs and organisations build a professional identity through creative branding, graphic design and marketing materials.</p>
-    <div class="actions">
-     <button class="btn primary" onclick="showPage('services')">Explore Services</button>
-     <button class="btn outline" onclick="showPage('contact')">Get a Quote</button>
+<!-- HERO -->
+<section class="hero" id="home">
+ <div class="container">
+  <div class="hero-content">
+   <span class="eyebrow"><span class="dot"></span> Creative Design • Stronger Brands</span>
+   <h1>Make your brand <span>impossible</span> to ignore.</h1>
+   <p class="hero-copy">We help businesses, entrepreneurs and organisations build a professional identity through thoughtful branding, graphic design and creative marketing materials.</p>
+   <div class="hero-actions">
+    <a href="#services" class="btn btn-primary">Explore Services ↗</a>
+    <a href="https://wa.me/256732166463" target="_blank" rel="noopener" class="btn btn-white">Chat on WhatsApp</a>
+   </div>
+  </div>
+
+  <div class="bento">
+   <div class="bento-card bento-logo">
+    <h3>Brand identity</h3>
+    <div class="logo-demo">YOUR<span style="color:#1A73E8">BRAND.</span><small>MAKE IT MEMORABLE</small></div>
+    <small>Logo and visual identity direction</small>
+   </div>
+   <div class="bento-card">
+    <h3>Social media design</h3>
+    <div class="social-demo">
+     <div class="social-tile tile-blue">BRAND<br>STORY</div>
+     <div class="social-tile tile-yellow">NEW<br>IDEAS</div>
+     <div class="social-tile tile-purple">CREATE</div>
     </div>
    </div>
-   <div class="hero-art">
-    <div class="art-inner">
-     <small>YOUR BRAND. YOUR IDENTITY.</small>
-     <br><strong>BUILD.<br><span>CONNECT.</span><br>GROW.</strong>
-     <div class="art-line"></div><div class="art-line"></div><div class="art-line"></div>
-     <p style="margin-top:17px;font-size:12px">Creative solutions for ambitious businesses.</p>
+   <div class="bento-card poster">
+    <small>CAMPAIGN DESIGN</small>
+    <strong>MAKE<br>AN IMPACT.</strong>
+    <small>Promotional graphics</small>
+   </div>
+   <div class="bento-card stationery">
+    <div class="paper"><strong>YOUR BUSINESS</strong><span></span><span></span><span style="width:55%"></span></div>
+    <div><h3>Business stationery</h3><small>Cards • Flyers • Print</small></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+ <div class="container">
+  <div class="section-head center">
+   <span class="eyebrow">What we do</span>
+   <h2>Creative services built around your business.</h2>
+   <p>Choose exactly what you need. You can request an individual service or select one of our packages.</p>
+  </div>
+
+  <div class="grid">
+   <article class="card">
+    <div class="icon-box">✦</div>
+    <h3>Logo & Brand Identity</h3>
+    <p>Build a recognisable visual identity for your business.</p>
+    <ul><li>Logo concepts</li><li>Brand colours</li><li>Typography direction</li><li>Basic identity materials</li></ul>
+   </article>
+   <article class="card">
+    <div class="icon-box">▦</div>
+    <h3>Social Media Design</h3>
+    <p>Present your products and services professionally online.</p>
+    <ul><li>Social media posts</li><li>Promotional graphics</li><li>Profile and cover designs</li><li>Campaign visuals</li></ul>
+   </article>
+   <article class="card">
+    <div class="icon-box">▣</div>
+    <h3>Business Branding</h3>
+    <p>Create consistent materials for everyday business use.</p>
+    <ul><li>Business cards</li><li>Letterheads</li><li>Flyers and brochures</li><li>Stationery design</li></ul>
+   </article>
+   <article class="card">
+    <div class="icon-box">↗</div>
+    <h3>Marketing Materials</h3>
+    <p>Communicate your offers through attractive visual materials.</p>
+    <ul><li>Promotional posters</li><li>Product adverts</li><li>Digital banners</li><li>Campaign graphics</li></ul>
+   </article>
+   <article class="card">
+    <div class="icon-box">◇</div>
+    <h3>Event Design</h3>
+    <p>Give events a consistent and memorable visual identity.</p>
+    <ul><li>Event posters</li><li>Tickets and invitations</li><li>VIP pass concepts</li><li>Event promotions</li></ul>
+   </article>
+   <article class="card">
+    <div class="icon-box">✧</div>
+    <h3>Custom Design</h3>
+    <p>Request a creative solution that fits your specific needs.</p>
+    <ul><li>Packaging concepts</li><li>Digital materials</li><li>Print-ready designs</li><li>Other agreed creative work</li></ul>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+ <div class="container">
+  <div class="section-head center">
+   <span class="eyebrow">Flexible packages</span>
+   <h2>Choose the right level for your brand.</h2>
+   <p>Compare all three packages. We also accept enquiries for individual services and custom combinations.</p>
+  </div>
+
+  <div class="grid">
+   <article class="card package-card">
+    <span class="popular-label">Essential</span>
+    <h3>Brand Starter</h3>
+    <p class="package-desc">For new businesses establishing their first visual identity.</p>
+    <div class="package-price">Request a quote</div>
+    <ul>
+     <li>Logo design concept</li>
+     <li>Basic colour palette</li>
+     <li>Typography recommendation</li>
+     <li>One promotional graphic</li>
+     <li>Agreed revision allowance</li>
+    </ul>
+    <button class="btn btn-light" onclick="selectPackage('Brand Starter')">Choose Starter</button>
+   </article>
+
+   <article class="card package-card popular">
+    <span class="popular-label">★ Most Popular</span>
+    <h3>Brand Growth</h3>
+    <p class="package-desc">For growing businesses building a consistent marketing presence.</p>
+    <div class="package-price">Request a quote</div>
+    <ul>
+     <li>Logo design concept</li>
+     <li>Colour and typography guide</li>
+     <li>Business card design</li>
+     <li>Three social media graphics</li>
+     <li>One promotional poster</li>
+     <li>Agreed revision allowance</li>
+    </ul>
+    <button class="btn" style="background:#1A73E8;color:white" onclick="selectPackage('Brand Growth')">Choose Growth</button>
+   </article>
+
+   <article class="card package-card">
+    <span class="popular-label">Complete identity</span>
+    <h3>Brand Premium</h3>
+    <p class="package-desc">For businesses seeking a broader and more complete visual identity.</p>
+    <div class="package-price">Request a quote</div>
+    <ul>
+     <li>Logo and identity concepts</li>
+     <li>Brand colour and typography guide</li>
+     <li>Business stationery design</li>
+     <li>Social media graphics set</li>
+     <li>Promotional campaign materials</li>
+     <li>Agreed revision allowance</li>
+    </ul>
+    <button class="btn btn-light" onclick="selectPackage('Brand Premium')">Choose Premium</button>
+   </article>
+  </div>
+  <p style="font-size:12px;margin-top:20px;text-align:center">Final prices, quantities, delivery dates, file formats and revisions are confirmed in your quotation before payment.</p>
+ </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+ <div class="container">
+  <div class="section-head center">
+   <span class="eyebrow">Creative showcase</span>
+   <h2>Ideas that bring brands to life.</h2>
+   <p>Explore three visual demonstration concepts showing how creative design can support different industries.</p>
+  </div>
+
+  <div class="grid">
+   <article class="card portfolio-card">
+    <div class="mockup royal">
+     <div class="mockup-inner">
+      <small>RESTAURANT IDENTITY</small>
+      <strong>ROYAL BITE</strong>
+      <span style="font-family:Georgia;font-style:italic">Good food. Great moments.</span>
+     </div>
     </div>
-   </div>
-  </div>
- </section>
+    <span class="category">Restaurant & hospitality</span>
+    <h3>Royal Bite</h3>
+    <p>Restaurant identity direction, menu designs, food promotions, packaging concepts and social media graphics.</p>
+    <button class="btn btn-light" onclick="requestSimilar('Restaurant branding concept')">Request Similar Work ↗</button>
+   </article>
 
- <section style="padding-top:10px">
-  <div class="container">
-   <div class="grid">
-    <div class="card"><div class="icon">✦</div><h3>Professional identity</h3><p>Present your business with consistent and attractive visual branding.</p></div>
-    <div class="card"><div class="icon">▦</div><h3>Creative marketing</h3><p>Promote products, services and events using clear visual materials.</p></div>
-    <div class="card"><div class="icon">↗</div><h3>Flexible choices</h3><p>Select a package or order an individual service that fits your budget.</p></div>
-   </div>
-  </div>
- </section>
-
- <section style="background:#0b1911">
-  <div class="container">
-   <div class="section-head"><div class="eyebrow">Our approach</div><h2>Good design should help your business communicate.</h2><p>We work with customers to understand their needs, agree on deliverables and develop creative materials for their business.</p></div>
-   <div class="grid">
-    <div class="card"><h3>For new businesses</h3><p>Build your first logo, identity and promotional materials.</p></div>
-    <div class="card"><h3>For growing businesses</h3><p>Improve consistency across your marketing and social media.</p></div>
-    <div class="card"><h3>For organisations</h3><p>Request campaign, event and custom design materials.</p></div>
-   </div>
-   <div class="actions"><button class="btn primary" onclick="showPage('portfolio')">See Our Work Concepts</button><button class="btn outline" onclick="showPage('contact')">Talk to Us</button></div>
-  </div>
- </section>
-</div>
-
-<!-- PAGE 2: SERVICES AND PACKAGES -->
-<div class="page" id="services">
- <div class="page-title"><div class="container"><div class="eyebrow">What we offer</div><h2>Services & Packages</h2><p>Explore every service and compare the packages before requesting a quotation.</p></div></div>
- <section id="all-services">
-  <div class="container">
-   <div class="section-head"><h2>Individual creative services</h2><p>You do not have to buy a full package. You can request any individual service.</p></div>
-   <div class="grid">
-    <article class="card"><div class="icon">✦</div><h3>Logo & Brand Identity</h3><p>Create a visual identity for your business.</p><ul><li>Logo concepts</li><li>Colour selection</li><li>Typography guidance</li><li>Basic identity materials</li></ul></article>
-    <article class="card"><div class="icon">▦</div><h3>Social Media Design</h3><p>Improve your online visual presentation.</p><ul><li>Social media posts</li><li>Promotional graphics</li><li>Profile and cover designs</li><li>Campaign visuals</li></ul></article>
-    <article class="card"><div class="icon">▣</div><h3>Business Branding</h3><p>Present your business consistently.</p><ul><li>Business cards</li><li>Letterheads</li><li>Flyers and brochures</li><li>Stationery designs</li></ul></article>
-    <article class="card"><div class="icon">↗</div><h3>Marketing Materials</h3><p>Promote your products and services.</p><ul><li>Posters</li><li>Product adverts</li><li>Digital banners</li><li>Campaign graphics</li></ul></article>
-    <article class="card"><div class="icon">◇</div><h3>Event Design</h3><p>Give events a memorable identity.</p><ul><li>Event posters</li><li>Tickets and invitations</li><li>VIP pass concepts</li><li>Event promotions</li></ul></article>
-    <article class="card"><div class="icon">✧</div><h3>Custom Design</h3><p>Tell us about your special creative requirement.</p><ul><li>Packaging concepts</li><li>Digital materials</li><li>Print-ready designs</li><li>Other agreed work</li></ul></article>
-   </div>
-  </div>
- </section>
-
- <section style="background:#0b1911">
-  <div class="container">
-   <div class="section-head"><div class="eyebrow">Compare your options</div><h2>Our three branding packages</h2><p>All packages are displayed together. Choose the option that suits your business and budget.</p></div>
-   <div class="grid">
-    <article class="card">
-     <span class="tag">ESSENTIAL</span><h3 style="margin-top:13px">Brand Starter</h3>
-     <p>For new businesses building their first identity.</p>
-     <div class="price">Request a quote</div>
-     <ul><li>Logo design concept</li><li>Basic colour palette</li><li>Typography recommendation</li><li>One promotional graphic</li><li>Agreed revision allowance</li></ul>
-     <button class="btn outline" onclick="choose('Brand Starter')">Choose Starter</button>
-    </article>
-    <article class="card featured">
-     <span class="tag">GROWTH</span><h3 style="margin-top:13px">Brand Growth</h3>
-     <p>For businesses improving their marketing presence.</p>
-     <div class="price">Request a quote</div>
-     <ul><li>Logo design concept</li><li>Colour and typography guide</li><li>Business card design</li><li>Three social graphics</li><li>One promotional poster</li><li>Agreed revision allowance</li></ul>
-     <button class="btn primary" onclick="choose('Brand Growth')">Choose Growth</button>
-    </article>
-    <article class="card">
-     <span class="tag">COMPLETE IDENTITY</span><h3 style="margin-top:13px">Brand Premium</h3>
-     <p>For businesses needing broader brand consistency.</p>
-     <div class="price">Request a quote</div>
-     <ul><li>Logo and identity concepts</li><li>Brand colour and typography guide</li><li>Business stationery design</li><li>Social media graphics set</li><li>Promotional campaign materials</li><li>Agreed revision allowance</li></ul>
-     <button class="btn outline" onclick="choose('Brand Premium')">Choose Premium</button>
-    </article>
-   </div>
-   <div class="note">Package deliverables are proposed inclusions. Exact quantities, file formats, revisions, prices and delivery dates must be confirmed in your written quotation before payment.</div>
-   <div class="actions"><button class="btn primary" onclick="showPage('contact')">Request a Custom Quote</button></div>
-  </div>
- </section>
-</div>
-
-<!-- PAGE 3: PORTFOLIO AND ABOUT -->
-<div class="page" id="portfolio">
- <div class="page-title"><div class="container"><div class="eyebrow">Who we are</div><h2>Portfolio & About</h2><p>Explore our creative direction and learn about Digital Brand Lift.</p></div></div>
- <section>
-  <div class="container">
-   <div class="section-head"><div class="eyebrow">Concept portfolio</div><h2>Creative ideas across different industries.</h2><p>These demonstration concepts show the kinds of projects we can develop for customers.</p></div>
-   <div class="grid">
-    <article class="card">
-     <div class="visual restaurant"><div><strong>ROYAL BITE</strong><small>GOOD FOOD. GREAT MOMENTS.</small></div></div>
-     <h3>Restaurant Branding</h3><p>A restaurant concept covering menu direction, food promotions, packaging and social media identity.</p>
-     <div class="actions"><button class="btn outline" onclick="requestService('Restaurant branding concept')">Request Similar Work</button></div>
-    </article>
-    <article class="card">
-     <div class="visual fashion"><div><strong>ZARIA FASHION</strong><small>STYLE WITH IDENTITY.</small></div></div>
-     <h3>Fashion Branding</h3><p>A fashion concept covering logo direction, shopping bags, business cards and promotional graphics.</p>
-     <div class="actions"><button class="btn outline" onclick="requestService('Fashion branding concept')">Request Similar Work</button></div>
-    </article>
-    <article class="card">
-     <div class="visual events"><div><strong>BIGCITY EVENTS</strong><small>MAKE EVERY MOMENT COUNT.</small></div></div>
-     <h3>Entertainment Branding</h3><p>An event identity concept covering concert posters, tickets, VIP passes and campaigns.</p>
-     <div class="actions"><button class="btn outline" onclick="requestService('Entertainment branding concept')">Request Similar Work</button></div>
-    </article>
-   </div>
-   <div class="note">These are illustrative demonstration projects, not confirmed client commissions. We will replace them with original completed work as our portfolio grows.</div>
-  </div>
- </section>
-
- <section style="background:#0b1911">
-  <div class="container">
-   <div class="section-head"><div class="eyebrow">About the business</div><h2>Helping brands present themselves with confidence.</h2><p>Digital Brand Lift is a creative branding and design service focused on helping businesses communicate their value through clear, consistent and attractive visual materials.</p></div>
-   <div class="grid">
-    <div class="card"><h3>Our purpose</h3><p>Make professional-looking creative services more accessible to entrepreneurs, small businesses and growing organisations.</p></div>
-    <div class="card"><h3>Our approach</h3><p>Understand your business, agree on the work, create the design and make the agreed improvements.</p></div>
-    <div class="card"><h3>Our customers</h3><p>Start-ups, shops, restaurants, fashion businesses, event organisers, professionals and organisations.</p></div>
-   </div>
-  </div>
- </section>
-
- <section>
-  <div class="container">
-   <div class="section-head"><div class="eyebrow">Our process</div><h2>How a project works</h2></div>
-   <div class="card">
-    <div class="step" data-n="1"><h3>Tell us what you need</h3><p>Choose a package or individual service and explain your project.</p></div>
-    <div class="step" data-n="2"><h3>Receive a quotation</h3><p>We discuss the scope, price, delivery date and revisions.</p></div>
-    <div class="step" data-n="3"><h3>Approve the agreement</h3><p>Work starts after the quotation and payment terms are agreed.</p></div>
-    <div class="step" data-n="4"><h3>Review the design</h3><p>Review the draft and request the agreed revisions.</p></div>
-    <div class="step" data-n="5"><h3>Receive final files</h3><p>Approved files are delivered in the agreed formats.</p></div>
-   </div>
-  </div>
- </section>
-</div>
-
-<!-- PAGE 4: CONTACT AND INFORMATION -->
-<div class="page" id="contact">
- <div class="page-title"><div class="container"><div class="eyebrow">Let's work together</div><h2>Contact & Information</h2><p>Request a quotation, ask a question or learn about our service arrangements.</p></div></div>
-
- <section>
-  <div class="container">
-   <div class="contact-grid">
-    <div class="contact-box">
-     <h3>Contact Digital Brand Lift</h3>
-     <p>Start with a WhatsApp enquiry. We can discuss your needs before you make any payment.</p>
-     <div class="contact-line"><strong>WHATSAPP</strong><a href="https://wa.me/256732166463" target="_blank" rel="noopener">+256 732 166 463</a></div>
-     <div class="contact-line"><strong>LOCATION</strong><p>Uganda</p></div>
-     <div class="contact-line"><strong>MARKET</strong><p>Uganda and international enquiries</p></div>
-     <a class="btn primary" href="https://wa.me/256732166463" target="_blank" rel="noopener">Chat on WhatsApp</a>
+   <article class="card portfolio-card">
+    <div class="mockup zaria">
+     <div class="mockup-inner">
+      <small>FASHION IDENTITY</small>
+      <strong>ZARIA</strong>
+      <span style="letter-spacing:3px">FASHION</span>
+      <small style="margin-top:12px">STYLE WITH IDENTITY</small>
+     </div>
     </div>
-    <div class="form-box">
-     <h3>Project enquiry form</h3>
-     <form id="quoteForm">
-      <label for="customerName">Your name</label>
-      <input id="customerName" required placeholder="Enter your name">
-      <label for="businessName">Business or project name</label>
-      <input id="businessName" placeholder="Enter business name">
-      <label for="service">Choose a service</label>
-      <select id="service" required>
-       <option value="">Select a service</option>
-       <option>Brand Starter</option><option>Brand Growth</option><option>Brand Premium</option>
-       <option>Logo and brand identity</option><option>Social media design</option>
-       <option>Business branding</option><option>Marketing materials</option>
-       <option>Event and entertainment design</option><option>Custom service</option>
-      </select>
-      <label for="budget">Estimated budget (optional)</label>
-      <input id="budget" placeholder="e.g. UGX 50,000">
-      <label for="details">Describe your project</label>
-      <textarea id="details" required placeholder="Tell us what you need..."></textarea>
-      <button class="btn primary" type="submit">Send Enquiry on WhatsApp</button>
-      <p class="small" style="margin-top:10px">Your details are placed in a WhatsApp message. This website does not store form submissions.</p>
-     </form>
+    <span class="category">Fashion & lifestyle</span>
+    <h3>Zaria Fashion</h3>
+    <p>Fashion identity direction, shopping bag concepts, business cards and promotional campaign graphics.</p>
+    <button class="btn btn-light" onclick="requestSimilar('Fashion branding concept')">Request Similar Work ↗</button>
+   </article>
+
+   <article class="card portfolio-card">
+    <div class="mockup bigcity">
+     <div class="mockup-inner">
+      <small>EVENT EXPERIENCE</small>
+      <strong>BIGCITY</strong>
+      <span style="letter-spacing:3px">EVENTS</span>
+      <small style="margin-top:12px">MAKE EVERY MOMENT COUNT</small>
+     </div>
     </div>
-   </div>
+    <span class="category">Entertainment & events</span>
+    <h3>BigCity Events</h3>
+    <p>Event identity direction, concert poster concepts, tickets, VIP passes and promotional campaigns.</p>
+    <button class="btn btn-light" onclick="requestSimilar('Entertainment branding concept')">Request Similar Work ↗</button>
+   </article>
   </div>
- </section>
+  <p style="font-size:12px;margin-top:18px;text-align:center">These are illustrative demonstration concepts, not claimed client commissions.</p>
+ </div>
+</section>
 
- <section style="background:#0b1911">
-  <div class="container">
-   <div class="section-head"><div class="eyebrow">Frequently asked questions</div><h2>Questions customers may have</h2></div>
-   <details class="faq"><summary>Can I order one service without a package?</summary><p>Yes. You can request an individual service or a custom combination.</p></details>
-   <details class="faq"><summary>How much do services cost?</summary><p>Prices depend on the work required. Request a quotation and confirm the price before paying.</p></details>
-   <details class="faq"><summary>Do you serve customers outside Uganda?</summary><p>International enquiries are welcome. Currency, payment and delivery arrangements must be agreed before accepting an international order.</p></details>
-   <details class="faq"><summary>How long does a project take?</summary><p>The delivery date depends on the project scope and will be agreed in writing before work begins.</p></details>
-   <details class="faq"><summary>Can I request changes?</summary><p>Yes. The included revisions will be stated in your quotation. Additional work outside the agreed scope may attract extra charges.</p></details>
-   <details class="faq"><summary>How do I pay?</summary><p>Payment instructions will be provided after your quotation is accepted. Verify the recipient and amount before sending money.</p></details>
-   <details class="faq"><summary>Does submitting the form place an order?</summary><p>No. The form prepares a WhatsApp message. Your order is confirmed only after both sides agree on the details.</p></details>
+<!-- PROCESS -->
+<section id="process">
+ <div class="container">
+  <div class="section-head center">
+   <span class="eyebrow">Simple process</span>
+   <h2>From your idea to the final design.</h2>
+   <p>A clear process helps customers understand what happens after they contact us.</p>
   </div>
- </section>
+  <div class="process-grid">
+   <div class="process-step"><span class="number">STEP 01</span><h3>Tell us your idea</h3><p>Choose a service and explain what your business needs.</p></div>
+   <div class="process-step"><span class="number">STEP 02</span><h3>Get a quotation</h3><p>Agree on deliverables, price, payment terms and timeline.</p></div>
+   <div class="process-step"><span class="number">STEP 03</span><h3>Review the design</h3><p>Review the work and request the agreed revisions.</p></div>
+   <div class="process-step"><span class="number">STEP 04</span><h3>Receive your files</h3><p>Get the approved final designs in the agreed formats.</p></div>
+  </div>
+ </div>
+</section>
 
- <section>
-  <div class="container">
-   <div class="section-head"><div class="eyebrow">Service policies</div><h2>Clear expectations for every project</h2></div>
-   <div class="grid">
-    <div class="card"><h3>Quotations & payment</h3><p>Every project receives an agreed scope and quotation. Deposit requirements, payment arrangements and balances must be confirmed before work begins.</p></div>
-    <div class="card"><h3>Revisions & delivery</h3><p>Included revisions and delivery dates are agreed for each project. Extra work outside the agreed scope may cost more.</p></div>
-    <div class="card"><h3>Privacy</h3><p>When you send this form, your information is passed to WhatsApp. This website does not have a customer database or server-side form storage.</p></div>
-    <div class="card"><h3>Refunds & cancellations</h3><p>Cancellation and refund arrangements must be agreed in writing before payment, taking into account work already completed.</p></div>
-    <div class="card"><h3>Customer responsibilities</h3><p>Customers should provide accurate information and have permission to use any images, text or other materials they supply.</p></div>
-    <div class="card"><h3>Design ownership</h3><p>Ownership and permitted use of final work, editable files, fonts and third-party assets must be clarified in the project agreement.</p></div>
-   </div>
-   <div class="note">These are starter service terms, not legal advice. Confirm your final business policies before accepting paid orders.</div>
+<!-- FAQ -->
+<section id="faq">
+ <div class="container">
+  <div class="section-head center">
+   <span class="eyebrow">Helpful answers</span>
+   <h2>Frequently asked questions.</h2>
+   <p>Find answers before starting your project.</p>
   </div>
- </section>
+  <div class="faq-list">
+   <details class="faq"><summary>Can I order one service without buying a package?</summary><p>Yes. You can request an individual service or a custom combination that suits your needs.</p></details>
+   <details class="faq"><summary>How much do your services cost?</summary><p>Pricing depends on the work required. Contact us for a quotation and confirm the price before making payment.</p></details>
+   <details class="faq"><summary>Do you serve customers outside Uganda?</summary><p>Yes, international enquiries are welcome. Currency, payment arrangements and delivery details are agreed before accepting a project.</p></details>
+   <details class="faq"><summary>How long does a project take?</summary><p>Delivery time depends on the size and complexity of the project. The agreed timeline will be included in your quotation.</p></details>
+   <details class="faq"><summary>Can I request changes to my design?</summary><p>Yes. The number of included revisions will be agreed before work begins. Additional changes outside the agreed scope may attract extra charges.</p></details>
+   <details class="faq"><summary>How do I pay?</summary><p>Payment instructions are provided after the quotation is accepted. Always verify the payment recipient and amount before sending money.</p></details>
+   <details class="faq"><summary>Does sending an enquiry confirm my order?</summary><p>No. Your WhatsApp message is an enquiry. Your project is confirmed only after both sides agree on the scope, price and payment terms.</p></details>
+   <details class="faq"><summary>Which files will I receive?</summary><p>File formats and whether editable source files are included will be agreed in your quotation.</p></details>
+  </div>
+ </div>
+</section>
 
- <section style="background:#0b1911">
-  <div class="container">
-   <div class="section-head"><div class="eyebrow">Marketing & visibility</div><h2>How customers can discover us</h2><p>We aim to attract customers through useful design examples, business networking and online visibility.</p></div>
-   <div class="grid">
-    <div class="card"><h3>Social media</h3><p>Share original examples, service information and useful creative tips on official social accounts once their links are added.</p></div>
-    <div class="card"><h3>Search visibility</h3><p>This site includes basic search-engine information. Publishing alone does not guarantee Google ranking or customer visits.</p></div>
-    <div class="card"><h3>Business networking</h3><p>We welcome enquiries from local businesses, entrepreneurs, event organisers and organisations.</p></div>
-   </div>
-   <div class="note">Official Facebook, Instagram and TikTok links still need to be added. Payment methods and prices also need to be confirmed by the business.</div>
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+ <div class="container">
+  <div class="section-head center">
+   <span class="eyebrow">Start a conversation</span>
+   <h2>Let's build something memorable.</h2>
+   <p>Tell us about your project and request a quotation. We welcome enquiries from Uganda and around the world.</p>
   </div>
- </section>
-</div>
+
+  <div class="contact-grid">
+   <div class="contact-info">
+    <h3>Talk to our team</h3>
+    <p>Have a question or a design idea? Reach out directly through WhatsApp.</p>
+    <div class="contact-detail"><strong>WHATSAPP</strong><a href="https://wa.me/256732166463" target="_blank" rel="noopener">+256 732 166 463</a></div>
+    <div class="contact-detail"><strong>LOCATION</strong><span>Uganda</span></div>
+    <div class="contact-detail"><strong>MARKET</strong><span>Uganda & International</span></div>
+    <div class="contact-detail"><strong>SERVICES</strong><span>Branding • Graphic Design • Marketing Materials</span></div>
+    <a href="https://wa.me/256732166463" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:25px">Open WhatsApp ↗</a>
+   </div>
+
+   <form class="quote-form" id="quoteForm">
+    <h3>Request a project quotation</h3>
+    <p style="font-size:13px">Complete the details below. Your enquiry will be prepared as a WhatsApp message.</p>
+
+    <label for="customerName">Your name *</label>
+    <input id="customerName" name="name" required placeholder="Enter your name">
+
+    <label for="businessName">Business name</label>
+    <input id="businessName" name="business" placeholder="Your business or project name">
+
+    <label for="serviceChoice">Service or package *</label>
+    <select id="serviceChoice" name="service" required>
+     <option value="">Select a service</option>
+     <option>Brand Starter</option>
+     <option>Brand Growth</option>
+     <option>Brand Premium</option>
+     <option>Logo & Brand Identity</option>
+     <option>Social Media Design</option>
+     <option>Business Branding</option>
+     <option>Marketing Materials</option>
+     <option>Event Design</option>
+     <option>Custom Design</option>
+     <option>Restaurant branding concept</option>
+     <option>Fashion branding concept</option>
+     <option>Entertainment branding concept</option>
+    </select>
+
+    <label for="budget">Estimated budget</label>
+    <input id="budget" name="budget" placeholder="Example: UGX 50,000">
+
+    <label for="description">Project description *</label>
+    <textarea id="description" name="description" required placeholder="Describe what you want us to create..."></textarea>
+
+    <button type="submit" class="btn btn-primary">Send Enquiry on WhatsApp ↗</button>
+    <p class="form-note">Submitting opens WhatsApp with your enquiry. This website does not store form submissions.</p>
+   </form>
+  </div>
+ </div>
+</section>
 
 </main>
 
+<!-- FOOTER -->
 <footer>
  <div class="container">
   <div class="footer-grid">
-   <div><a href="#" class="logo" onclick="showPage('home');return false">DIGITAL <span>BRAND LIFT</span></a><p style="font-size:13px;margin-top:10px">Creative branding and digital design for businesses ready to grow.</p></div>
-   <div><h3>Explore pages</h3><a href="#" onclick="showPage('home');return false">Home</a><a href="#" onclick="showPage('services');return false">Services & Packages</a><a href="#" onclick="showPage('portfolio');return false">Portfolio & About</a></div>
-   <div><h3>Get in touch</h3><a href="#" onclick="showPage('contact');return false">Contact</a><a href="https://wa.me/256732166463" target="_blank" rel="noopener">WhatsApp</a></div>
+   <div>
+    <a class="brand" href="#home">
+     <span class="brand-icon">D</span>
+     <span class="brand-name">Digital Brand Lift<span>CREATIVE BRANDING STUDIO</span></span>
+    </a>
+    <p style="margin-top:15px;max-width:330px">Creative branding and graphic design solutions for businesses ready to make a stronger impression.</p>
+   </div>
+   <div>
+    <h4>Explore</h4>
+    <a href="#services">Services</a>
+    <a href="#packages">Packages</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#process">Our Process</a>
+   </div>
+   <div>
+    <h4>Contact</h4>
+    <a href="#contact">Request a Quote</a>
+    <a href="https://wa.me/256732166463" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#faq">Frequently Asked Questions</a>
+   </div>
   </div>
-  <div class="small" style="border-top:1px solid var(--line);padding-top:18px;margin-top:25px">© <span id="year"></span> Digital Brand Lift. All rights reserved. | Uganda and international enquiries.</div>
+
+  <details class="policy">
+   <summary>Terms & Policies · View service information</summary>
+   <div class="policy-content">
+    <details>
+     <summary>Quotations and payment</summary>
+     <p>Each project has an agreed scope and quotation. Payment amounts, deposit requirements and payment arrangements must be confirmed before work begins.</p>
+    </details>
+    <details>
+     <summary>Revisions and delivery</summary>
+     <p>Included revisions, delivery dates and final file formats are agreed for each project. Additional work outside the agreed scope may attract extra charges.</p>
+    </details>
+    <details>
+     <summary>Privacy</summary>
+     <p>Information entered in the enquiry form is placed into a WhatsApp message when you submit it. This website does not operate a customer database or store form submissions.</p>
+    </details>
+    <details>
+     <summary>Cancellations and refunds</summary>
+     <p>Cancellation and refund arrangements should be agreed in writing before payment, taking account of work already completed and any costs already incurred.</p>
+    </details>
+    <details>
+     <summary>Customer responsibilities</summary>
+     <p>Customers should provide accurate project information and have permission to use any images, text, logos or other materials they supply.</p>
+    </details>
+    <details>
+     <summary>Ownership and usage rights</summary>
+     <p>Ownership, permitted use, editable files, fonts and third-party assets should be clarified in the project agreement before delivery.</p>
+    </details>
+   </div>
+  </details>
+
+  <div class="copyright">© <span id="year"></span> Digital Brand Lift. All rights reserved. · Uganda & International enquiries.</div>
  </div>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/256732166463" target="_blank" rel="noopener">WhatsApp ↗</a>
+<a class="whatsapp-float" href="https://wa.me/256732166463" target="_blank" rel="noopener">WhatsApp ↗</a>
 
 <script>
-function showPage(pageId){
- document.querySelectorAll('.page').forEach(page=>{
-  page.classList.toggle('active',page.id===pageId);
+function openDrawer(){
+ document.getElementById('mobileDrawer').classList.add('open');
+}
+function closeDrawer(){
+ document.getElementById('mobileDrawer').classList.remove('open');
+}
+function drawerBackground(event){
+ if(event.target.id==='mobileDrawer')closeDrawer();
+}
+
+function selectPackage(packageName){
+ const select=document.getElementById('serviceChoice');
+ select.value=packageName;
+ document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+ setTimeout(function(){
+  document.getElementById('customerName').focus({preventScroll:true});
+ },650);
+}
+
+function requestSimilar(serviceName){
+ const select=document.getElementById('serviceChoice');
+ const matching=Array.from(select.options).find(function(option){
+  return option.value===serviceName;
  });
- document.querySelectorAll('.tab').forEach(tab=>{
-  tab.classList.toggle('active',tab.dataset.page===pageId);
- });
- document.getElementById('tabs').classList.remove('open');
- document.getElementById('menuButton').textContent='☰ MENU';
- window.scrollTo({top:0,behavior:'smooth'});
- history.replaceState(null,'','#'+pageId);
+ select.value=matching?matching.value:'Custom Design';
+ document.getElementById('description').value=
+  'I would like a project similar to: '+serviceName+'. Please contact me with a quotation.';
+ document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+ setTimeout(function(){
+  document.getElementById('customerName').focus({preventScroll:true});
+ },650);
 }
-function toggleMenu(){
- const tabs=document.getElementById('tabs');
- tabs.classList.toggle('open');
- document.getElementById('menuButton').textContent=tabs.classList.contains('open')?'✕ CLOSE':'☰ MENU';
-}
-function choose(packageName){
- showPage('contact');
- document.getElementById('service').value=packageName;
-}
-function requestService(serviceName){
- showPage('contact');
- const select=document.getElementById('service');
- const match=Array.from(select.options).find(option=>option.text===serviceName);
- select.value=match?match.value:'Custom service';
- document.getElementById('details').value='I would like a project similar to: '+serviceName;
-}
+
 document.getElementById('quoteForm').addEventListener('submit',function(event){
  event.preventDefault();
+
  const name=document.getElementById('customerName').value.trim();
  const business=document.getElementById('businessName').value.trim();
- const service=document.getElementById('service').value;
+ const service=document.getElementById('serviceChoice').value;
  const budget=document.getElementById('budget').value.trim();
- const details=document.getElementById('details').value.trim();
- const message='Hello Digital Brand Lift. I would like to make an enquiry.\n\n'+
- 'Name: '+name+'\nBusiness/project: '+(business||'Not provided')+
- '\nService: '+service+'\nBudget: '+(budget||'Not provided')+
- '\nProject details: '+details+
- '\n\nPlease send me a quotation and next steps.';
- window.open('https://wa.me/256732166463?text='+encodeURIComponent(message),'_blank');
+ const description=document.getElementById('description').value.trim();
+
+ const message=
+ 'Hello Digital Brand Lift. I would like to request a project quotation.\n\n'+
+ 'Name: '+name+'\n'+
+ 'Business name: '+(business||'Not provided')+'\n'+
+ 'Selected service/package: '+service+'\n'+
+ 'Budget: '+(budget||'Not specified')+'\n'+
+ 'Project description: '+description+'\n\n'+
+ 'Please let me know the quotation and next steps.';
+
+ const whatsappURL=
+ 'https://wa.me/256732166463?text='+encodeURIComponent(message);
+
+ window.open(whatsappURL,'_blank','noopener');
 });
+
 document.getElementById('year').textContent=new Date().getFullYear();
-const initialPage=location.hash.replace('#','');
-if(['home','services','portfolio','contact'].includes(initialPage))showPage(initialPage);
 </script>
+
 </body>
 </html>
