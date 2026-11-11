@@ -3,266 +3,324 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#07110d">
-<meta name="description" content="Digital Brand Lift offers affordable website design, branding, social media support and digital visibility services for growing businesses.">
-<title>Digital Brand Lift | Your Brand. More Visibility. More Growth.</title>
+<meta name="description" content="Digital Brand Lift helps businesses build professional brands, grow online and attract customers.">
+<title>Digital Brand Lift | Build. Grow. Stand Out.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-:root{--bg:#07110d;--panel:#0d1b14;--green:#20c982;--mint:#9af0c4;--white:#f5faf7;--muted:#b4c5bb;--line:rgba(154,240,196,.17)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-header{position:sticky;top:0;z-index:10;background:rgba(7,17,13,.96);border-bottom:1px solid var(--line)}
-.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{font-weight:800;letter-spacing:.8px;font-size:17px}
-.brand span{color:var(--green)}
-.links{display:flex;gap:22px;color:var(--muted);font-size:14px}
-.links a:hover{color:var(--mint)}
-.btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 17px;border-radius:9px;font-weight:700;font-size:14px;background:var(--green);color:#041109;border:1px solid var(--green);text-align:center}
-.btn:hover{filter:brightness(1.08)}
-.btn.outline{background:transparent;color:var(--white);border-color:var(--line)}
-.hero{padding:82px 0 72px;background:radial-gradient(ellipse at 80% 20%,rgba(32,201,130,.17),transparent 42%)}
-.eyebrow{color:var(--mint);font-size:12px;letter-spacing:2px;font-weight:700;text-transform:uppercase}
-h1{font-size:clamp(40px,7vw,72px);line-height:1.05;letter-spacing:-2px;max-width:820px;margin:17px 0}
-h1 span{color:var(--green)}
-.lead{max-width:680px;color:var(--muted);font-size:18px}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
-.hero-note{margin-top:22px;color:#8fa69a;font-size:12px}
-section{padding:72px 0}
-.section-head{max-width:720px;margin-bottom:30px}
-h2{font-size:clamp(28px,4vw,42px);line-height:1.14;margin:9px 0 13px}
-.sub{color:var(--muted);margin:0}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:linear-gradient(145deg,#11241a,var(--panel));border:1px solid var(--line);border-radius:15px;padding:23px}
-.icon{width:42px;height:42px;display:grid;place-items:center;border-radius:11px;background:rgba(32,201,130,.12);color:var(--mint);font-size:21px}
-h3{margin:15px 0 8px;font-size:19px}
-.card p{color:var(--muted);font-size:14px;margin:0}
-.band{background:#0b1811;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;align-items:stretch}
-.package{display:flex;flex-direction:column;background:linear-gradient(145deg,#11241a,#0b1711);border:1px solid var(--line);border-radius:16px;padding:24px}
-.package.featured{border-color:rgba(32,201,130,.65);box-shadow:0 12px 38px rgba(0,0,0,.18)}
-.package-tag{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--mint);font-weight:700}
-.price{font-size:31px;font-weight:800;color:var(--green);margin:8px 0 3px}
-.price small{font-size:12px;color:var(--muted);font-weight:400}
-.package-intro{color:var(--muted);font-size:14px;min-height:45px}
-.package ul,.points{padding:0;margin:17px 0 22px;list-style:none}
-.package li,.points li{margin:10px 0;color:var(--muted);font-size:14px}
-.package li:before,.points li:before{content:"✓";color:var(--green);font-weight:800;margin-right:9px}
-.package .btn{margin-top:auto}
-.note{font-size:12px;color:#91a69a;margin-top:18px}
-.individual-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
-.individual{padding:18px;border:1px solid var(--line);border-radius:12px;background:rgba(13,27,20,.72)}
-.individual b{display:block;margin-bottom:4px}
-.individual span{font-size:13px;color:var(--muted)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-.process{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.step{border-top:2px solid var(--green);padding:18px 4px}
-.step b{color:var(--mint);font-size:12px;letter-spacing:1px}
-.contact-box{background:linear-gradient(130deg,#10251a,#0b1711);border:1px solid var(--line);padding:36px;border-radius:18px}
-footer{padding:30px 0;border-top:1px solid var(--line);color:#91a69a;font-size:13px}
-.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.mobile-cta{display:none}
-@media(max-width:820px){
-.links{gap:12px;font-size:12px}
-.package-grid{grid-template-columns:1fr 1fr}
-.package:last-child{grid-column:1/-1}
+:root {
+--bg:#07110d;
+--panel:#0d1b14;
+--green:#20c982;
+--mint:#9af0c4;
+--white:#f5fff9;
+--muted:#a2b5a9;
+--border:rgba(255,255,255,.10);
 }
-@media(max-width:650px){
-.links{display:none}
-.nav{min-height:66px}
-.nav>.btn{padding:10px 12px;font-size:12px}
-.hero{padding:62px 0 55px}
-section{padding:55px 0}
-.grid,.two,.process,.package-grid,.individual-grid{grid-template-columns:1fr}
-.package:last-child{grid-column:auto}
-.package-intro{min-height:0}
-.contact-box{padding:24px}
-.mobile-cta{display:block;position:fixed;bottom:12px;left:12px;right:12px;z-index:20;box-shadow:0 8px 30px rgba(0,0,0,.4)}
-footer{padding-bottom:88px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+img{width:100%;display:block;object-fit:cover}
+.container{width:min(1120px,91%);margin:auto}
+.section{padding:85px 0}
+.eyebrow{color:var(--green);text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:2px}
+h1,h2,h3{font-family:'Manrope',sans-serif;line-height:1.2}
+h2{font-size:clamp(28px,5vw,43px);margin:12px 0}
+.green{color:var(--green)}
+.section-intro{color:var(--muted);max-width:650px;margin:12px 0 35px}
+.center{text-align:center}
+.center .section-intro{margin-left:auto;margin-right:auto}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 20px;border-radius:9px;font-weight:800;background:var(--green);color:#04130b;transition:.25s}
+.btn:hover{transform:translateY(-3px);background:var(--mint)}
+.btn-outline{border:1px solid var(--green);color:var(--mint);background:transparent}
+.btn-outline:hover{background:var(--green);color:#04130b}
+
+header{position:sticky;top:0;z-index:100;background:rgba(7,17,13,.95);backdrop-filter:blur(15px);border-bottom:1px solid var(--border)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:'Manrope',sans-serif;font-size:19px;font-weight:800;letter-spacing:-.8px}
+.logo span{color:var(--green)}
+.logo small{display:block;font-size:9px;color:var(--muted);letter-spacing:3px}
+.nav-links{display:flex;gap:25px;align-items:center;font-size:13px;color:var(--muted)}
+.nav-links a:hover{color:var(--green)}
+.menu-btn{display:none;border:1px solid var(--border);color:white;background:var(--panel);border-radius:8px;padding:9px 13px;font-size:20px}
+
+.hero{padding:80px 0 75px;background:radial-gradient(ellipse at 80% 25%,rgba(32,201,130,.15),transparent 42%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:45px}
+.hero h1{font-size:clamp(39px,6vw,67px);letter-spacing:-2.5px;margin:18px 0}
+.hero h1 span{color:var(--green)}
+.hero p{color:var(--muted);max-width:530px;margin-bottom:27px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-image{position:relative}
+.hero-image img{height:420px;border-radius:22px;border:1px solid var(--border)}
+.image-note{position:absolute;bottom:18px;left:18px;right:18px;background:rgba(7,17,13,.93);border:1px solid var(--border);padding:15px;border-radius:12px}
+.image-note strong{color:var(--mint)}
+.image-note small{display:block;color:var(--muted)}
+.trust-strip{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:21px 0;color:var(--muted);text-align:center;font-size:13px}
+.trust-strip strong{color:var(--green)}
+
+.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.package{background:var(--panel);border:1px solid var(--border);border-radius:17px;overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.package:hover{transform:translateY(-6px);border-color:var(--green)}
+.package img{height:190px}
+.package-content{padding:23px;display:flex;flex-direction:column;flex:1}
+.package h3{font-size:22px;margin:8px 0}
+.price{color:var(--green);font-family:'Manrope',sans-serif;font-size:30px;font-weight:800;margin:10px 0}
+.price small{font-size:12px;color:var(--muted);font-weight:500}
+.package p{color:var(--muted);font-size:13px;margin-bottom:15px}
+.package ul{list-style:none;margin:10px 0 22px}
+.package li{font-size:13px;color:#d3e3d8;padding:7px 0;border-bottom:1px solid var(--border)}
+.package li::before{content:"✓";color:var(--green);font-weight:bold;margin-right:9px}
+.package .btn{margin-top:auto;width:100%}
+.featured{border-color:var(--green)}
+.featured-label{display:inline-block;background:var(--green);color:#04130b;font-size:10px;padding:5px 10px;border-radius:20px;font-weight:800;width:max-content}
+
+.individual-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:var(--panel);border:1px solid var(--border);border-radius:13px;overflow:hidden}
+.service img{height:170px}
+.service-content{padding:19px}
+.service h3{font-size:18px;margin-bottom:8px}
+.service p{font-size:13px;color:var(--muted);margin-bottom:13px}
+.service a{color:var(--mint);font-size:13px;font-weight:800}
+.service a:hover{color:var(--green)}
+
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.why-grid img{height:390px;border-radius:18px}
+.why-list{display:grid;gap:19px;margin-top:25px}
+.why-item{display:flex;gap:14px}
+.why-icon{width:39px;height:39px;display:grid;place-items:center;background:rgba(32,201,130,.12);color:var(--green);border-radius:10px;flex-shrink:0}
+.why-item p{font-size:13px;color:var(--muted);margin-top:4px}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}
+.step{padding:23px;border:1px solid var(--border);background:var(--panel);border-radius:13px}
+.step-number{font-size:27px;color:var(--green);font-weight:800}
+.step h3{font-size:17px;margin:12px 0 8px}
+.step p{font-size:13px;color:var(--muted)}
+
+.faq{max-width:780px;margin:30px auto 0}
+details{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:17px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--muted);font-size:14px;padding-top:12px}
+
+.contact-box{background:linear-gradient(135deg,#102b1c,#0d1b14);border:1px solid rgba(32,201,130,.3);border-radius:20px;padding:45px 25px;text-align:center}
+.contact-box p{color:var(--muted);margin:15px auto 25px;max-width:580px}
+
+footer{padding:35px 0;border-top:1px solid var(--border);margin-top:70px}
+.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer p,footer a{font-size:12px;color:var(--muted)}
+footer a:hover{color:var(--green)}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap}
+.floating-whatsapp{position:fixed;bottom:20px;right:20px;z-index:90;background:#20c982;color:#04130b;padding:13px 17px;border-radius:50px;font-weight:800;box-shadow:0 5px 25px rgba(0,0,0,.35)}
+
+@media(max-width:800px){
+.hero-grid,.why-grid{grid-template-columns:1fr}
+.hero{padding-top:55px}
+.hero-image img{height:320px}
+.package-grid{grid-template-columns:1fr}
+.individual-grid{grid-template-columns:repeat(2,1fr)}
+.steps{grid-template-columns:repeat(2,1fr)}
+.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#0b1911;padding:22px 5%;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--border)}
+.nav-links.open{display:flex}
+.menu-btn{display:block}
+}
+@media(max-width:480px){
+.individual-grid,.steps{grid-template-columns:1fr}
+.section{padding:65px 0}
+.hero h1{letter-spacing:-1.5px}
+.contact-box{padding:35px 17px}
 }
 </style>
 </head>
+
 <body>
 <header>
-<div class="wrap nav">
-<a class="brand" href="#home">DIGITAL <span>BRAND LIFT</span></a>
-<nav class="links" aria-label="Main navigation">
-<a href="#services">Services</a>
-<a href="#packages">Packages</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
+<div class="container nav">
+<a href="#home" class="logo">DIGITAL <span>BRAND LIFT</span><small>BUILD · GROW · STAND OUT</small></a>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+<nav class="nav-links" id="navLinks">
+<a href="#home">Home</a><a href="#packages">Packages</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+<a class="btn" href="#packages">Explore Packages</a>
 </nav>
-<a class="btn" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%27d%20like%20to%20discuss%20your%20services.">Let's talk</a>
 </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-<div class="wrap">
-<div class="eyebrow">Digital services for growing businesses</div>
-<h1>Your brand deserves<br><span>to be seen.</span></h1>
-<p class="lead">We help businesses build a stronger digital presence through professional websites, social media support, branding and practical online visibility services.</p>
-<div class="actions">
-<a class="btn" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%27d%20like%20help%20with%20my%20business.">Discuss your project on WhatsApp</a>
-<a class="btn outline" href="#packages">Compare packages</a>
+<div class="container hero-grid">
+<div>
+<span class="eyebrow">Your business deserves to be seen</span>
+<h1>Build a Brand.<br>Grow Your <span>Business.</span></h1>
+<p>We help businesses create powerful brand identities, establish their digital presence and reach more customers. Your next level starts here.</p>
+<div class="hero-actions">
+<a href="#packages" class="btn">Explore Our Packages →</a>
+<a href="#contact" class="btn btn-outline">Talk to Us</a>
 </div>
-<p class="hero-note">Serving businesses in Uganda and working with clients internationally.</p>
 </div>
-</section>
-
-<section id="services">
-<div class="wrap">
-<div class="section-head">
-<div class="eyebrow">What we do</div>
-<h2>Choose the support your business needs.</h2>
-<p class="sub">You do not have to buy a full package. Choose an individual service or ask us to recommend an option that fits your goals and budget.</p>
-</div>
-<div class="grid">
-<article class="card"><div class="icon">↗</div><h3>Website Design</h3><p>Mobile-friendly business websites, landing pages and online portfolios that clearly present your business and services.</p></article>
-<article class="card"><div class="icon">◎</div><h3>Social Media Support</h3><p>Business page setup, content planning, promotional graphics and practical support for your social media presence.</p></article>
-<article class="card"><div class="icon">⌖</div><h3>Google Business Profile</h3><p>Setup assistance and profile improvements for eligible businesses that meet customers in person.</p></article>
-<article class="card"><div class="icon">⌕</div><h3>SEO Foundations</h3><p>Website page titles, descriptions, structure and basic search optimisation to help search engines understand your site.</p></article>
-<article class="card"><div class="icon">✳</div><h3>Branding & Graphics</h3><p>Logo concepts, promotional flyers, posters and consistent visual materials for your business.</p></article>
-<article class="card"><div class="icon">▣</div><h3>Business Page Setup</h3><p>Professional setup and organisation of business social pages, profile information and contact details.</p></article>
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1100&q=85" alt="Digital marketing and business analytics workspace">
+<div class="image-note"><strong>Your vision. Our creativity.</strong><small>Digital solutions designed to move businesses forward.</small></div>
 </div>
 </div>
 </section>
 
-<section class="band" id="packages">
-<div class="wrap">
-<div class="section-head">
-<div class="eyebrow">Clear options, flexible choices</div>
-<h2>Find a package that fits your budget.</h2>
-<p class="sub">These are starting package prices. If you only need one service or have a different budget, contact us for a tailored quotation.</p>
+<div class="trust-strip"><div class="container">BRANDING <strong>✦</strong> DIGITAL MARKETING <strong>✦</strong> WEB DESIGN <strong>✦</strong> BUSINESS GROWTH</div></div>
+
+<section class="section" id="packages">
+<div class="container">
+<div class="center">
+<span class="eyebrow">Choose your growth path</span>
+<h2>Our Service <span class="green">Packages</span></h2>
+<p class="section-intro">Every business has different needs and budgets. Compare our packages and choose the level of support that works best for your business.</p>
 </div>
 <div class="package-grid">
 <article class="package">
-<div class="package-tag">01 · Getting started</div>
-<h3>Brand Starter</h3>
+<img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=85" alt="Brand identity design">
+<div class="package-content">
+<span class="eyebrow">Start strong</span><h3>Brand Starter</h3>
 <div class="price">UGX 50,000</div>
-<p class="package-intro">For small businesses building or improving their social media presence.</p>
+<p>For small businesses ready to establish a professional online presence.</p>
 <ul>
-<li>Setup or improvement of one Facebook business page</li>
-<li>Professional profile description and contact details</li>
-<li>3 branded social media post designs</li>
-<li>3 ready-to-use captions</li>
-<li>One reasonable revision round</li>
+<li>One Facebook page setup or improvement</li><li>Professional profile description</li><li>Business contact details setup</li><li>3 branded promotional designs</li><li>3 promotional captions</li><li>Basic visibility advice</li><li>One revision</li>
 </ul>
-<a class="btn outline" href="https://wa.me/256732166463?text=Hello%2C%20I%27m%20interested%20in%20the%20Brand%20Starter%20package%20(UGX%2050%2C000).">Enquire about Starter</a>
-</article>
+<p><strong>Delivery:</strong> 2–3 working days</p>
+<a class="btn" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20am%20interested%20in%20Brand%20Starter%20(UGX%2050%2C000).">Choose Starter →</a>
+</div></article>
 
 <article class="package featured">
-<div class="package-tag">02 · Build visibility</div>
-<h3>Brand Growth</h3>
+<img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=900&q=85" alt="Social media marketing">
+<div class="package-content">
+<span class="featured-label">MORE GROWTH SUPPORT</span><h3>Brand Growth</h3>
 <div class="price">UGX 150,000</div>
-<p class="package-intro">For businesses that want more planned and consistent social content.</p>
+<p>For businesses looking to improve their visibility and marketing consistency.</p>
 <ul>
-<li>Brand Starter deliverables</li>
-<li>8 branded social media post designs in total</li>
-<li>One-month content calendar</li>
-<li>Google Business Profile assistance, if eligible</li>
-<li>Basic SEO recommendations for an existing website</li>
+<li>Everything in Brand Starter</li><li>8 branded promotional designs</li><li>One-month content calendar</li><li>Google Business Profile assistance if eligible</li><li>Basic SEO recommendations</li><li>One revision</li>
 </ul>
-<a class="btn" href="https://wa.me/256732166463?text=Hello%2C%20I%27m%20interested%20in%20the%20Brand%20Growth%20package%20(UGX%20150%2C000).">Enquire about Growth</a>
-</article>
+<a class="btn" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20am%20interested%20in%20Brand%20Growth%20(UGX%20150%2C000).">Choose Growth →</a>
+</div></article>
 
 <article class="package">
-<div class="package-tag">03 · Build your website</div>
-<h3>Digital Transformation</h3>
+<img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=900&q=85" alt="Professional website design">
+<div class="package-content">
+<span class="eyebrow">Go digital</span><h3>Digital Transformation</h3>
 <div class="price">UGX 350,000</div>
-<p class="package-intro">For businesses that need a professional website and stronger digital presentation.</p>
+<p>For businesses ready to establish a stronger digital foundation.</p>
 <ul>
-<li>Business website of up to 5 pages</li>
-<li>Mobile-friendly layout</li>
-<li>WhatsApp contact integration</li>
-<li>Basic on-page SEO setup</li>
-<li>Social media visual branding</li>
-<li>Website handover</li>
+<li>Professional website up to 5 pages</li><li>Mobile-friendly design</li><li>WhatsApp integration</li><li>Basic SEO setup</li><li>Social media branding</li><li>One revision</li>
 </ul>
-<a class="btn outline" href="https://wa.me/256732166463?text=Hello%2C%20I%27m%20interested%20in%20the%20Digital%20Transformation%20package%20(UGX%20350%2C000).">Enquire about Website</a>
-</article>
+<a class="btn" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20am%20interested%20in%20Digital%20Transformation%20(UGX%20350%2C000).">Choose Transformation →</a>
+</div></article>
 </div>
-<p class="note">Package prices are proposed starting prices and will be confirmed in a written quote. Domain registration, paid hosting, advertising spend, paid software, photography and third-party fees are not included unless stated in the quote. Timelines begin after the required content and information are received.</p>
+<p class="section-intro">Need something different? You can also request individual services. Final scope and any additional costs will be agreed before work begins.</p>
 </div>
 </section>
 
-<section id="individual">
-<div class="wrap">
-<div class="section-head">
-<div class="eyebrow">Need just one thing?</div>
-<h2>Choose an individual service.</h2>
-<p class="sub">Tell us what you need. We will discuss the scope and provide a price before work begins.</p>
-</div>
+<section class="section" id="services" style="background:#091710">
+<div class="container">
+<span class="eyebrow">Flexible solutions</span><h2>Individual <span class="green">Services</span></h2>
+<p class="section-intro">You don't have to buy a full package. Select only the service your business needs.</p>
 <div class="individual-grid">
-<div class="individual"><b>Logo and graphic design</b><span>Logos, flyers, posters and promotional graphics.</span></div>
-<div class="individual"><b>Website design</b><span>Landing pages, business websites and redesigns.</span></div>
-<div class="individual"><b>Social media content</b><span>Post designs, captions and content calendars.</span></div>
-<div class="individual"><b>Business page setup</b><span>Profile setup, descriptions and contact details.</span></div>
-<div class="individual"><b>SEO assistance</b><span>Basic website search optimisation.</span></div>
-<div class="individual"><b>Google Business Profile</b><span>Profile setup and improvements for eligible businesses.</span></div>
-</div>
-<div class="actions">
-<a class="btn" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20need%20a%20quote%20for%20an%20individual%20service.%20My%20budget%20is%20...">Request an individual-service quote</a>
+
+<article class="service"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=700&q=85" alt="Logo design"><div class="service-content"><h3>Logo & Graphic Design</h3><p>Visual identities, promotional posters, flyers and branded graphics.</p><a href="https://wa.me/256732166463?text=I%20want%20to%20enquire%20about%20Logo%20and%20Graphic%20Design.">Request a quote →</a></div></article>
+
+<article class="service"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=85" alt="Website design"><div class="service-content"><h3>Website Design</h3><p>Modern, responsive websites that help businesses build credibility.</p><a href="https://wa.me/256732166463?text=I%20want%20to%20enquire%20about%20Website%20Design.">Request a quote →</a></div></article>
+
+<article class="service"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=85" alt="Social media management"><div class="service-content"><h3>Social Media Management</h3><p>Content planning and consistent business communication online.</p><a href="https://wa.me/256732166463?text=I%20want%20to%20enquire%20about%20Social%20Media%20Management.">Request a quote →</a></div></article>
+
+<article class="service"><img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=700&q=85" alt="Search engine optimization"><div class="service-content"><h3>SEO Assistance</h3><p>Basic search visibility improvements and website optimization.</p><a href="https://wa.me/256732166463?text=I%20want%20to%20enquire%20about%20SEO%20Assistance.">Request a quote →</a></div></article>
+
+<article class="service"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=700&q=85" alt="Business profile assistance"><div class="service-content"><h3>Google Business Profile</h3><p>Eligible business profile setup and improvement assistance.</p><a href="https://wa.me/256732166463?text=I%20want%20to%20enquire%20about%20Google%20Business%20Profile%20Assistance.">Request a quote →</a></div></article>
+
+<article class="service"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=700&q=85" alt="Digital business strategy"><div class="service-content"><h3>Digital Strategy</h3><p>Practical guidance to improve your brand's digital direction.</p><a href="https://wa.me/256732166463?text=I%20want%20to%20enquire%20about%20Digital%20Strategy.">Request a quote →</a></div></article>
+
 </div>
 </div>
 </section>
 
-<section class="band" id="about">
-<div class="wrap two">
+<section class="section" id="about">
+<div class="container why-grid">
+<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85" alt="Creative team collaborating">
 <div>
-<div class="eyebrow">About Digital Brand Lift</div>
-<h2>Practical digital support, with your goals in mind.</h2>
-<p class="sub">We are building a digital services agency focused on helping small businesses, entrepreneurs and growing brands take practical steps online.</p>
+<span class="eyebrow">Why Digital Brand Lift?</span>
+<h2>We turn business ideas into <span class="green">digital experiences.</span></h2>
+<p class="section-intro">We believe every business deserves the opportunity to look professional, connect with customers and grow. Our approach focuses on practical, accessible digital solutions.</p>
+<div class="why-list">
+<div class="why-item"><div class="why-icon">✦</div><div><strong>Professional presentation</strong><p>Give your business a consistent and recognizable image.</p></div></div>
+<div class="why-item"><div class="why-icon">✓</div><div><strong>Flexible service options</strong><p>Choose complete packages or individual services.</p></div></div>
+<div class="why-item"><div class="why-icon">↗</div><div><strong>Practical digital solutions</strong><p>Focus on tools that help your business become more visible.</p></div></div>
 </div>
-<div class="card">
-<h3>Our approach</h3>
-<ul class="points">
-<li>Understand your business and your goals.</li>
-<li>Recommend a practical service for your budget.</li>
-<li>Agree on the scope, price and timeline before starting.</li>
-<li>Keep communication clear throughout the project.</li>
-</ul>
 </div>
 </div>
 </section>
 
-<section id="process">
-<div class="wrap">
-<div class="section-head"><div class="eyebrow">Simple process</div><h2>From enquiry to delivery.</h2></div>
-<div class="process">
-<div class="step"><b>01 / DISCUSS</b><h3>Tell us what you need</h3><p class="sub">Share your business, goals, preferred service and budget.</p></div>
-<div class="step"><b>02 / AGREE</b><h3>Receive a clear quote</h3><p class="sub">We confirm deliverables, price, timeline and payment terms before work begins.</p></div>
-<div class="step"><b>03 / CREATE</b><h3>Get your work delivered</h3><p class="sub">We create the agreed work, share it for review and complete the agreed revisions.</p></div>
+<section class="section">
+<div class="container">
+<div class="center"><span class="eyebrow">Simple and transparent</span><h2>How We <span class="green">Work</span></h2><p class="section-intro">A straightforward process from your first message to delivery.</p></div>
+<div class="steps">
+<div class="step"><div class="step-number">01</div><h3>Get in touch</h3><p>Tell us about your business and what you need.</p></div>
+<div class="step"><div class="step-number">02</div><h3>Choose a service</h3><p>Compare packages or request an individual service.</p></div>
+<div class="step"><div class="step-number">03</div><h3>Approve the plan</h3><p>Agree on deliverables, price and timeline before work begins.</p></div>
+<div class="step"><div class="step-number">04</div><h3>Receive your work</h3><p>Review your completed deliverables and agreed revisions.</p></div>
 </div>
 </div>
 </section>
 
-<section id="contact">
-<div class="wrap">
+<section class="section" id="faq">
+<div class="container center">
+<span class="eyebrow">Got questions?</span><h2>Frequently Asked <span class="green">Questions</span></h2>
+<div class="faq">
+<details><summary>Do I have to buy a complete package?</summary><p>No. You can select individual services depending on your business needs and budget.</p></details>
+<details><summary>How do I choose the right package?</summary><p>Brand Starter establishes a basic online presence. Brand Growth offers more marketing support. Digital Transformation focuses on building your website and broader digital presence.</p></details>
+<details><summary>How do I place an order?</summary><p>Contact us on WhatsApp. We will discuss your requirements and agree on the scope, price and delivery timeline.</p></details>
+<details><summary>Can I request a custom service?</summary><p>Yes. Tell us what you need and we can discuss a suitable quotation.</p></details>
+<details><summary>Do you guarantee more sales?</summary><p>No marketing service can honestly guarantee sales. We focus on improving your brand presentation, digital visibility and customer communication.</p></details>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
 <div class="contact-box">
-<div class="eyebrow">Let's find the right option</div>
-<h2>Your budget. Your goals. A practical plan.</h2>
-<p class="sub">Not sure which package you need? Tell us what your business does and what you want to improve. We can discuss a suitable package or an individual service.</p>
-<div class="actions">
-<a class="btn" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20please%20help%20me%20choose%20a%20service%20that%20fits%20my%20business%20and%20budget.">Chat on WhatsApp: +256 732 166 463</a>
-</div>
+<span class="eyebrow">Your next step starts here</span>
+<h2>Ready to Lift Your <span class="green">Brand?</span></h2>
+<p>Tell us about your business. Whether you need a logo, a website or a complete digital transformation, let's discuss a solution that fits your goals.</p>
+<a class="btn" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift!%20I%20would%20like%20to%20discuss%20your%20services.">Chat With Us on WhatsApp →</a>
+<p style="margin-bottom:0;margin-top:20px">WhatsApp: +256 732 166 463</p>
 </div>
 </div>
 </section>
 </main>
 
 <footer>
-<div class="wrap foot">
-<div><strong>DIGITAL BRAND LIFT</strong><br>Your Brand. More Visibility. More Growth.</div>
-<div>© <span id="year"></span> Digital Brand Lift. All rights reserved.</div>
+<div class="container footer-grid">
+<div><a href="#home" class="logo">DIGITAL <span>BRAND LIFT</span></a><p>Build. Grow. Stand Out.</p><p style="margin-top:8px">© <span id="year"></span> Digital Brand Lift. All rights reserved.</p></div>
+<div class="footer-links"><a href="#packages">Packages</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
 </div>
 </footer>
 
-<a class="btn mobile-cta" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%27d%20like%20to%20discuss%20your%20services.">Chat with us on WhatsApp</a>
+<a class="floating-whatsapp" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift!" aria-label="Chat on WhatsApp">WhatsApp ↗</a>
+
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
+const menuBtn=document.getElementById('menuBtn');
+const navLinks=document.getElementById('navLinks');
+
+menuBtn.addEventListener('click',()=>{
+navLinks.classList.toggle('open');
+menuBtn.textContent=navLinks.classList.contains('open')?'✕':'☰';
+});
+
+document.querySelectorAll('#navLinks a').forEach(link=>{
+link.addEventListener('click',()=>{
+navLinks.classList.remove('open');
+menuBtn.textContent='☰';
+});
+});
+
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
-  </html>
+</html>
