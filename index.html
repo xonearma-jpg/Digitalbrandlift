@@ -9,12 +9,10 @@
 <meta name="google-site-verification" content="3g5wRQW9r7M4xoEyp5FwCSjuvREsOEb-saDQjrR37ss">
 
 <title>Digital Brand Lift | Website Design & Digital Marketing Uganda</title>
-
-<meta name="description" content="Digital Brand Lift provides website design, social media marketing and Google Business Profile setup in Uganda. Explore affordable digital services and business packages.">
-
+<meta name="description" content="Digital Brand Lift helps Ugandan businesses grow online with website design, social media marketing and Google Business Profile setup. Explore affordable services and packages.">
 <meta name="keywords" content="website design Uganda, web design Mukono, digital marketing Uganda, social media marketing Uganda, Google Business Profile setup Uganda">
-
 <meta name="author" content="Digital Brand Lift">
+
 <meta property="og:title" content="Digital Brand Lift | Grow Your Business Online">
 <meta property="og:description" content="Professional digital services for businesses in Uganda.">
 <meta property="og:type" content="website">
@@ -25,19 +23,15 @@
 
 <style>
 :root {
-  color-scheme: light;
-
-  /* Material Design 3-inspired colour roles */
   --primary: #176B45;
-  --on-primary: #FFFFFF;
+  --primary-dark: #075333;
   --primary-container: #D5F5DF;
   --on-primary-container: #002111;
 
-  --secondary: #4D6354;
   --surface: #F7FAF6;
-  --surface-container-low: #F1F5EF;
+  --surface-low: #F1F5EF;
   --surface-container: #EEF3ED;
-  --surface-container-high: #E7EDE6;
+  --surface-high: #E7EDE6;
 
   --text: #191D19;
   --muted: #5E6B61;
@@ -45,23 +39,16 @@
   --border: #DDE5DC;
 
   --dark: #102018;
-  --dark-soft: #19372A;
-
-  --green: #176B45;
-  --green-dark: #075333;
-  --green-light: #D5F5DF;
-
   --white: #FFFFFF;
-  --background: #F7FAF6;
 
-  --shape-small: 8px;
-  --shape-medium: 12px;
-  --shape-large: 16px;
-  --shape-extra-large: 28px;
-  --shape-full: 999px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-full: 999px;
 
-  --shadow: 0 2px 8px rgba(25,45,32,.08);
-  --shadow-large: 0 8px 28px rgba(25,45,32,.10);
+  --shadow: 0 3px 12px rgba(25,45,32,.07);
+  --shadow-lg: 0 12px 35px rgba(25,45,32,.12);
 }
 
 * {
@@ -72,7 +59,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 85px;
 }
 
 body {
@@ -80,12 +67,11 @@ body {
   background: var(--surface);
   color: var(--text);
   line-height: 1.7;
-  letter-spacing: -.01em;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 button, input, select, textarea {
@@ -96,28 +82,20 @@ button {
   cursor: pointer;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 .container {
   width: min(1160px, 92%);
   margin: auto;
 }
 
-/* Announcement bar */
-
 .topbar {
   background: var(--dark);
   color: #E1EFE5;
   text-align: center;
-  padding: 9px 12px;
+  padding: 8px 12px;
   font-size: 12px;
-  font-weight: 500;
 }
 
-/* Navigation */
+/* NAVIGATION */
 
 header {
   background: rgba(255,255,255,.96);
@@ -129,7 +107,7 @@ header {
 }
 
 .nav {
-  min-height: 76px;
+  min-height: 74px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -137,7 +115,7 @@ header {
 }
 
 .logo {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: -.06em;
   color: var(--dark);
@@ -151,13 +129,9 @@ header {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 23px;
+  gap: 21px;
   font-size: 13px;
   font-weight: 600;
-}
-
-.nav-links a {
-  transition: color .2s;
 }
 
 .nav-links a:hover {
@@ -172,46 +146,44 @@ header {
 
 .menu-btn {
   display: none;
+  background: var(--surface-low);
   border: 1px solid var(--border);
-  background: var(--surface-container-low);
-  color: var(--text);
-  border-radius: var(--shape-medium);
+  border-radius: var(--radius-md);
   width: 45px;
   height: 45px;
   font-size: 21px;
 }
 
-/* Buttons */
+/* BUTTONS */
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
   min-height: 48px;
-  padding: 12px 23px;
+  padding: 12px 22px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
   border: none;
-  border-radius: var(--shape-full);
-  font-size: 14px;
-  font-weight: 600;
-  transition: background .2s, box-shadow .2s, transform .2s;
+  transition: .2s ease;
 }
 
 .btn-primary {
   background: var(--primary);
-  color: var(--on-primary);
+  color: white;
 }
 
 .btn-primary:hover {
-  background: var(--green-dark);
-  box-shadow: var(--shadow);
-  transform: translateY(-1px);
+  background: var(--primary-dark);
+  transform: translateY(-2px);
 }
 
 .btn-outline {
-  background: transparent;
   border: 1px solid var(--outline);
   color: var(--primary);
+  background: transparent;
 }
 
 .btn-outline:hover {
@@ -219,42 +191,42 @@ header {
   border-color: var(--primary);
 }
 
-/* Hero */
+/* HERO */
 
 .hero {
   padding: 82px 0;
   background:
-    radial-gradient(circle at 85% 20%, rgba(22,107,69,.11), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(23,107,69,.12), transparent 32%),
     linear-gradient(135deg, #F7FAF6, #EEF6EF);
+  overflow: hidden;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.05fr .95fr;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
   gap: 55px;
+  align-items: center;
 }
 
 .eyebrow {
   display: inline-flex;
-  align-items: center;
   background: var(--primary-container);
   color: var(--on-primary-container);
-  border-radius: var(--shape-full);
   padding: 7px 14px;
+  border-radius: var(--radius-full);
   font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 800;
   letter-spacing: .06em;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 19px;
 }
 
 .hero h1 {
-  font-size: clamp(38px, 5vw, 59px);
+  color: var(--dark);
+  font-size: clamp(38px, 5vw, 58px);
   line-height: 1.12;
   letter-spacing: -.055em;
   font-weight: 800;
-  color: var(--dark);
   margin-bottom: 22px;
 }
 
@@ -262,136 +234,605 @@ header {
   color: var(--primary);
 }
 
-.hero p {
+.hero-copy {
   color: var(--muted);
-  font-size: 16px;
-  max-width: 570px;
-  margin-bottom: 28px;
+  font-size: 15px;
+  max-width: 540px;
+  margin-bottom: 27px;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 12px;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
 .hero-note {
-  margin-top: 22px;
   color: var(--muted);
   font-size: 12px;
+  margin-top: 20px;
 }
 
-.hero-image {
+/* HERO WEBSITE MOCKUP */
+
+.hero-visual {
   position: relative;
+  padding: 12px;
 }
 
-.hero-image img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  border-radius: var(--shape-extra-large);
-  box-shadow: var(--shadow-large);
-}
-
-.image-note {
-  position: absolute;
-  bottom: 20px;
-  left: -20px;
+.browser {
   background: white;
-  padding: 17px 20px;
-  border-radius: var(--shape-large);
-  box-shadow: var(--shadow-large);
-  font-size: 13px;
-  font-weight: 700;
+  border: 1px solid #DCE5DD;
+  border-radius: 17px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transform: rotate(1deg);
 }
 
-.image-note span {
+.browser-bar {
+  height: 38px;
+  background: #F0F3F0;
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+  gap: 6px;
+}
+
+.browser-dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #AEB8B0;
+}
+
+.browser-address {
+  background: white;
+  border-radius: 20px;
+  font-size: 9px;
+  color: #778178;
+  padding: 4px 15px;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.demo-website {
+  min-height: 315px;
+  background: #F7F9F6;
+  padding: 23px;
+}
+
+.demo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.demo-brand {
+  font-size: 12px;
+  font-weight: 800;
+  color: #176B45;
+}
+
+.demo-nav-links {
+  display: flex;
+  gap: 12px;
+  font-size: 8px;
+  color: #59645B;
+}
+
+.demo-hero {
+  background: linear-gradient(115deg, #E0F1E4, #F1F7ED);
+  border-radius: 12px;
+  padding: 23px 18px;
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.demo-hero h3 {
+  font-size: 19px;
+  line-height: 1.25;
+  color: #173B27;
+  margin-bottom: 8px;
+}
+
+.demo-hero p {
+  font-size: 8px;
+  color: #53685A;
+  margin-bottom: 12px;
+}
+
+.demo-mini-btn {
+  display: inline-block;
+  background: #176B45;
+  color: white;
+  font-size: 8px;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+
+.demo-illustration {
+  min-height: 125px;
+  border-radius: 10px;
+  background: linear-gradient(145deg,#B3D8BC,#508C66);
+  display: grid;
+  place-items: center;
+  font-size: 43px;
+}
+
+.demo-bottom {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.demo-bottom div {
+  background: white;
+  border: 1px solid #E6ECE5;
+  border-radius: 8px;
+  padding: 13px 8px;
+  text-align: center;
+  font-size: 8px;
+  color: #5D6C60;
+}
+
+.demo-bottom strong {
+  display: block;
+  font-size: 11px;
+  color: #176B45;
+  margin-bottom: 3px;
+}
+
+.hero-sticker {
+  position: absolute;
+  right: -8px;
+  bottom: 4px;
+  background: white;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.hero-sticker span {
   display: block;
   color: var(--primary);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 500;
 }
 
-/* General sections */
+/* SECTION HEADINGS */
 
 section {
-  padding: 82px 0;
+  padding: 78px 0;
 }
 
 .section-heading {
+  max-width: 720px;
+  margin: 0 auto 43px;
   text-align: center;
-  max-width: 710px;
-  margin: 0 auto 45px;
 }
 
 .section-heading h2 {
-  font-size: clamp(28px, 4vw, 39px);
+  font-size: clamp(27px,4vw,38px);
   line-height: 1.2;
   letter-spacing: -.04em;
-  font-weight: 700;
   color: var(--dark);
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .section-heading p {
-  color: var(--muted);
   font-size: 14px;
+  color: var(--muted);
 }
 
-/* Services */
+/* SERVICES */
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 22px;
+  gap: 20px;
 }
 
 .service-card {
-  background: var(--surface-container-low);
+  background: var(--surface-low);
   border: 1px solid var(--border);
-  border-radius: var(--shape-large);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: .25s;
+  transition: .2s;
 }
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-large);
+  box-shadow: var(--shadow-lg);
 }
 
-.service-card img {
-  width: 100%;
-  height: 205px;
-  object-fit: cover;
+.service-visual {
+  height: 190px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.service-visual.website {
+  background: linear-gradient(140deg,#D9EEE0,#A5D2B2);
+}
+
+.service-visual.social {
+  background: linear-gradient(140deg,#F4E5D8,#E8C2A6);
+}
+
+.service-visual.google {
+  background: linear-gradient(140deg,#E2EAF5,#B8CBE7);
 }
 
 .service-content {
-  padding: 24px;
+  padding: 23px;
 }
 
 .service-content h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-size: 17px;
+  margin-bottom: 9px;
   color: var(--dark);
 }
 
 .service-content p {
   color: var(--muted);
-  font-size: 13px;
-  margin-bottom: 19px;
+  font-size: 12px;
+  margin-bottom: 17px;
 }
 
 .service-link {
   color: var(--primary);
-  font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 800;
 }
 
-/* Packages */
+/* MINI WEBSITE MOCKUPS */
+
+.mini-site {
+  width: 78%;
+  height: 145px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  padding: 12px;
+  transform: rotate(-3deg);
+}
+
+.mini-site-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 7px;
+  font-weight: 800;
+  color: #1E5C3B;
+  margin-bottom: 11px;
+}
+
+.mini-site-banner {
+  height: 70px;
+  background: linear-gradient(120deg,#D4EBD9,#83B99A);
+  border-radius: 5px;
+  padding: 10px;
+  color: #17432B;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.mini-site-lines {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.mini-site-lines span {
+  height: 17px;
+  flex: 1;
+  background: #EAF0E9;
+  border-radius: 3px;
+}
+
+/* SOCIAL MOCKUP */
+
+.social-mockup {
+  width: 180px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  transform: rotate(3deg);
+}
+
+.social-heading {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 3px 0 8px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 4px;
+}
+
+.social-tile {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+.social-tile:nth-child(1) { background: #E3F0E5; }
+.social-tile:nth-child(2) { background: #F2E4D8; }
+.social-tile:nth-child(3) { background: #DCE8F2; }
+.social-tile:nth-child(4) { background: #E9E3F3; }
+.social-tile:nth-child(5) { background: #E8F0D9; }
+.social-tile:nth-child(6) { background: #F4E3E2; }
+
+/* GOOGLE PROFILE MOCKUP */
+
+.google-mockup {
+  width: 82%;
+  background: white;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+  transform: rotate(-2deg);
+}
+
+.google-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.google-name {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.google-rating {
+  color: #A56A00;
+  font-size: 10px;
+  margin: 4px 0;
+}
+
+.google-category {
+  color: #68746B;
+  font-size: 9px;
+}
+
+.google-buttons {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.google-buttons span {
+  color: #176B45;
+  border: 1px solid #DCE7DE;
+  border-radius: 20px;
+  padding: 5px 8px;
+  font-size: 8px;
+}
+
+/* SAMPLE WORK */
+
+.samples {
+  background: var(--surface-container);
+}
+
+.sample-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 21px;
+}
+
+.sample-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.sample-screen {
+  height: 205px;
+  padding: 13px;
+  background: #E7EEE7;
+}
+
+.sample-browser {
+  background: white;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.sample-browser-bar {
+  height: 18px;
+  background: #EFF2EF;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+}
+
+.sample-browser-bar span {
+  width: 5px;
+  height: 5px;
+  background: #AEB8B0;
+  border-radius: 50%;
+}
+
+.clinic-page {
+  height: calc(100% - 18px);
+  background: #F8FBF8;
+  padding: 13px;
+}
+
+.clinic-nav {
+  color: #226442;
+  font-size: 9px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clinic-banner {
+  background: #DCEFE3;
+  border-radius: 6px;
+  margin-top: 12px;
+  height: 105px;
+  padding: 15px 10px;
+  color: #16472D;
+}
+
+.clinic-banner h4 {
+  font-size: 14px;
+  line-height: 1.3;
+  max-width: 145px;
+}
+
+.clinic-banner p {
+  font-size: 7px;
+  margin-top: 6px;
+}
+
+.clinic-blocks {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.clinic-blocks span {
+  height: 22px;
+  flex: 1;
+  border-radius: 4px;
+  background: #E7EEE8;
+}
+
+.restaurant-page {
+  height: calc(100% - 18px);
+  background: #FBF7EF;
+  padding: 12px;
+}
+
+.restaurant-nav {
+  font-size: 9px;
+  font-weight: 800;
+  color: #8A4926;
+}
+
+.restaurant-banner {
+  margin-top: 12px;
+  background: linear-gradient(120deg,#9A5B35,#E5B27B);
+  border-radius: 6px;
+  height: 105px;
+  padding: 20px 12px;
+  color: white;
+}
+
+.restaurant-banner h4 {
+  font-size: 18px;
+}
+
+.restaurant-banner p {
+  font-size: 8px;
+}
+
+.restaurant-blocks {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.restaurant-blocks span {
+  flex: 1;
+  height: 22px;
+  background: #F0E7D9;
+  border-radius: 4px;
+}
+
+.salon-page {
+  height: calc(100% - 18px);
+  background: #FBF5F8;
+  padding: 12px;
+}
+
+.salon-nav {
+  color: #8C496B;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.salon-banner {
+  margin-top: 12px;
+  background: linear-gradient(120deg,#E9C6D8,#C58AA9);
+  border-radius: 6px;
+  height: 105px;
+  padding: 20px 12px;
+  color: #542B43;
+}
+
+.salon-banner h4 {
+  font-size: 18px;
+}
+
+.salon-banner p {
+  font-size: 8px;
+}
+
+.salon-blocks {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.salon-blocks span {
+  flex: 1;
+  height: 22px;
+  background: #F1E5EC;
+  border-radius: 4px;
+}
+
+.sample-info {
+  padding: 20px;
+}
+
+.demo-label {
+  display: inline-block;
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  padding: 5px 10px;
+  border-radius: var(--radius-full);
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.sample-info h3 {
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.sample-info p {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* PACKAGES */
 
 .packages {
-  background: var(--surface-container);
+  background: var(--surface);
 }
 
 .package-grid {
@@ -402,72 +843,84 @@ section {
 }
 
 .package-card {
-  background: var(--surface-container-low);
+  background: var(--surface-low);
   border: 1px solid var(--border);
-  padding: 29px;
-  border-radius: var(--shape-large);
+  padding: 27px;
+  border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .package-card.featured {
+  background: white;
   border: 2px solid var(--primary);
-  background: #FFFFFF;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -1px;
+  right: 18px;
+  background: var(--primary);
+  color: white;
+  padding: 7px 13px;
+  border-radius: 0 0 10px 10px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .04em;
 }
 
 .package-label {
-  color: var(--on-primary-container);
-  background: var(--primary-container);
   display: inline-block;
   align-self: flex-start;
-  padding: 6px 12px;
-  border-radius: var(--shape-full);
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  border-radius: var(--radius-full);
+  padding: 5px 11px;
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .06em;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .package-card h3 {
-  font-size: 21px;
-  font-weight: 700;
+  font-size: 20px;
   color: var(--dark);
 }
 
 .package-description {
   color: var(--muted);
   font-size: 12px;
-  min-height: 48px;
-  margin: 8px 0 16px;
+  margin: 9px 0 15px;
+  min-height: 45px;
 }
 
 .price {
-  font-size: 29px;
+  color: var(--primary);
+  font-size: 28px;
   font-weight: 800;
   letter-spacing: -.04em;
-  color: var(--primary);
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .package-card ul {
   list-style: none;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   flex: 1;
 }
 
 .package-card li {
-  padding: 9px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--border);
-  font-size: 12px;
   color: var(--muted);
+  font-size: 12px;
 }
 
 .package-card li::before {
   content: "✓";
   color: var(--primary);
   font-weight: 800;
-  margin-right: 9px;
+  margin-right: 8px;
 }
 
 .package-card .btn {
@@ -476,14 +929,14 @@ section {
 
 .notice {
   background: var(--primary-container);
-  border-radius: var(--shape-medium);
-  padding: 16px 18px;
   color: var(--on-primary-container);
+  padding: 15px 17px;
+  border-radius: var(--radius-md);
   font-size: 12px;
-  margin-top: 24px;
+  margin-top: 23px;
 }
 
-/* Monthly support */
+/* MONTHLY SUPPORT */
 
 .subscription-grid {
   display: grid;
@@ -492,30 +945,28 @@ section {
 }
 
 .subscription-card {
-  background: var(--surface-container-low);
+  background: var(--surface-low);
   border: 1px solid var(--border);
-  border-radius: var(--shape-large);
-  padding: 26px;
+  border-radius: var(--radius-lg);
+  padding: 25px;
   display: flex;
   flex-direction: column;
 }
 
 .subscription-card h3 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 17px;
   margin-bottom: 8px;
 }
 
 .subscription-card p {
-  font-size: 12px;
   color: var(--muted);
+  font-size: 12px;
 }
 
 .subscription-price {
   color: var(--primary);
+  font-size: 24px;
   font-weight: 800;
-  font-size: 25px;
-  letter-spacing: -.04em;
   margin: 16px 0;
 }
 
@@ -527,50 +978,81 @@ section {
 
 .subscription-card .btn {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
-/* How it works */
+/* PROCESS */
 
 .process-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 25px;
+  gap: 22px;
 }
 
 .process-item {
   text-align: center;
-  padding: 25px 20px;
+  padding: 22px;
 }
 
 .process-number {
-  width: 50px;
-  height: 50px;
-  border-radius: var(--shape-full);
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
   display: grid;
   place-items: center;
+  margin: 0 auto 15px;
   background: var(--primary-container);
   color: var(--primary);
   font-weight: 800;
-  margin: 0 auto 17px;
 }
 
 .process-item h3 {
   font-size: 17px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .process-item p {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
 }
 
-/* Contact */
+/* FAQ */
+
+.faq-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+details {
+  background: var(--surface-low);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  margin-bottom: 12px;
+}
+
+details[open] {
+  background: var(--surface-container);
+}
+
+summary {
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+details p {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 11px;
+}
+
+/* CONTACT */
 
 .contact {
   background: var(--dark);
   color: white;
-  border-radius: var(--shape-extra-large) var(--shape-extra-large) 0 0;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
 .contact .section-heading h2 {
@@ -590,7 +1072,7 @@ section {
 
 .contact-info h3 {
   font-size: 22px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .contact-info p {
@@ -600,7 +1082,7 @@ section {
 }
 
 .contact-detail {
-  margin: 18px 0;
+  margin: 17px 0;
   color: #E0EEE5;
   font-size: 13px;
 }
@@ -608,20 +1090,18 @@ section {
 .contact-form {
   background: white;
   color: var(--text);
-  border-radius: var(--shape-extra-large);
-  padding: 29px;
-  box-shadow: var(--shadow-large);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-lg);
 }
 
 .contact-form h3 {
+  font-size: 20px;
   margin-bottom: 20px;
-  font-size: 21px;
 }
 
-/* Form fields */
-
 .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
@@ -635,12 +1115,12 @@ section {
 .form-group select,
 .form-group textarea {
   width: 100%;
-  min-height: 50px;
-  padding: 13px 15px;
+  min-height: 49px;
+  padding: 12px 14px;
   border: 1px solid var(--border);
-  border-radius: var(--shape-small);
+  border-radius: var(--radius-sm);
   outline: none;
-  background: var(--surface-container-low);
+  background: var(--surface-low);
   color: var(--text);
   font-size: 13px;
 }
@@ -661,44 +1141,12 @@ section {
   width: 100%;
 }
 
-/* FAQs */
-
-.faq-list {
-  max-width: 800px;
-  margin: auto;
-}
-
-details {
-  background: var(--surface-container-low);
-  border: 1px solid var(--border);
-  padding: 19px 21px;
-  border-radius: var(--shape-medium);
-  margin-bottom: 12px;
-}
-
-details[open] {
-  background: var(--surface-container);
-}
-
-summary {
-  font-weight: 650;
-  font-size: 14px;
-  cursor: pointer;
-  color: var(--dark);
-}
-
-details p {
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-/* Footer */
+/* FOOTER */
 
 footer {
   background: #08140D;
   color: #C4D1C8;
-  padding: 42px 0 20px;
+  padding: 40px 0 20px;
 }
 
 .footer-grid {
@@ -708,14 +1156,12 @@ footer {
   margin-bottom: 30px;
 }
 
-footer h3,
-footer h4 {
+footer h3, footer h4 {
   color: white;
   margin-bottom: 13px;
 }
 
-footer p,
-footer a {
+footer p, footer a {
   font-size: 12px;
   color: #AABBB0;
 }
@@ -736,11 +1182,11 @@ footer a:hover {
   font-size: 11px;
 }
 
-/* WhatsApp floating button */
+/* WHATSAPP FLOAT */
 
 .whatsapp-float {
   position: fixed;
-  right: 19px;
+  right: 18px;
   bottom: 20px;
   z-index: 900;
   background: #168A4B;
@@ -749,26 +1195,22 @@ footer a:hover {
   min-height: 48px;
   display: flex;
   align-items: center;
-  border-radius: var(--shape-full);
+  border-radius: var(--radius-full);
   font-size: 13px;
-  font-weight: 700;
-  box-shadow: var(--shadow-large);
+  font-weight: 800;
+  box-shadow: var(--shadow-lg);
 }
 
-/* Mobile */
+/* RESPONSIVE */
 
-@media(max-width: 900px) {
+@media(max-width: 950px) {
   .nav-links {
     gap: 12px;
     font-size: 11px;
   }
 
   .hero-grid {
-    gap: 30px;
-  }
-
-  .hero-image img {
-    height: 350px;
+    gap: 28px;
   }
 }
 
@@ -793,7 +1235,6 @@ footer a:hover {
     right: 0;
     background: white;
     padding: 14px 5%;
-    border-bottom: 1px solid var(--border);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -805,7 +1246,7 @@ footer a:hover {
   }
 
   .nav-links a {
-    padding: 14px 8px;
+    padding: 13px 7px;
     border-bottom: 1px solid var(--border);
     font-size: 13px;
   }
@@ -815,7 +1256,7 @@ footer a:hover {
   }
 
   .hero {
-    padding: 55px 0;
+    padding: 52px 0;
   }
 
   .hero-grid,
@@ -827,24 +1268,38 @@ footer a:hover {
     font-size: 40px;
   }
 
-  .hero p {
+  .hero-copy {
     font-size: 14px;
   }
 
-  .hero-image img {
-    height: 270px;
+  .hero-visual {
+    padding: 5px;
   }
 
-  .image-note {
-    left: 10px;
-    bottom: 10px;
+  .demo-website {
+    min-height: 280px;
+    padding: 16px;
+  }
+
+  .demo-hero {
+    padding: 16px 12px;
+  }
+
+  .demo-hero h3 {
+    font-size: 16px;
+  }
+
+  .hero-sticker {
+    right: 0;
+    bottom: -10px;
   }
 
   section {
-    padding: 60px 0;
+    padding: 58px 0;
   }
 
   .services-grid,
+  .sample-grid,
   .package-grid,
   .subscription-grid,
   .process-grid {
@@ -857,7 +1312,7 @@ footer a:hover {
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 23px;
   }
 
   .contact-form {
@@ -874,11 +1329,8 @@ footer a:hover {
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     transition-duration: .01ms !important;
-    animation-duration: .01ms !important;
   }
 }
 </style>
@@ -900,15 +1352,16 @@ footer a:hover {
     <nav class="nav-links" id="navLinks">
       <a href="#home">Home</a>
       <a href="#services">Services</a>
+      <a href="#samples">Sample Work</a>
       <a href="#packages">Packages</a>
       <a href="#subscriptions">Monthly Support</a>
-      <a href="#about">How It Works</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <div class="nav-actions">
       <a href="#contact" class="btn btn-primary">Get a Quote</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <button class="menu-btn" id="menuBtn"
+              aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
 
   </div>
@@ -929,15 +1382,21 @@ footer a:hover {
         <span>Grow with confidence.</span>
       </h1>
 
-      <p>
+      <p class="hero-copy">
         We help businesses present themselves professionally online,
         connect with more customers and make it easier for people
         to discover their services.
       </p>
 
       <div class="hero-buttons">
-        <a href="#packages" class="btn btn-primary">Explore Packages</a>
-        <a href="#contact" class="btn btn-outline">Talk to Us</a>
+        <a href="#packages" class="btn btn-primary">
+          Explore Packages
+        </a>
+
+        <a href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20digital%20services."
+           class="btn btn-outline" target="_blank" rel="noopener">
+          Talk to Us on WhatsApp
+        </a>
       </div>
 
       <div class="hero-note">
@@ -945,15 +1404,49 @@ footer a:hover {
       </div>
     </div>
 
-    <div class="hero-image">
-      <img
-        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85"
-        alt="Digital business analytics dashboard"
-      >
+    <!-- BUILT-IN WEBSITE MOCKUP -->
 
-      <div class="image-note">
-        Your business deserves to be seen.
-        <span>Let's build your digital presence.</span>
+    <div class="hero-visual">
+      <div class="browser">
+
+        <div class="browser-bar">
+          <span class="browser-dot"></span>
+          <span class="browser-dot"></span>
+          <span class="browser-dot"></span>
+          <div class="browser-address">yourbusiness.example</div>
+        </div>
+
+        <div class="demo-website">
+          <div class="demo-nav">
+            <div class="demo-brand">YOUR BUSINESS</div>
+            <div class="demo-nav-links">
+              <span>Home</span>
+              <span>About</span>
+              <span>Services</span>
+              <span>Contact</span>
+            </div>
+          </div>
+
+          <div class="demo-hero">
+            <div>
+              <h3>Welcome to your next chapter.</h3>
+              <p>A professional website built to introduce your business.</p>
+              <span class="demo-mini-btn">Discover More</span>
+            </div>
+            <div class="demo-illustration">✦</div>
+          </div>
+
+          <div class="demo-bottom">
+            <div><strong>01</strong>About us</div>
+            <div><strong>02</strong>Our services</div>
+            <div><strong>03</strong>Contact us</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-sticker">
+        Designed for your business
+        <span>Mobile-friendly website concepts</span>
       </div>
     </div>
 
@@ -977,11 +1470,21 @@ footer a:hover {
     <div class="services-grid">
 
       <article class="service-card">
-        <img
-          src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=85"
-          alt="Professional website design on a computer"
-          loading="lazy"
-        >
+        <div class="service-visual website">
+          <div class="mini-site">
+            <div class="mini-site-top">
+              <span>YOUR BRAND</span>
+              <span>MENU ☰</span>
+            </div>
+            <div class="mini-site-banner">
+              Your business.
+              Your online presence.
+            </div>
+            <div class="mini-site-lines">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
 
         <div class="service-content">
           <h3>Website Design</h3>
@@ -990,7 +1493,6 @@ footer a:hover {
             We create mobile-friendly websites that introduce
             your services and make it easier for customers to contact you.
           </p>
-
           <a class="service-link" href="#contact"
              onclick="selectService('Website Design')">
             Request this service →
@@ -999,11 +1501,19 @@ footer a:hover {
       </article>
 
       <article class="service-card">
-        <img
-          src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=900&q=85"
-          alt="Social media marketing"
-          loading="lazy"
-        >
+        <div class="service-visual social">
+          <div class="social-mockup">
+            <div class="social-heading">YOUR BUSINESS · POSTS</div>
+            <div class="social-grid">
+              <div class="social-tile">✦</div>
+              <div class="social-tile">☕</div>
+              <div class="social-tile">📣</div>
+              <div class="social-tile">🌿</div>
+              <div class="social-tile">✨</div>
+              <div class="social-tile">♥</div>
+            </div>
+          </div>
+        </div>
 
         <div class="service-content">
           <h3>Social Media Marketing</h3>
@@ -1012,7 +1522,6 @@ footer a:hover {
             content planning, social media post designs and
             practical marketing support.
           </p>
-
           <a class="service-link" href="#contact"
              onclick="selectService('Social Media Marketing')">
             Request this service →
@@ -1021,11 +1530,22 @@ footer a:hover {
       </article>
 
       <article class="service-card">
-        <img
-          src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=900&q=85"
-          alt="Business location and maps"
-          loading="lazy"
-        >
+        <div class="service-visual google">
+          <div class="google-mockup">
+            <div class="google-top">
+              <strong>Google Business Profile</strong>
+              <span>•••</span>
+            </div>
+            <div class="google-name">Your Business Uganda</div>
+            <div class="google-rating">★★★★☆ · Sample profile</div>
+            <div class="google-category">Business profile demonstration</div>
+            <div class="google-buttons">
+              <span>Call</span>
+              <span>Directions</span>
+              <span>Website</span>
+            </div>
+          </div>
+        </div>
 
         <div class="service-content">
           <h3>Google Business Profile Setup</h3>
@@ -1034,7 +1554,6 @@ footer a:hover {
             and Maps through profile setup, business information
             and guidance on managing your profile.
           </p>
-
           <a class="service-link" href="#contact"
              onclick="selectService('Google Business Profile Setup')">
             Request this service →
@@ -1043,6 +1562,142 @@ footer a:hover {
       </article>
 
     </div>
+  </div>
+</section>
+
+<!-- SAMPLE WORK -->
+
+<section class="samples" id="samples">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="eyebrow">Our design concepts</div>
+      <h2>See what your business could look like online</h2>
+      <p>
+        Explore sample website concepts created to demonstrate
+        possible layouts and presentation styles for different businesses.
+      </p>
+    </div>
+
+    <div class="sample-grid">
+
+      <!-- CLINIC DEMO -->
+
+      <article class="sample-card">
+        <div class="sample-screen">
+          <div class="sample-browser">
+            <div class="sample-browser-bar">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="clinic-page">
+              <div class="clinic-nav">
+                <span>GREENCARE CLINIC</span>
+                <span>HOME · SERVICES</span>
+              </div>
+
+              <div class="clinic-banner">
+                <h4>Your health deserves quality care.</h4>
+                <p>A welcoming clinic website concept.</p>
+              </div>
+
+              <div class="clinic-blocks">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sample-info">
+          <span class="demo-label">Demonstration concept</span>
+          <h3>Clinic Website</h3>
+          <p>
+            A clean layout concept for a healthcare business,
+            with service information and contact details.
+          </p>
+        </div>
+      </article>
+
+      <!-- RESTAURANT DEMO -->
+
+      <article class="sample-card">
+        <div class="sample-screen">
+          <div class="sample-browser">
+            <div class="sample-browser-bar">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="restaurant-page">
+              <div class="restaurant-nav">
+                THE LOCAL TABLE
+              </div>
+
+              <div class="restaurant-banner">
+                <h4>Good food. Good moments.</h4>
+                <p>A restaurant website concept.</p>
+              </div>
+
+              <div class="restaurant-blocks">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sample-info">
+          <span class="demo-label">Demonstration concept</span>
+          <h3>Restaurant Website</h3>
+          <p>
+            A sample restaurant layout for menus, business
+            information and customer enquiries.
+          </p>
+        </div>
+      </article>
+
+      <!-- SALON DEMO -->
+
+      <article class="sample-card">
+        <div class="sample-screen">
+          <div class="sample-browser">
+            <div class="sample-browser-bar">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="salon-page">
+              <div class="salon-nav">
+                THE BEAUTY STUDIO
+              </div>
+
+              <div class="salon-banner">
+                <h4>Beauty begins with confidence.</h4>
+                <p>A salon website concept.</p>
+              </div>
+
+              <div class="salon-blocks">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sample-info">
+          <span class="demo-label">Demonstration concept</span>
+          <h3>Salon Website</h3>
+          <p>
+            A sample beauty business layout for services,
+            pricing information and appointment enquiries.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="notice">
+      These are illustrative design concepts, not completed client projects.
+      Your actual website design will be tailored to your business,
+      content, branding and agreed package.
+    </div>
+
   </div>
 </section>
 
@@ -1088,6 +1743,8 @@ footer a:hover {
       </article>
 
       <article class="package-card featured">
+        <span class="popular-badge">MOST POPULAR</span>
+
         <div class="package-label">GROWTH</div>
         <h3>Business Growth</h3>
 
@@ -1166,21 +1823,9 @@ footer a:hover {
 
       <article class="subscription-card">
         <h3>Website Care</h3>
-
-        <p>
-          For businesses that need occasional website updates
-          and basic maintenance support.
-        </p>
-
-        <div class="subscription-price">
-          UGX 50,000 <small>/ month</small>
-        </div>
-
-        <p>
-          Includes agreed minor text, image and contact updates,
-          plus basic website checks.
-        </p>
-
+        <p>For businesses that need occasional website updates and basic maintenance support.</p>
+        <div class="subscription-price">UGX 50,000 <small>/ month</small></div>
+        <p>Includes agreed minor text, image and contact updates, plus basic website checks.</p>
         <a href="#contact" class="btn btn-outline"
            onclick="selectSubscription('Website Care - UGX 50,000 per month')">
           Request Plan
@@ -1189,21 +1834,9 @@ footer a:hover {
 
       <article class="subscription-card">
         <h3>Google Business Support</h3>
-
-        <p>
-          For businesses that need help keeping their
-          Google Business Profile information updated.
-        </p>
-
-        <div class="subscription-price">
-          UGX 50,000 <small>/ month</small>
-        </div>
-
-        <p>
-          Includes agreed business information updates,
-          profile guidance and review response guidance.
-        </p>
-
+        <p>For businesses that need help keeping their Google Business Profile information updated.</p>
+        <div class="subscription-price">UGX 50,000 <small>/ month</small></div>
+        <p>Includes agreed business information updates, profile guidance and review response guidance.</p>
         <a href="#contact" class="btn btn-outline"
            onclick="selectSubscription('Google Business Support - UGX 50,000 per month')">
           Request Plan
@@ -1212,21 +1845,9 @@ footer a:hover {
 
       <article class="subscription-card">
         <h3>Social Media Support</h3>
-
-        <p>
-          For businesses that want a more consistent
-          social media communication plan.
-        </p>
-
-        <div class="subscription-price">
-          UGX 100,000 <small>/ month</small>
-        </div>
-
-        <p>
-          Includes a monthly content plan and up to
-          eight basic post designs with captions.
-        </p>
-
+        <p>For businesses that want a more consistent social media communication plan.</p>
+        <div class="subscription-price">UGX 100,000 <small>/ month</small></div>
+        <p>Includes a monthly content plan and up to eight basic post designs with captions.</p>
         <a href="#contact" class="btn btn-primary"
            onclick="selectSubscription('Social Media Support - UGX 100,000 per month')">
           Request Plan
@@ -1265,28 +1886,19 @@ footer a:hover {
       <div class="process-item">
         <div class="process-number">01</div>
         <h3>Choose a service</h3>
-        <p>
-          Select an individual service or compare our packages
-          and monthly support options.
-        </p>
+        <p>Select an individual service or compare our packages and monthly support options.</p>
       </div>
 
       <div class="process-item">
         <div class="process-number">02</div>
         <h3>Discuss your needs</h3>
-        <p>
-          Contact us on WhatsApp. We will discuss your requirements,
-          confirm the scope and explain the next steps.
-        </p>
+        <p>Contact us on WhatsApp. We will discuss your requirements, confirm the scope and explain the next steps.</p>
       </div>
 
       <div class="process-item">
         <div class="process-number">03</div>
         <h3>Confirm and begin</h3>
-        <p>
-          Once the agreed price and payment are confirmed,
-          we can begin the agreed work.
-        </p>
+        <p>Once the agreed price and payment are confirmed, we can begin the agreed work.</p>
       </div>
 
     </div>
@@ -1308,56 +1920,37 @@ footer a:hover {
 
       <details>
         <summary>Do I need to buy a package?</summary>
-        <p>
-          No. You can request an individual service.
-          Packages are optional combinations for customers
-          who need more than one service.
-        </p>
+        <p>No. You can request an individual service. Packages are optional combinations for customers who need more than one service.</p>
+      </details>
+
+      <details>
+        <summary>Are the sample designs completed client projects?</summary>
+        <p>No. They are demonstration concepts created to show possible layouts. Your actual project will be designed around your business requirements.</p>
       </details>
 
       <details>
         <summary>How do I make payment?</summary>
-        <p>
-          Payment arrangements are confirmed directly through WhatsApp.
-          We use manual payment confirmation. Do not send money
-          until you have received and verified the agreed payment details.
-        </p>
+        <p>Payment arrangements are confirmed directly through WhatsApp. We use manual payment confirmation. Do not send money until you have received and verified the agreed payment details.</p>
       </details>
 
       <details>
         <summary>Are monthly plans automatically renewed?</summary>
-        <p>
-          No. Monthly plans are requested and confirmed manually.
-          There are no automatic deductions from your mobile money
-          or bank account.
-        </p>
+        <p>No. Monthly plans are requested and confirmed manually. There are no automatic deductions from your mobile money or bank account.</p>
       </details>
 
       <details>
         <summary>Can you guarantee that my business will rank first on Google?</summary>
-        <p>
-          No. Google rankings depend on many factors and are not
-          controlled by any service provider. We can help with
-          profile setup and good profile management practices,
-          but we cannot guarantee a particular ranking.
-        </p>
+        <p>No. Google rankings depend on many factors. We can help with profile setup and good management practices, but cannot guarantee a particular ranking.</p>
       </details>
 
       <details>
         <summary>Are domain and hosting costs included?</summary>
-        <p>
-          Not automatically. Domain registration and hosting may
-          involve separate third-party charges. These costs will
-          be explained before you approve any work.
-        </p>
+        <p>Not automatically. Domain registration and hosting may involve separate third-party charges. These costs will be explained before you approve any work.</p>
       </details>
 
       <details>
         <summary>How do I get started?</summary>
-        <p>
-          Select a service or package, complete the enquiry form
-          and send your request through WhatsApp.
-        </p>
+        <p>Select a service or package, complete the enquiry form and send your request through WhatsApp.</p>
       </details>
 
     </div>
@@ -1372,10 +1965,7 @@ footer a:hover {
     <div class="section-heading">
       <div class="eyebrow">Let's talk</div>
       <h2>Tell us what your business needs</h2>
-      <p>
-        Send an enquiry and we will discuss the right service
-        or package for your business.
-      </p>
+      <p>Send an enquiry and we will discuss the right service or package for your business.</p>
     </div>
 
     <div class="contact-grid">
@@ -1405,7 +1995,7 @@ footer a:hover {
         </div>
 
         <a class="btn btn-primary"
-           href="https://wa.me/256732166463"
+           href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20would%20like%20to%20discuss%20your%20services."
            target="_blank" rel="noopener">
           Chat on WhatsApp
         </a>
@@ -1416,20 +2006,17 @@ footer a:hover {
 
         <div class="form-group">
           <label for="customerName">Your name</label>
-          <input id="customerName" type="text"
-                 placeholder="Enter your name" required>
+          <input id="customerName" type="text" placeholder="Enter your name" required>
         </div>
 
         <div class="form-group">
           <label for="businessName">Business name</label>
-          <input id="businessName" type="text"
-                 placeholder="Enter your business name">
+          <input id="businessName" type="text" placeholder="Enter your business name">
         </div>
 
         <div class="form-group">
           <label for="customerPhone">Your phone number</label>
-          <input id="customerPhone" type="tel"
-                 placeholder="Enter your phone number" required>
+          <input id="customerPhone" type="tel" placeholder="Enter your phone number" required>
         </div>
 
         <div class="form-group">
@@ -1451,8 +2038,7 @@ footer a:hover {
 
         <div class="form-group">
           <label for="customerMessage">Tell us more about your needs</label>
-          <textarea id="customerMessage"
-                    placeholder="Briefly describe what you need..."></textarea>
+          <textarea id="customerMessage" placeholder="Briefly describe what you need..."></textarea>
         </div>
 
         <button class="btn btn-primary" type="submit">
@@ -1488,6 +2074,7 @@ footer a:hover {
       <div>
         <h4>Explore</h4>
         <a href="#services">Our Services</a>
+        <a href="#samples">Sample Work</a>
         <a href="#packages">Packages</a>
         <a href="#subscriptions">Monthly Support</a>
         <a href="#faq">FAQs</a>
@@ -1511,7 +2098,7 @@ footer a:hover {
 </footer>
 
 <a class="whatsapp-float"
-   href="https://wa.me/256732166463"
+   href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20would%20like%20to%20make%20an%20enquiry."
    target="_blank" rel="noopener"
    aria-label="Chat with us on WhatsApp">
   WhatsApp
@@ -1577,7 +2164,7 @@ document.getElementById("enquiryForm").addEventListener("submit", function(event
     "https://wa.me/256732166463?text=" +
     encodeURIComponent(lines.join("\n"));
 
-  window.open(whatsappURL, "_blank", "noopener");
+  window.open(whatsappURL, "_blank");
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
