@@ -3,40 +3,65 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#07140f">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F7FAF6">
 
 <meta name="google-site-verification" content="3g5wRQW9r7M4xoEyp5FwCSjuvREsOEb-saDQjrR37ss">
 
-<title>Digital Brand Lift | Website Design & Digital Marketing in Uganda</title>
+<title>Digital Brand Lift | Website Design & Digital Marketing Uganda</title>
 
-<meta name="description" content="Digital Brand Lift helps businesses in Uganda grow online through professional website design, social media marketing and Google Business Profile setup. Explore affordable packages.">
+<meta name="description" content="Digital Brand Lift provides website design, social media marketing and Google Business Profile setup in Uganda. Explore affordable digital services and business packages.">
 
 <meta name="keywords" content="website design Uganda, web design Mukono, digital marketing Uganda, social media marketing Uganda, Google Business Profile setup Uganda">
 
 <meta name="author" content="Digital Brand Lift">
-
 <meta property="og:title" content="Digital Brand Lift | Grow Your Business Online">
-<meta property="og:description" content="Affordable website design and digital marketing services for businesses in Uganda.">
+<meta property="og:description" content="Professional digital services for businesses in Uganda.">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --green: #16a36a;
-  --green-dark: #08784b;
-  --green-light: #e9f8f0;
-  --dark: #07140f;
-  --dark-soft: #10251b;
-  --text: #17251d;
-  --muted: #64736a;
-  --white: #ffffff;
-  --border: #e3ebe5;
-  --background: #f7faf8;
-  --shadow: 0 15px 45px rgba(8, 40, 23, .08);
+  color-scheme: light;
+
+  /* Material Design 3-inspired colour roles */
+  --primary: #176B45;
+  --on-primary: #FFFFFF;
+  --primary-container: #D5F5DF;
+  --on-primary-container: #002111;
+
+  --secondary: #4D6354;
+  --surface: #F7FAF6;
+  --surface-container-low: #F1F5EF;
+  --surface-container: #EEF3ED;
+  --surface-container-high: #E7EDE6;
+
+  --text: #191D19;
+  --muted: #5E6B61;
+  --outline: #737D73;
+  --border: #DDE5DC;
+
+  --dark: #102018;
+  --dark-soft: #19372A;
+
+  --green: #176B45;
+  --green-dark: #075333;
+  --green-light: #D5F5DF;
+
+  --white: #FFFFFF;
+  --background: #F7FAF6;
+
+  --shape-small: 8px;
+  --shape-medium: 12px;
+  --shape-large: 16px;
+  --shape-extra-large: 28px;
+  --shape-full: 999px;
+
+  --shadow: 0 2px 8px rgba(25,45,32,.08);
+  --shadow-large: 0 8px 28px rgba(25,45,32,.10);
 }
 
 * {
@@ -47,14 +72,15 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 85px;
+  scroll-padding-top: 90px;
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
-  background: var(--background);
+  font-family: "Inter", sans-serif;
+  background: var(--surface);
   color: var(--text);
   line-height: 1.7;
+  letter-spacing: -.01em;
 }
 
 a {
@@ -70,18 +96,28 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   width: min(1160px, 92%);
   margin: auto;
 }
 
+/* Announcement bar */
+
 .topbar {
   background: var(--dark);
-  color: #dcece2;
+  color: #E1EFE5;
   text-align: center;
   padding: 9px 12px;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 500;
 }
+
+/* Navigation */
 
 header {
   background: rgba(255,255,255,.96);
@@ -93,7 +129,7 @@ header {
 }
 
 .nav {
-  height: 76px;
+  min-height: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,27 +137,31 @@ header {
 }
 
 .logo {
-  font-family: "Manrope", sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 800;
-  letter-spacing: -1px;
+  letter-spacing: -.06em;
   color: var(--dark);
+  white-space: nowrap;
 }
 
 .logo span {
-  color: var(--green);
+  color: var(--primary);
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 25px;
-  font-size: 14px;
+  gap: 23px;
+  font-size: 13px;
   font-weight: 600;
 }
 
+.nav-links a {
+  transition: color .2s;
+}
+
 .nav-links a:hover {
-  color: var(--green);
+  color: var(--primary);
 }
 
 .nav-actions {
@@ -130,54 +170,62 @@ header {
   gap: 10px;
 }
 
+.menu-btn {
+  display: none;
+  border: 1px solid var(--border);
+  background: var(--surface-container-low);
+  color: var(--text);
+  border-radius: var(--shape-medium);
+  width: 45px;
+  height: 45px;
+  font-size: 21px;
+}
+
+/* Buttons */
+
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  min-height: 48px;
+  padding: 12px 23px;
   border: none;
-  border-radius: 9px;
-  padding: 13px 19px;
-  font-weight: 700;
+  border-radius: var(--shape-full);
   font-size: 14px;
-  transition: .2s ease;
+  font-weight: 600;
+  transition: background .2s, box-shadow .2s, transform .2s;
 }
 
 .btn-primary {
-  background: var(--green);
-  color: white;
+  background: var(--primary);
+  color: var(--on-primary);
 }
 
 .btn-primary:hover {
   background: var(--green-dark);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
 }
 
 .btn-outline {
-  border: 1px solid var(--border);
-  color: var(--text);
-  background: white;
+  background: transparent;
+  border: 1px solid var(--outline);
+  color: var(--primary);
 }
 
 .btn-outline:hover {
-  border-color: var(--green);
-  color: var(--green-dark);
+  background: var(--primary-container);
+  border-color: var(--primary);
 }
 
-.menu-btn {
-  display: none;
-  border: 1px solid var(--border);
-  background: white;
-  border-radius: 8px;
-  padding: 8px 12px;
-  font-size: 22px;
-}
+/* Hero */
 
 .hero {
-  padding: 85px 0 75px;
+  padding: 82px 0;
   background:
-    radial-gradient(circle at 85% 20%, rgba(22,163,106,.13), transparent 30%),
-    linear-gradient(135deg, #f7fbf8, #eef8f1);
+    radial-gradient(circle at 85% 20%, rgba(22,107,69,.11), transparent 30%),
+    linear-gradient(135deg, #F7FAF6, #EEF6EF);
 }
 
 .hero-grid {
@@ -190,34 +238,33 @@ header {
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: var(--green-light);
-  color: var(--green-dark);
-  border-radius: 50px;
-  padding: 7px 13px;
-  font-size: 12px;
-  font-weight: 800;
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  border-radius: var(--shape-full);
+  padding: 7px 14px;
+  font-size: 11px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .06em;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-family: "Manrope", sans-serif;
   font-size: clamp(38px, 5vw, 59px);
   line-height: 1.12;
-  letter-spacing: -2px;
+  letter-spacing: -.055em;
+  font-weight: 800;
   color: var(--dark);
   margin-bottom: 22px;
 }
 
 .hero h1 span {
-  color: var(--green);
+  color: var(--primary);
 }
 
 .hero p {
   color: var(--muted);
-  font-size: 17px;
+  font-size: 16px;
   max-width: 570px;
   margin-bottom: 28px;
 }
@@ -231,7 +278,7 @@ header {
 .hero-note {
   margin-top: 22px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .hero-image {
@@ -242,8 +289,8 @@ header {
   width: 100%;
   height: 420px;
   object-fit: cover;
-  border-radius: 22px;
-  box-shadow: var(--shadow);
+  border-radius: var(--shape-extra-large);
+  box-shadow: var(--shadow-large);
 }
 
 .image-note {
@@ -252,18 +299,20 @@ header {
   left: -20px;
   background: white;
   padding: 17px 20px;
-  border-radius: 13px;
-  box-shadow: var(--shadow);
+  border-radius: var(--shape-large);
+  box-shadow: var(--shadow-large);
   font-size: 13px;
   font-weight: 700;
 }
 
 .image-note span {
   display: block;
-  color: var(--green-dark);
-  font-size: 12px;
+  color: var(--primary);
+  font-size: 11px;
   font-weight: 500;
 }
+
+/* General sections */
 
 section {
   padding: 82px 0;
@@ -271,45 +320,43 @@ section {
 
 .section-heading {
   text-align: center;
-  max-width: 700px;
+  max-width: 710px;
   margin: 0 auto 45px;
 }
 
-.section-heading .eyebrow {
-  margin-bottom: 13px;
-}
-
 .section-heading h2 {
-  font-family: "Manrope", sans-serif;
   font-size: clamp(28px, 4vw, 39px);
   line-height: 1.2;
-  letter-spacing: -1px;
-  margin-bottom: 14px;
+  letter-spacing: -.04em;
+  font-weight: 700;
   color: var(--dark);
+  margin-bottom: 14px;
 }
 
 .section-heading p {
   color: var(--muted);
-  font-size: 15px;
+  font-size: 14px;
 }
+
+/* Services */
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 22px;
 }
 
 .service-card {
-  background: white;
+  background: var(--surface-container-low);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--shape-large);
   overflow: hidden;
-  transition: .25s ease;
+  transition: .25s;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-large);
 }
 
 .service-card img {
@@ -319,105 +366,107 @@ section {
 }
 
 .service-content {
-  padding: 23px;
+  padding: 24px;
 }
 
 .service-content h3 {
-  font-size: 19px;
+  font-size: 18px;
+  font-weight: 700;
   margin-bottom: 10px;
   color: var(--dark);
 }
 
 .service-content p {
   color: var(--muted);
-  font-size: 14px;
-  margin-bottom: 18px;
+  font-size: 13px;
+  margin-bottom: 19px;
 }
 
 .service-link {
-  color: var(--green-dark);
-  font-weight: 800;
-  font-size: 14px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 13px;
 }
 
+/* Packages */
+
 .packages {
-  background: #edf5ef;
+  background: var(--surface-container);
 }
 
 .package-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 20px;
   align-items: stretch;
 }
 
 .package-card {
-  background: white;
+  background: var(--surface-container-low);
   border: 1px solid var(--border);
   padding: 29px;
-  border-radius: 17px;
-  position: relative;
+  border-radius: var(--shape-large);
+  display: flex;
+  flex-direction: column;
 }
 
 .package-card.featured {
-  border: 2px solid var(--green);
+  border: 2px solid var(--primary);
+  background: #FFFFFF;
   box-shadow: var(--shadow);
 }
 
 .package-label {
-  color: var(--green-dark);
-  background: var(--green-light);
+  color: var(--on-primary-container);
+  background: var(--primary-container);
   display: inline-block;
-  padding: 5px 10px;
-  border-radius: 30px;
-  font-size: 11px;
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: var(--shape-full);
+  font-size: 10px;
   font-weight: 800;
-  margin-bottom: 13px;
+  letter-spacing: .06em;
+  margin-bottom: 14px;
 }
 
 .package-card h3 {
   font-size: 21px;
+  font-weight: 700;
   color: var(--dark);
 }
 
 .package-description {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
   min-height: 48px;
   margin: 8px 0 16px;
 }
 
 .price {
-  font-family: "Manrope", sans-serif;
-  font-size: 30px;
+  font-size: 29px;
   font-weight: 800;
-  color: var(--green-dark);
+  letter-spacing: -.04em;
+  color: var(--primary);
   margin-bottom: 18px;
-}
-
-.price small {
-  font-family: "DM Sans", sans-serif;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 500;
 }
 
 .package-card ul {
   list-style: none;
   margin-bottom: 23px;
+  flex: 1;
 }
 
 .package-card li {
-  padding: 8px 0;
-  border-bottom: 1px solid #edf1ed;
-  font-size: 13px;
-  color: #526157;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--muted);
 }
 
 .package-card li::before {
   content: "✓";
-  color: var(--green);
-  font-weight: 900;
+  color: var(--primary);
+  font-weight: 800;
   margin-right: 9px;
 }
 
@@ -425,60 +474,67 @@ section {
   width: 100%;
 }
 
+.notice {
+  background: var(--primary-container);
+  border-radius: var(--shape-medium);
+  padding: 16px 18px;
+  color: var(--on-primary-container);
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+/* Monthly support */
+
 .subscription-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 20px;
 }
 
 .subscription-card {
-  background: white;
-  padding: 26px;
+  background: var(--surface-container-low);
   border: 1px solid var(--border);
-  border-radius: 15px;
+  border-radius: var(--shape-large);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscription-card h3 {
   font-size: 18px;
-  margin-bottom: 7px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .subscription-card p {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--muted);
 }
 
 .subscription-price {
-  color: var(--green-dark);
+  color: var(--primary);
   font-weight: 800;
   font-size: 25px;
-  margin: 15px 0;
+  letter-spacing: -.04em;
+  margin: 16px 0;
 }
 
 .subscription-price small {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
 }
 
 .subscription-card .btn {
   width: 100%;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
-.notice {
-  background: #f0f8f3;
-  border-left: 4px solid var(--green);
-  padding: 14px 17px;
-  border-radius: 7px;
-  color: #435b4b;
-  font-size: 13px;
-  margin-top: 22px;
-}
+/* How it works */
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 25px;
 }
 
@@ -488,30 +544,33 @@ section {
 }
 
 .process-number {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--shape-full);
   display: grid;
   place-items: center;
-  background: var(--green-light);
-  color: var(--green-dark);
+  background: var(--primary-container);
+  color: var(--primary);
   font-weight: 800;
   margin: 0 auto 17px;
 }
 
 .process-item h3 {
+  font-size: 17px;
   margin-bottom: 9px;
-  font-size: 18px;
 }
 
 .process-item p {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
 }
+
+/* Contact */
 
 .contact {
   background: var(--dark);
   color: white;
+  border-radius: var(--shape-extra-large) var(--shape-extra-large) 0 0;
 }
 
 .contact .section-heading h2 {
@@ -519,7 +578,7 @@ section {
 }
 
 .contact .section-heading p {
-  color: #b9c9bf;
+  color: #C2D2C8;
 }
 
 .contact-grid {
@@ -535,22 +594,23 @@ section {
 }
 
 .contact-info p {
-  color: #b9c9bf;
-  font-size: 14px;
+  color: #C2D2C8;
+  font-size: 13px;
   margin-bottom: 22px;
 }
 
 .contact-detail {
-  margin: 17px 0;
-  color: #e0eee5;
-  font-size: 14px;
+  margin: 18px 0;
+  color: #E0EEE5;
+  font-size: 13px;
 }
 
 .contact-form {
   background: white;
   color: var(--text);
-  border-radius: 16px;
-  padding: 28px;
+  border-radius: var(--shape-extra-large);
+  padding: 29px;
+  box-shadow: var(--shadow-large);
 }
 
 .contact-form h3 {
@@ -558,33 +618,38 @@ section {
   font-size: 21px;
 }
 
+/* Form fields */
+
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .form-group label {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 12px 13px;
-  border: 1px solid #dce6de;
-  border-radius: 8px;
+  min-height: 50px;
+  padding: 13px 15px;
+  border: 1px solid var(--border);
+  border-radius: var(--shape-small);
   outline: none;
-  background: #fbfdfb;
+  background: var(--surface-container-low);
   color: var(--text);
+  font-size: 13px;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: var(--green);
+  border: 2px solid var(--primary);
+  background: white;
 }
 
 .form-group textarea {
@@ -596,21 +661,28 @@ section {
   width: 100%;
 }
 
+/* FAQs */
+
 .faq-list {
   max-width: 800px;
   margin: auto;
 }
 
 details {
-  background: white;
+  background: var(--surface-container-low);
   border: 1px solid var(--border);
-  padding: 18px 20px;
-  border-radius: 10px;
+  padding: 19px 21px;
+  border-radius: var(--shape-medium);
   margin-bottom: 12px;
 }
 
+details[open] {
+  background: var(--surface-container);
+}
+
 summary {
-  font-weight: 700;
+  font-weight: 650;
+  font-size: 14px;
   cursor: pointer;
   color: var(--dark);
 }
@@ -618,13 +690,15 @@ summary {
 details p {
   margin-top: 12px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
 }
 
+/* Footer */
+
 footer {
-  background: #040d08;
-  color: #c4d1c8;
-  padding: 40px 0 20px;
+  background: #08140D;
+  color: #C4D1C8;
+  padding: 42px 0 20px;
 }
 
 .footer-grid {
@@ -634,50 +708,59 @@ footer {
   margin-bottom: 30px;
 }
 
-footer h3, footer h4 {
+footer h3,
+footer h4 {
   color: white;
   margin-bottom: 13px;
 }
 
-footer p, footer a {
-  font-size: 13px;
-  color: #aabbb0;
+footer p,
+footer a {
+  font-size: 12px;
+  color: #AABBB0;
 }
 
 footer a {
   display: block;
-  margin: 7px 0;
+  margin: 8px 0;
 }
 
 footer a:hover {
-  color: #42d895;
+  color: #8DE0B0;
 }
 
 .footer-bottom {
-  border-top: 1px solid #203127;
+  border-top: 1px solid #26392C;
   padding-top: 18px;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
 }
+
+/* WhatsApp floating button */
 
 .whatsapp-float {
   position: fixed;
   right: 19px;
   bottom: 20px;
   z-index: 900;
-  background: #20c76a;
+  background: #168A4B;
   color: white;
-  padding: 13px 17px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 800;
-  box-shadow: 0 8px 25px rgba(0,0,0,.2);
+  padding: 13px 19px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--shape-full);
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: var(--shadow-large);
 }
+
+/* Mobile */
 
 @media(max-width: 900px) {
   .nav-links {
-    gap: 13px;
-    font-size: 12px;
+    gap: 12px;
+    font-size: 11px;
   }
 
   .hero-grid {
@@ -691,7 +774,11 @@ footer a:hover {
 
 @media(max-width: 720px) {
   .nav {
-    height: 68px;
+    min-height: 68px;
+  }
+
+  .logo {
+    font-size: 18px;
   }
 
   .menu-btn {
@@ -705,11 +792,12 @@ footer a:hover {
     left: 0;
     right: 0;
     background: white;
-    padding: 20px 5%;
+    padding: 14px 5%;
     border-bottom: 1px solid var(--border);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
+    box-shadow: var(--shadow);
   }
 
   .nav-links.open {
@@ -717,8 +805,9 @@ footer a:hover {
   }
 
   .nav-links a {
-    padding: 12px 0;
+    padding: 14px 8px;
     border-bottom: 1px solid var(--border);
+    font-size: 13px;
   }
 
   .nav-actions .btn {
@@ -735,11 +824,15 @@ footer a:hover {
   }
 
   .hero h1 {
-    font-size: 41px;
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 14px;
   }
 
   .hero-image img {
-    height: 280px;
+    height: 270px;
   }
 
   .image-note {
@@ -768,7 +861,24 @@ footer a:hover {
   }
 
   .contact-form {
-    padding: 20px;
+    padding: 21px;
+  }
+
+  .hero-buttons .btn {
+    flex: 1;
+  }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
   }
 }
 </style>
@@ -777,7 +887,7 @@ footer a:hover {
 <body>
 
 <div class="topbar">
-  Helping businesses build a stronger and more visible online presence.
+  Practical digital services for businesses ready to grow online.
 </div>
 
 <header>
@@ -798,13 +908,15 @@ footer a:hover {
 
     <div class="nav-actions">
       <a href="#contact" class="btn btn-primary">Get a Quote</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
     </div>
 
   </div>
 </header>
 
 <main>
+
+<!-- HERO -->
 
 <section class="hero" id="home">
   <div class="container hero-grid">
@@ -819,12 +931,12 @@ footer a:hover {
 
       <p>
         We help businesses present themselves professionally online,
-        connect with more customers and make it easier for people to
-        discover their services.
+        connect with more customers and make it easier for people
+        to discover their services.
       </p>
 
       <div class="hero-buttons">
-        <a href="#packages" class="btn btn-primary">Explore Our Packages</a>
+        <a href="#packages" class="btn btn-primary">Explore Packages</a>
         <a href="#contact" class="btn btn-outline">Talk to Us</a>
       </div>
 
@@ -836,7 +948,7 @@ footer a:hover {
     <div class="hero-image">
       <img
         src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85"
-        alt="Business analytics and digital growth dashboard"
+        alt="Digital business analytics dashboard"
       >
 
       <div class="image-note">
@@ -847,6 +959,8 @@ footer a:hover {
 
   </div>
 </section>
+
+<!-- SERVICES -->
 
 <section id="services">
   <div class="container">
@@ -865,7 +979,7 @@ footer a:hover {
       <article class="service-card">
         <img
           src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=900&q=85"
-          alt="Website displayed on a computer"
+          alt="Professional website design on a computer"
           loading="lazy"
         >
 
@@ -876,6 +990,7 @@ footer a:hover {
             We create mobile-friendly websites that introduce
             your services and make it easier for customers to contact you.
           </p>
+
           <a class="service-link" href="#contact"
              onclick="selectService('Website Design')">
             Request this service →
@@ -897,6 +1012,7 @@ footer a:hover {
             content planning, social media post designs and
             practical marketing support.
           </p>
+
           <a class="service-link" href="#contact"
              onclick="selectService('Social Media Marketing')">
             Request this service →
@@ -907,7 +1023,7 @@ footer a:hover {
       <article class="service-card">
         <img
           src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=900&q=85"
-          alt="Business location and map"
+          alt="Business location and maps"
           loading="lazy"
         >
 
@@ -918,6 +1034,7 @@ footer a:hover {
             and Maps through profile setup, business information
             and guidance on managing your profile.
           </p>
+
           <a class="service-link" href="#contact"
              onclick="selectService('Google Business Profile Setup')">
             Request this service →
@@ -928,6 +1045,8 @@ footer a:hover {
     </div>
   </div>
 </section>
+
+<!-- PACKAGES -->
 
 <section class="packages" id="packages">
   <div class="container">
@@ -1029,6 +1148,8 @@ footer a:hover {
   </div>
 </section>
 
+<!-- MONTHLY SUPPORT -->
+
 <section id="subscriptions">
   <div class="container">
 
@@ -1045,6 +1166,7 @@ footer a:hover {
 
       <article class="subscription-card">
         <h3>Website Care</h3>
+
         <p>
           For businesses that need occasional website updates
           and basic maintenance support.
@@ -1054,8 +1176,10 @@ footer a:hover {
           UGX 50,000 <small>/ month</small>
         </div>
 
-        <p>Includes agreed minor text, image and contact updates,
-        plus basic website checks.</p>
+        <p>
+          Includes agreed minor text, image and contact updates,
+          plus basic website checks.
+        </p>
 
         <a href="#contact" class="btn btn-outline"
            onclick="selectSubscription('Website Care - UGX 50,000 per month')">
@@ -1065,6 +1189,7 @@ footer a:hover {
 
       <article class="subscription-card">
         <h3>Google Business Support</h3>
+
         <p>
           For businesses that need help keeping their
           Google Business Profile information updated.
@@ -1074,8 +1199,10 @@ footer a:hover {
           UGX 50,000 <small>/ month</small>
         </div>
 
-        <p>Includes agreed business information updates,
-        profile guidance and review response guidance.</p>
+        <p>
+          Includes agreed business information updates,
+          profile guidance and review response guidance.
+        </p>
 
         <a href="#contact" class="btn btn-outline"
            onclick="selectSubscription('Google Business Support - UGX 50,000 per month')">
@@ -1085,6 +1212,7 @@ footer a:hover {
 
       <article class="subscription-card">
         <h3>Social Media Support</h3>
+
         <p>
           For businesses that want a more consistent
           social media communication plan.
@@ -1094,8 +1222,10 @@ footer a:hover {
           UGX 100,000 <small>/ month</small>
         </div>
 
-        <p>Includes a monthly content plan and up to
-        eight basic post designs with captions.</p>
+        <p>
+          Includes a monthly content plan and up to
+          eight basic post designs with captions.
+        </p>
 
         <a href="#contact" class="btn btn-primary"
            onclick="selectSubscription('Social Media Support - UGX 100,000 per month')">
@@ -1115,6 +1245,8 @@ footer a:hover {
 
   </div>
 </section>
+
+<!-- HOW IT WORKS -->
 
 <section id="about">
   <div class="container">
@@ -1160,6 +1292,8 @@ footer a:hover {
     </div>
   </div>
 </section>
+
+<!-- FAQ -->
 
 <section id="faq">
   <div class="container">
@@ -1229,6 +1363,8 @@ footer a:hover {
     </div>
   </div>
 </section>
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
   <div class="container">
@@ -1334,6 +1470,8 @@ footer a:hover {
 
 </main>
 
+<!-- FOOTER -->
+
 <footer>
   <div class="container">
 
@@ -1383,13 +1521,15 @@ footer a:hover {
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", function () {
-  navLinks.classList.toggle("open");
+menuBtn.addEventListener("click", function() {
+  const isOpen = navLinks.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", String(isOpen));
 });
 
 document.querySelectorAll(".nav-links a").forEach(function(link) {
   link.addEventListener("click", function() {
     navLinks.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
   });
 });
 
@@ -1419,20 +1559,25 @@ document.getElementById("enquiryForm").addEventListener("submit", function(event
     return;
   }
 
-  const whatsappMessage =
-    "Hello Digital Brand Lift,%0A%0A" +
-    "I would like to make an enquiry.%0A%0A" +
-    "Name: " + encodeURIComponent(name) + "%0A" +
-    "Business: " + encodeURIComponent(business || "Not provided") + "%0A" +
-    "Phone: " + encodeURIComponent(phone) + "%0A" +
-    "Service: " + encodeURIComponent(service) + "%0A" +
-    "Message: " + encodeURIComponent(message || "No additional details") +
-    "%0A%0APlease share the next steps.";
+  const lines = [
+    "Hello Digital Brand Lift,",
+    "",
+    "I would like to make an enquiry.",
+    "",
+    "Name: " + name,
+    "Business: " + (business || "Not provided"),
+    "Phone: " + phone,
+    "Service: " + service,
+    "Message: " + (message || "No additional details"),
+    "",
+    "Please share the next steps."
+  ];
 
-  window.open(
-    "https://wa.me/256732166463?text=" + whatsappMessage,
-    "_blank"
-  );
+  const whatsappURL =
+    "https://wa.me/256732166463?text=" +
+    encodeURIComponent(lines.join("\n"));
+
+  window.open(whatsappURL, "_blank", "noopener");
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
