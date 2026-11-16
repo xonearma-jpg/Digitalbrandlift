@@ -2,1381 +2,1053 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="KOGg-Z8AV7ndns0yENruwyUS4MU4YBI35TAYo5sT2gE">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#EEF3F9">
-<meta name="google-site-verification" content="3g5wRQW9r7M4xoEyp5FwCSjuvREsOEb-saDQjrR37ss">
-
-<title>Digital Brand Lift | Website Design & Digital Marketing Uganda</title>
-<meta name="description" content="Digital Brand Lift helps Ugandan businesses grow online through website design, social media marketing and Google Business Profile setup.">
-<meta name="keywords" content="website design Uganda, web design Mukono, digital marketing Uganda, social media marketing Uganda, Google Business Profile setup Uganda">
-<meta name="author" content="Digital Brand Lift">
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="Digital Brand Lift | Grow Your Business Online">
-<meta property="og:description" content="Affordable digital services for businesses in Uganda.">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_UG">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --bg:#EEF3F9;
-  --surface:#FFFFFF;
-  --surface2:#E7EEF7;
-  --blue:#1A73E8;
-  --blue-dark:#1557B0;
-  --green:#0F9D58;
-  --green-dark:#087443;
-  --ink:#0F172A;
-  --muted:#475569;
-  --border:#CBD5E1;
-  --radius:20px;
-  --shadow:0 5px 20px rgba(15,23,42,.07);
-}
-
-* {
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html {
-  scroll-behavior:smooth;
-  scroll-padding-top:90px;
-}
-
-body {
-  min-width:320px;
-  overflow-x:hidden;
-  background:var(--bg);
-  color:var(--ink);
-  font-family:"Plus Jakarta Sans",sans-serif;
-  line-height:1.65;
-}
-
-a { color:inherit; text-decoration:none; }
-button,input,select,textarea { font:inherit; }
-button { cursor:pointer; }
-
-.container {
-  width:min(1160px,92%);
-  margin:auto;
-}
-
-section { padding:80px 0; }
-
-.btn {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:9px;
-  min-height:48px;
-  padding:13px 23px;
-  border-radius:999px;
-  border:1px solid transparent;
-  font-size:14px;
-  font-weight:800;
-  text-align:center;
-  transition:.2s;
-}
-
-.btn:hover { transform:translateY(-2px); }
-.btn-primary { background:var(--blue); color:white; }
-.btn-primary:hover { background:var(--blue-dark); }
-.btn-green { background:var(--green); color:white; }
-.btn-green:hover { background:var(--green-dark); }
-.btn-outline { background:white; border-color:var(--border); color:var(--blue-dark); }
-.btn-outline:hover { background:#E0ECFF; border-color:var(--blue); }
-
-.eyebrow {
-  display:inline-block;
-  margin-bottom:15px;
-  padding:7px 14px;
-  border-radius:999px;
-  background:#E0ECFF;
-  color:var(--blue-dark);
-  font-size:13px;
-  font-weight:800;
-}
-
-.section-heading {
-  max-width:750px;
-  margin:0 auto 42px;
-  text-align:center;
-}
-
-.section-heading h2 {
-  margin-bottom:12px;
-  font-size:clamp(26px,4vw,36px);
-  line-height:1.2;
-  letter-spacing:-1px;
-}
-
-.section-heading p { color:var(--muted); }
-
-.site-header {
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(238,243,249,.97);
-  border-bottom:1px solid var(--border);
-  backdrop-filter:blur(12px);
-}
-
-.nav {
-  min-height:76px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-
-/* LOGO */
-.logo {
-  display:inline-flex;
-  align-items:center;
-  line-height:1;
-  flex-shrink:0;
-}
-
-.logo img {
-  display:block;
-  width:auto;
-  max-width:220px;
-  height:48px;
-  object-fit:contain;
-}
-
-.nav-links {
-  display:flex;
-  align-items:center;
-  gap:24px;
-}
-
-.nav-links a {
-  color:var(--muted);
-  font-size:14px;
-  font-weight:700;
-}
-
-.nav-links a:hover { color:var(--blue); }
-
-.menu-btn {
-  display:none;
-  width:44px;
-  height:44px;
-  border:1px solid var(--border);
-  border-radius:12px;
-  background:white;
-  font-size:22px;
-}
-
-/* HERO */
-.hero {
-  padding:85px 0;
-  background:
-    radial-gradient(circle at 85% 15%,rgba(26,115,232,.13),transparent 32%),
-    linear-gradient(135deg,#EEF3F9,#E6EDF8);
-}
-
-.hero-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:50px;
-}
-
-.hero h1 {
-  margin-bottom:20px;
-  font-size:clamp(36px,5vw,54px);
-  line-height:1.13;
-  letter-spacing:-2px;
-}
-
-.hero h1 span { color:var(--blue); }
-
-.hero-copy {
-  margin-bottom:25px;
-  color:var(--muted);
-  font-size:17px;
-}
-
-.hero-buttons { display:flex; flex-wrap:wrap; gap:12px; }
-
-.hero-note {
-  margin-top:20px;
-  color:var(--muted);
-  font-size:13px;
-  font-weight:700;
-}
-
-.browser {
-  overflow:hidden;
-  background:white;
-  border:1px solid var(--border);
-  border-radius:20px;
-  box-shadow:0 15px 40px rgba(15,23,42,.12);
-  transform:rotate(1deg);
-}
-
-.browser-bar {
-  display:flex;
-  align-items:center;
-  gap:7px;
-  padding:13px;
-  background:#E6ECF4;
-}
-
-.browser-dot {
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:#94A3B8;
-}
-
-.browser-address {
-  flex:1;
-  margin-left:10px;
-  padding:5px 12px;
-  border-radius:20px;
-  background:white;
-  color:var(--muted);
-  font-size:12px;
-}
-
-.demo-website { padding:24px; background:#F1F5FB; }
-
-.demo-nav {
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
-  margin-bottom:25px;
-  font-size:12px;
-}
-
-.demo-brand { color:var(--blue-dark); font-weight:800; }
-.demo-nav-links { color:var(--muted); }
-
-.demo-hero {
-  display:grid;
-  grid-template-columns:1fr .8fr;
-  align-items:center;
-  gap:12px;
-  padding:20px;
-  border-radius:15px;
-  background:linear-gradient(120deg,#DDEBFC,#E9F1FA);
-}
-
-.demo-hero h3 {
-  margin-bottom:9px;
-  color:#183B65;
-  font-size:20px;
-  line-height:1.3;
-}
-
-.demo-hero p { margin-bottom:13px; color:var(--muted); font-size:12px; }
-
-.demo-mini-btn {
-  display:inline-block;
-  padding:7px 12px;
-  border-radius:20px;
-  background:var(--blue);
-  color:white;
-  font-size:11px;
-  font-weight:800;
-}
-
-.demo-illustration {
-  display:grid;
-  place-items:center;
-  min-height:130px;
-  border-radius:12px;
-  background:linear-gradient(145deg,#A8C9F2,#4D8FDE);
-  color:white;
-  font-size:48px;
-}
-
-.demo-bottom {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:9px;
-  margin-top:13px;
-}
-
-.demo-bottom div {
-  padding:12px 5px;
-  border:1px solid var(--border);
-  border-radius:10px;
-  background:white;
-  color:var(--muted);
-  text-align:center;
-  font-size:11px;
-}
-
-.demo-bottom strong { display:block; color:var(--blue); font-size:16px; }
-
-.hero-sticker {
-  margin-top:18px;
-  padding:13px 17px;
-  border-radius:13px;
-  background:white;
-  box-shadow:var(--shadow);
-  font-size:13px;
-  font-weight:800;
-}
-
-.hero-sticker span { display:block; color:var(--green); font-weight:600; }
-
-/* CARDS */
-.services-grid,.sample-grid,.package-grid,.process-grid {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:20px;
-}
-
-.service-card,.sample-card,.package-card,.process-item {
-  overflow:hidden;
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  background:white;
-  box-shadow:var(--shadow);
-}
-
-.service-visual {
-  height:190px;
-  display:grid;
-  place-items:center;
-  padding:20px;
-}
-
-.website { background:linear-gradient(140deg,#DDEBFC,#B9D3F5); }
-.social { background:linear-gradient(140deg,#E5EAF7,#D4DDF0); }
-.google { background:linear-gradient(140deg,#DDECE6,#B9DDCC); }
-
-.mini-site,.social-mockup,.google-mockup {
-  width:85%;
-  padding:15px;
-  border-radius:12px;
-  background:white;
-  box-shadow:var(--shadow);
-}
-
-.mini-site-top { display:flex; justify-content:space-between; color:var(--blue-dark); font-size:11px; font-weight:800; }
-
-.mini-site-banner {
-  margin:14px 0;
-  padding:22px 12px;
-  border-radius:8px;
-  background:#E0ECFF;
-  color:#183B65;
-  font-size:17px;
-  font-weight:800;
-}
-
-.mini-site-lines span {
-  display:block;
-  height:6px;
-  margin:7px 0;
-  border-radius:5px;
-  background:#E2E8F0;
-}
-
-.social-heading { margin-bottom:10px; font-size:11px; font-weight:800; }
-
-.social-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; }
-
-.social-tile {
-  display:grid;
-  place-items:center;
-  height:55px;
-  border-radius:6px;
-  background:#DCE8F8;
-  color:var(--blue-dark);
-  font-weight:800;
-}
-
-.google-top { font-size:12px; }
-.google-name { margin-top:12px; font-weight:800; }
-.google-rating { color:#D69E00; font-size:12px; }
-.google-category { color:var(--muted); font-size:11px; }
-.google-buttons { display:flex; gap:6px; margin-top:12px; }
-
-.google-buttons span {
-  padding:5px 9px;
-  border-radius:15px;
-  background:#E0ECFF;
-  color:var(--blue-dark);
-  font-size:10px;
-}
-
-.service-content,.sample-info { padding:24px; }
-.service-content h3,.sample-info h3 { margin-bottom:10px; font-size:19px; }
-
-.service-content p,.sample-info p {
-  margin-bottom:17px;
-  color:var(--muted);
-  font-size:14px;
-}
-
-.service-link { color:var(--blue); font-size:13px; font-weight:800; }
-
-.sample-screen { padding:20px; background:#E6ECF4; }
-.sample-browser { overflow:hidden; border-radius:10px; background:white; }
-.sample-browser-bar { display:flex; gap:5px; padding:9px; background:#DCE4EF; }
-
-.sample-browser-bar span {
-  width:7px;
-  height:7px;
-  border-radius:50%;
-  background:#94A3B8;
-}
-
-.clinic-page,.restaurant-page,.salon-page { min-height:160px; padding:14px; }
-.clinic-nav,.restaurant-nav,.salon-nav { margin-bottom:15px; font-size:11px; font-weight:800; }
-.clinic-banner { padding:20px; border-radius:8px; background:#E2F0F2; }
-.restaurant-banner { padding:20px; border-radius:8px; background:#F4E6D5; }
-.salon-banner { padding:20px; border-radius:8px; background:#F2E2EC; }
-
-.clinic-banner h4,.restaurant-banner h4,.salon-banner h4 { font-size:17px; }
-.clinic-banner p,.restaurant-banner p,.salon-banner p { font-size:11px; }
-
-.clinic-blocks,.restaurant-blocks,.salon-blocks { display:flex; gap:7px; margin-top:12px; }
-
-.clinic-blocks span,.restaurant-blocks span,.salon-blocks span {
-  flex:1;
-  height:17px;
-  border-radius:4px;
-  background:#E2E8F0;
-}
-
-.concept-badge {
-  display:inline-block;
-  margin-bottom:8px;
-  color:var(--green-dark);
-  font-size:11px;
-  font-weight:800;
-}
-
-.sample-caption { margin-top:20px; color:var(--muted); text-align:center; font-size:12px; }
-
-/* PRICING */
-.pricing-subheading { margin:45px 0 20px; text-align:center; }
-.pricing-subheading p { color:var(--muted); font-size:14px; }
-.package-card { padding:25px; }
-.package-card.featured { border:2px solid var(--blue); }
-.package-label { color:var(--blue); font-size:11px; font-weight:800; text-transform:uppercase; }
-
-.popular-badge,.savings-badge {
-  display:inline-block;
-  margin:10px 0;
-  padding:5px 10px;
-  border-radius:20px;
-  background:#E0ECFF;
-  color:var(--blue-dark);
-  font-size:11px;
-  font-weight:800;
-}
-
-.package-card h3 { margin:8px 0; font-size:21px; }
-.package-description { min-height:45px; color:var(--muted); font-size:13px; }
-.price { margin:17px 0; color:var(--blue-dark); font-size:25px; font-weight:800; }
-.package-card ul { margin:15px 0 22px; padding-left:19px; color:var(--muted); font-size:13px; }
-.package-card li { margin:8px 0; }
-.package-card .btn { width:100%; }
-
-.pricing-note {
-  margin-top:25px;
-  padding:20px;
-  border:1px solid var(--border);
-  border-radius:14px;
-  background:#F8FAFC;
-  color:var(--muted);
-  font-size:13px;
-}
-
-.monthly-section { margin-top:65px; }
-.monthly-heading { margin-bottom:20px; text-align:center; }
-.monthly-heading p { color:var(--muted); font-size:14px; }
-.plan-tabs { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-bottom:18px; }
-
-.plan-tab {
-  padding:11px 17px;
-  border:1px solid var(--border);
-  border-radius:30px;
-  background:white;
-  color:var(--muted);
-  font-size:13px;
-  font-weight:800;
-}
-
-.plan-tab[aria-selected="true"] {
-  border-color:var(--blue);
-  background:#E0ECFF;
-  color:var(--blue-dark);
-}
-
-.plan-panel {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  padding:25px;
-  border:1px solid var(--border);
-  border-radius:16px;
-  background:white;
-}
-
-.plan-panel h4 { font-size:20px; }
-.plan-panel p { color:var(--muted); font-size:13px; }
-.plan-price { margin-top:10px; color:var(--blue-dark); font-size:23px; font-weight:800; }
-.plan-price small { color:var(--muted); font-size:12px; }
-.monthly-note { margin-top:15px; color:var(--muted); font-size:12px; }
-
-/* PROCESS */
-.process { background:#E7EEF7; }
-.process-item { padding:25px; }
-.process-number { margin-bottom:15px; color:var(--blue); font-size:28px; font-weight:800; }
-.process-item h3 { margin-bottom:9px; font-size:18px; }
-.process-item p { color:var(--muted); font-size:13px; }
-
-/* CONTACT */
-.contact-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:35px; align-items:start; }
-.contact-info h3,.contact-form h3 { margin-bottom:15px; font-size:25px; }
-.contact-info p { margin-bottom:25px; color:var(--muted); }
-.contact-detail { margin:15px 0; color:var(--muted); font-size:14px; }
-.contact-detail strong { color:var(--ink); }
-
-.contact-form {
-  padding:28px;
-  border:1px solid var(--border);
-  border-radius:18px;
-  background:white;
-  box-shadow:var(--shadow);
-}
-
-.form-group { margin-bottom:16px; }
-.form-group label { display:block; margin-bottom:6px; font-size:13px; font-weight:800; }
-
-.form-group input,.form-group select,.form-group textarea {
-  width:100%;
-  min-height:48px;
-  padding:12px;
-  border:1px solid var(--border);
-  border-radius:10px;
-  background:#F8FAFC;
-  color:var(--ink);
-  outline:none;
-}
-
-.form-group textarea { min-height:110px; resize:vertical; }
-
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus {
-  border-color:var(--blue);
-  box-shadow:0 0 0 3px rgba(26,115,232,.12);
-}
-
-.contact-form .btn { width:100%; }
-.form-note { margin-top:12px; color:var(--muted); font-size:11px; text-align:center; }
-
-/* LOCATION */
-.location-section { background:#E7EEF7; }
-.location-card { overflow:hidden; border:1px solid var(--border); border-radius:20px; background:white; box-shadow:var(--shadow); }
-.location-map iframe { display:block; width:100%; height:400px; border:0; }
-.location-details { padding:25px; text-align:center; }
-.location-details p { margin-bottom:15px; color:var(--muted); }
-
-/* FAQ */
-.faq-list { max-width:800px; margin:auto; }
-
-.faq-list details {
-  margin-bottom:12px;
-  padding:18px 20px;
-  border:1px solid var(--border);
-  border-radius:13px;
-  background:white;
-}
-
-.faq-list summary { cursor:pointer; font-weight:800; }
-.faq-list p { margin-top:12px; color:var(--muted); font-size:14px; }
-
-/* FOOTER */
-footer { padding:55px 0 20px; background:#14243D; color:white; }
-
-.footer-grid {
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:35px;
-}
-
-.footer-grid h3,.footer-grid h4 { margin-bottom:14px; }
-
-.footer-grid p,.footer-grid a {
-  display:block;
-  margin-bottom:10px;
-  color:#CBD5E1;
-  font-size:13px;
-}
-
-.footer-grid a:hover { color:white; }
-
-/* FOOTER LOGO */
-.footer-logo {
-  display:block;
-  width:auto;
-  max-width:240px;
-  height:58px;
-  margin-bottom:14px;
-  object-fit:contain;
-}
-
-.footer-bottom {
-  margin-top:35px;
-  padding-top:20px;
-  border-top:1px solid #334155;
-  color:#CBD5E1;
-  font-size:12px;
-  text-align:center;
-}
-
-.whatsapp-float {
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:999;
-  padding:13px 18px;
-  border-radius:40px;
-  background:#0F9D58;
-  color:white;
-  box-shadow:0 5px 20px rgba(0,0,0,.2);
-  font-size:13px;
-  font-weight:800;
-}
-
-/* MOBILE */
-@media(max-width:900px) {
-  .nav-links { gap:13px; }
-  .nav-links a { font-size:12px; }
-
-  .services-grid,.sample-grid,.package-grid,.process-grid {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-}
-
-@media(max-width:700px) {
-  section { padding:60px 0; }
-  .nav { min-height:68px; }
-  .menu-btn { display:block; }
-
-  .logo img {
-    height:42px;
-    max-width:185px;
-  }
-
-  .nav-links {
-    display:none;
-    position:absolute;
-    top:68px;
-    left:0;
-    right:0;
-    padding:20px 5%;
-    border-bottom:1px solid var(--border);
-    background:#EEF3F9;
-  }
-
-  .nav-links.open {
-    display:flex;
-    flex-direction:column;
-    align-items:stretch;
-    gap:0;
-  }
-
-  .nav-links a { padding:12px 0; font-size:15px; }
-  .nav-contact { display:none; }
-  .hero { padding:60px 0; }
-  .hero-grid { grid-template-columns:1fr; gap:35px; }
-  .hero h1 { font-size:39px; }
-
-  .services-grid,.sample-grid,.package-grid,.process-grid {
-    grid-template-columns:1fr;
-  }
-
-  .contact-grid { grid-template-columns:1fr; }
-  .plan-panel { flex-direction:column; align-items:flex-start; }
-  .footer-grid { grid-template-columns:1fr; gap:20px; }
-  .demo-website { padding:13px; }
-  .demo-hero { grid-template-columns:1fr; }
-  .demo-illustration { min-height:90px; }
-  .demo-nav-links { font-size:10px; }
-  .contact-form { padding:20px; }
-  .location-map iframe { height:320px; }
-}
-
-@media(prefers-reduced-motion:reduce) {
-  html { scroll-behavior:auto; }
-  * { transition:none!important; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Digital Brand Lift helps Ugandan businesses grow online with professional website design, social media marketing and Google Business Profile setup.">
+  <title>Digital Brand Lift | Digital Solutions for Ugandan Businesses</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --surface: #111c2e;
+      --surface2: #17243a;
+      --surface3: #1d2d46;
+      --text: #f4f7fb;
+      --muted: #a8b5c8;
+      --line: rgba(255,255,255,.11);
+      --blue: #62a8ff;
+      --blue2: #3478ed;
+      --green: #42d6a0;
+      --white: #ffffff;
+      --radius: 20px;
+      --shadow: 0 22px 70px rgba(0,0,0,.25);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    body.modal-open { overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    button { cursor: pointer; }
+    img { max-width: 100%; display: block; }
+
+    h1, h2, h3, h4 {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      line-height: 1.2;
+      letter-spacing: -.035em;
+    }
+    h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: 1.25rem; }
+    p { color: var(--muted); }
+    .container { width: min(1160px, 91%); margin: auto; }
+    .section { padding: 100px 0; }
+    .section-head { max-width: 690px; margin-bottom: 42px; }
+    .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+    .section-head p { margin-top: 14px; font-size: 1.02rem; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px;
+      color: var(--green); font-size: .78rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: .13em; margin-bottom: 17px;
+    }
+    .eyebrow:before { content: ""; width: 23px; height: 2px; background: var(--green); }
+    .gradient-text {
+      background: linear-gradient(100deg, #78b8ff, #48dfb0);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      min-height: 49px; padding: 13px 21px; border: 1px solid transparent;
+      border-radius: 12px; font-weight: 800; font-size: .91rem;
+      transition: .25s ease;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary { background: linear-gradient(110deg, var(--blue2), #2b9cce); color: white; box-shadow: 0 10px 28px rgba(52,120,237,.22); }
+    .btn-outline { border-color: var(--line); color: var(--text); background: rgba(255,255,255,.035); }
+    .btn-outline:hover { border-color: var(--blue); background: rgba(98,168,255,.08); }
+    .btn-small { min-height: 40px; padding: 9px 14px; font-size: .82rem; }
+    .tag {
+      display: inline-flex; align-items: center; padding: 6px 10px;
+      border: 1px solid rgba(66,214,160,.22); border-radius: 99px;
+      background: rgba(66,214,160,.08); color: var(--green);
+      font-size: .72rem; font-weight: 800;
+    }
+
+    /* Navigation */
+    .site-header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(11,18,32,.88); backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      min-height: 78px; display: flex; align-items: center;
+      justify-content: space-between; gap: 25px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 11px;
+      font-family: "Plus Jakarta Sans", sans-serif; font-weight: 800;
+      font-size: 1.06rem; letter-spacing: -.04em; flex-shrink: 0;
+    }
+    .brand-mark {
+      width: 39px; height: 39px; display: grid; place-items: center;
+      border-radius: 12px; color: #061321; font-size: 1.15rem;
+      background: linear-gradient(135deg, #76baff, #42d6a0);
+      box-shadow: 0 7px 24px rgba(66,214,160,.18);
+    }
+    .brand small { display: block; color: var(--muted); font: 600 .58rem "Inter",sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 27px; }
+    .nav-links a { color: #c6d1df; font-size: .84rem; font-weight: 700; transition: .2s; }
+    .nav-links a:hover { color: var(--green); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .menu-toggle {
+      display: none; width: 44px; height: 44px; border: 1px solid var(--line);
+      border-radius: 12px; background: var(--surface); color: white; font-size: 1.35rem;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative; padding: 92px 0 88px; overflow: hidden;
+      background:
+        radial-gradient(ellipse at 80% 18%, rgba(52,120,237,.17), transparent 35%),
+        radial-gradient(ellipse at 10% 80%, rgba(66,214,160,.08), transparent 35%);
+    }
+    .hero:after {
+      content: ""; position: absolute; width: 440px; height: 440px; right: -230px; bottom: -260px;
+      border: 1px solid rgba(98,168,255,.15); border-radius: 50%;
+      box-shadow: 0 0 0 50px rgba(98,168,255,.025), 0 0 0 100px rgba(98,168,255,.02);
+      pointer-events: none;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.04fr .96fr; align-items: center; gap: 55px; position: relative; z-index: 1; }
+    .hero-copy p { max-width: 570px; margin: 23px 0 29px; font-size: 1.08rem; }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-proof { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 33px; }
+    .proof-item { display: flex; align-items: center; gap: 9px; color: #c9d5e4; font-size: .78rem; font-weight: 700; }
+    .proof-icon { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 8px; background: rgba(66,214,160,.12); color: var(--green); }
+
+    /* Hero mockup */
+    .hero-visual { position: relative; min-width: 0; }
+    .browser {
+      overflow: hidden; border: 1px solid rgba(255,255,255,.17);
+      border-radius: 18px; background: #f7f9fc; color: #17243a;
+      box-shadow: var(--shadow); transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+    }
+    .browser-bar { height: 39px; background: #e8edf4; display: flex; align-items: center; gap: 6px; padding: 0 13px; }
+    .browser-dot { width: 8px; height: 8px; border-radius: 50%; background: #aab5c4; }
+    .browser-address { margin-left: 8px; padding: 4px 12px; flex: 1; border-radius: 6px; background: white; color: #66758a; font-size: .62rem; }
+    .mock-site { padding: 23px; min-height: 340px; background: linear-gradient(135deg,#f8fbff,#eaf3ff); }
+    .mock-nav { display: flex; align-items: center; justify-content: space-between; color: #13253c; font-size: .68rem; font-weight: 800; }
+    .mock-logo { display: flex; align-items: center; gap: 7px; }
+    .mock-logo span { width: 22px; height: 22px; border-radius: 7px; background: #2e83d8; }
+    .mock-nav-links { color: #66758a; font-size: .55rem; }
+    .mock-hero { display: grid; grid-template-columns: 1fr .8fr; gap: 15px; align-items: center; margin-top: 38px; }
+    .mock-hero h3 { color: #152944; font-size: 1.45rem; line-height: 1.17; }
+    .mock-hero p { color: #6b7a8e; font-size: .63rem; margin: 10px 0; }
+    .mock-button { display: inline-block; padding: 7px 10px; border-radius: 6px; background: #2478d3; color: white; font-size: .58rem; font-weight: 800; }
+    .mock-photo {
+      min-height: 155px; border-radius: 12px; display: grid; place-items: center;
+      background: linear-gradient(145deg,#8fc4ed,#e4f3ff 55%,#a6d9c5);
+      color: #245579; font-size: 2.6rem;
+    }
+    .mock-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-top: 24px; }
+    .mock-stat { padding: 10px 7px; background: white; border-radius: 8px; text-align: center; }
+    .mock-stat strong { display: block; color: #1d395a; font-size: .85rem; }
+    .mock-stat span { color: #7c8b9e; font-size: .52rem; }
+    .floating-card {
+      position: absolute; right: -20px; bottom: -25px; padding: 14px 17px;
+      border: 1px solid var(--line); border-radius: 14px; background: #17243a;
+      box-shadow: var(--shadow); min-width: 175px;
+    }
+    .floating-card strong { display: block; font-size: .8rem; }
+    .floating-card span { color: var(--green); font-size: .7rem; font-weight: 700; }
+
+    /* Trust strip */
+    .trust-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.018); }
+    .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .trust-item { padding: 23px 12px; text-align: center; border-right: 1px solid var(--line); }
+    .trust-item:last-child { border: 0; }
+    .trust-item strong { display: block; color: var(--text); font-size: .88rem; }
+    .trust-item span { color: var(--muted); font-size: .72rem; }
+
+    /* Services */
+    .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .service-card, .package-card, .support-card {
+      padding: 27px; border: 1px solid var(--line); border-radius: var(--radius);
+      background: linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));
+      transition: .25s ease;
+    }
+    .service-card:hover, .package-card:hover { transform: translateY(-6px); border-color: rgba(98,168,255,.45); }
+    .service-icon {
+      width: 49px; height: 49px; display: grid; place-items: center;
+      border-radius: 14px; margin-bottom: 22px;
+      background: rgba(98,168,255,.12); color: var(--blue); font-size: 1.4rem;
+    }
+    .service-card p { margin: 12px 0 18px; font-size: .9rem; }
+    .price { font-family: "Plus Jakarta Sans",sans-serif; font-weight: 800; font-size: 1.45rem; color: var(--text); }
+    .price small { font: 600 .72rem "Inter",sans-serif; color: var(--muted); }
+    .service-card .btn { width: 100%; margin-top: 21px; }
+
+    /* Templates */
+    .templates-section { background: #0e1828; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .template-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 19px; }
+    .template-card {
+      overflow: hidden; border: 1px solid var(--line); border-radius: 18px;
+      background: var(--surface); transition: .25s;
+    }
+    .template-card:hover { transform: translateY(-5px); border-color: var(--blue); }
+    .template-art { height: 190px; padding: 16px; display: flex; align-items: center; justify-content: center; }
+    .clinic-art { background: linear-gradient(135deg,#dff3ff,#9cc9eb); }
+    .restaurant-art { background: linear-gradient(135deg,#fbe6ce,#d6a77b); }
+    .salon-art { background: linear-gradient(135deg,#f6ddeb,#c6a4d9); }
+    .mini-window { width: 100%; max-width: 290px; padding: 13px; border-radius: 10px; background: white; color: #20334a; box-shadow: 0 12px 30px rgba(0,0,0,.13); }
+    .mini-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: .58rem; font-weight: 800; }
+    .mini-pill { padding: 4px 7px; border-radius: 5px; background: #e6f3ff; color: #2876bd; font-size: .48rem; }
+    .mini-content { display: grid; grid-template-columns: 1fr .75fr; gap: 8px; align-items: center; }
+    .mini-content strong { display: block; font-size: .85rem; line-height: 1.15; }
+    .mini-content small { display: block; color: #718197; font-size: .52rem; margin-top: 6px; }
+    .mini-block { height: 68px; border-radius: 7px; background: linear-gradient(135deg,#c5e5f5,#eaf5fa); }
+    .restaurant-art .mini-block { background: linear-gradient(135deg,#d68e53,#f2d2a9); }
+    .salon-art .mini-block { background: linear-gradient(135deg,#bb83bd,#f2d8ec); }
+    .template-info { padding: 21px; }
+    .template-info p { font-size: .84rem; margin: 9px 0 15px; }
+    .text-link { color: var(--blue); font-size: .82rem; font-weight: 800; background: none; border: 0; }
+    .text-link:hover { color: var(--green); }
+
+    /* Packages */
+    .packages-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; align-items: stretch; }
+    .package-card { display: flex; flex-direction: column; position: relative; }
+    .package-card.featured { border-color: rgba(66,214,160,.55); background: linear-gradient(160deg,rgba(66,214,160,.09),rgba(255,255,255,.025)); }
+    .popular-label { position: absolute; top: 18px; right: 18px; }
+    .package-card h3 { margin: 12px 0 9px; }
+    .package-card > p { font-size: .84rem; min-height: 52px; }
+    .package-price { margin: 19px 0; font-family: "Plus Jakarta Sans"; font-size: 2rem; font-weight: 800; }
+    .package-price small { font: 600 .7rem "Inter"; color: var(--muted); }
+    .package-list { list-style: none; margin: 0 0 18px; }
+    .package-list li { padding: 8px 0; border-bottom: 1px solid var(--line); color: #c7d3e2; font-size: .82rem; }
+    .package-list li:before { content: "✓"; color: var(--green); font-weight: 900; margin-right: 9px; }
+    .delivery { margin-top: auto; margin-bottom: 18px; color: var(--green); font-size: .78rem; font-weight: 800; }
+    .package-card .btn { width: 100%; }
+
+    /* Support tabs */
+    .support-wrap { padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); }
+    .support-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; }
+    .support-tab {
+      padding: 11px 17px; border: 1px solid var(--line); border-radius: 10px;
+      background: transparent; color: var(--muted); font-weight: 800; font-size: .83rem;
+    }
+    .support-tab.active { background: rgba(98,168,255,.14); border-color: var(--blue); color: white; }
+    .support-content { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 35px; }
+    .support-content p { margin: 12px 0; }
+    .support-price { font: 800 2.2rem "Plus Jakarta Sans"; color: var(--text); }
+    .support-price small { font: 600 .78rem "Inter"; color: var(--muted); }
+    .support-deliverables { list-style: none; }
+    .support-deliverables li { padding: 9px 0; color: #d0d9e5; border-bottom: 1px solid var(--line); font-size: .88rem; }
+    .support-deliverables li:before { content: "✓"; color: var(--green); margin-right: 10px; font-weight: 900; }
+
+    /* Process */
+    .process-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 17px; }
+    .process-step { padding: 22px; border-top: 2px solid rgba(98,168,255,.55); background: rgba(255,255,255,.025); border-radius: 0 0 13px 13px; }
+    .step-number { color: var(--green); font: 800 1.7rem "Plus Jakarta Sans"; }
+    .process-step h3 { margin: 12px 0 8px; font-size: 1rem; }
+    .process-step p { font-size: .82rem; }
+
+    /* Enquiry */
+    .enquiry-section { background: radial-gradient(ellipse at 10% 10%,rgba(52,120,237,.13),transparent 40%), #0e1828; }
+    .enquiry-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 55px; align-items: start; }
+    .contact-points { margin-top: 28px; display: grid; gap: 13px; }
+    .contact-point { display: flex; align-items: center; gap: 12px; color: #d6e0ed; font-size: .88rem; }
+    .contact-point span { width: 37px; height: 37px; display: grid; place-items: center; border-radius: 11px; background: var(--surface2); color: var(--green); }
+    .contact-point a { color: var(--blue); }
+    .enquiry-form { padding: 30px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .form-field { margin-bottom: 16px; }
+    .form-field.full { grid-column: 1/-1; }
+    .form-field label { display: block; margin-bottom: 7px; color: #dce5f0; font-size: .78rem; font-weight: 800; }
+    .form-field input, .form-field select, .form-field textarea {
+      width: 100%; padding: 13px 14px; border: 1px solid var(--line);
+      border-radius: 10px; outline: none; color: white; background: #0d1727;
+      font-size: .87rem; transition: .2s;
+    }
+    .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(98,168,255,.1); }
+    .form-field select option { background: #0d1727; }
+    .form-field textarea { min-height: 115px; resize: vertical; }
+    .form-note { font-size: .72rem; margin: 12px 0 17px; }
+    .enquiry-form .btn { width: 100%; }
+
+    /* Location */
+    .location-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 35px; align-items: center; }
+    .map-frame { overflow: hidden; min-height: 330px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+    .map-frame iframe { width: 100%; height: 330px; display: block; border: 0; filter: grayscale(.2) contrast(1.05); }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--line); padding: 55px 0 25px; background: #080e19; }
+    .footer-grid { display: grid; grid-template-columns: 1.3fr .7fr .8fr; gap: 40px; }
+    .footer-about p { max-width: 370px; margin-top: 15px; font-size: .85rem; }
+    .footer-col h4 { margin-bottom: 15px; font-size: .9rem; }
+    .footer-col a { display: block; margin: 9px 0; color: var(--muted); font-size: .82rem; }
+    .footer-col a:hover { color: var(--green); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 15px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); color: #8291a5; font-size: .73rem; }
+
+    /* Modal */
+    .modal {
+      position: fixed; inset: 0; z-index: 2000; display: none;
+      align-items: center; justify-content: center; padding: 20px;
+      background: rgba(0,0,0,.76); backdrop-filter: blur(8px);
+    }
+    .modal.open { display: flex; }
+    .modal-box {
+      position: relative; width: min(570px,100%); max-height: 90vh; overflow: auto;
+      padding: 30px; border: 1px solid var(--line); border-radius: 20px;
+      background: #142137; box-shadow: var(--shadow);
+      animation: modalIn .22s ease;
+    }
+    @keyframes modalIn { from { opacity: 0; transform: translateY(12px) scale(.98); } to { opacity: 1; transform: none; } }
+    .modal-close {
+      position: absolute; top: 14px; right: 15px; width: 36px; height: 36px;
+      border: 1px solid var(--line); border-radius: 10px; background: var(--surface2);
+      color: white; font-size: 1.2rem;
+    }
+    .modal-box p { margin: 13px 0; }
+    .modal-features { list-style: none; margin: 15px 0 23px; }
+    .modal-features li { padding: 8px 0; border-bottom: 1px solid var(--line); color: #d0d9e5; font-size: .86rem; }
+    .modal-features li:before { content: "✓"; color: var(--green); margin-right: 9px; }
+
+    .whatsapp-float {
+      position: fixed; z-index: 900; right: 20px; bottom: 20px;
+      width: 57px; height: 57px; display: grid; place-items: center;
+      border-radius: 50%; background: #20c978; color: #062b1b;
+      font-size: 1.55rem; font-weight: 900; box-shadow: 0 10px 28px rgba(0,0,0,.3);
+      transition: .2s;
+    }
+    .whatsapp-float:hover { transform: translateY(-4px) scale(1.04); }
+
+    @media (max-width: 920px) {
+      .nav-links { gap: 15px; }
+      .nav-actions .btn-outline { display: none; }
+      .hero-grid { gap: 30px; }
+      .packages-grid, .services-grid, .template-grid { grid-template-columns: repeat(2,1fr); }
+      .package-card:last-child, .service-card:last-child { grid-column: auto; }
+      .process-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 700px) {
+      .section { padding: 72px 0; }
+      .nav { min-height: 70px; }
+      .menu-toggle { display: grid; place-items: center; }
+      .nav-actions { margin-left: auto; }
+      .nav-actions .btn { display: none; }
+      .nav-links {
+        position: absolute; top: 70px; left: 0; right: 0;
+        display: flex; flex-direction: column; align-items: stretch; gap: 0;
+        padding: 8px 5% 18px; background: #0d1727;
+        border-bottom: 1px solid var(--line);
+        max-height: 0; overflow: hidden; opacity: 0;
+        transition: max-height .3s ease, opacity .25s ease;
+      }
+      .nav-links.open { max-height: 420px; opacity: 1; }
+      .nav-links a { padding: 13px 5px; border-bottom: 1px solid var(--line); }
+      .hero { padding: 68px 0 75px; }
+      .hero-grid, .enquiry-grid, .location-grid, .support-content { grid-template-columns: 1fr; }
+      .hero-visual { margin: 10px 8px 20px 0; }
+      .browser { transform: none; }
+      .floating-card { right: -8px; }
+      .trust-grid { grid-template-columns: repeat(2,1fr); }
+      .trust-item:nth-child(2) { border-right: 0; }
+      .trust-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .packages-grid, .services-grid, .template-grid { grid-template-columns: 1fr; }
+      .package-card > p { min-height: 0; }
+      .support-wrap { padding: 20px; }
+      .support-tabs { display: grid; grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; gap: 0; }
+      .form-field.full { grid-column: auto; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-about { grid-column: 1/-1; }
+      .footer-bottom { flex-direction: column; }
+      .mock-site { min-height: 300px; padding: 17px; }
+      .mock-hero h3 { font-size: 1.1rem; }
+      .mock-photo { min-height: 125px; }
+    }
+    @media (max-width: 420px) {
+      .brand { font-size: .94rem; }
+      .brand-mark { width: 35px; height: 35px; }
+      .hero-buttons .btn { width: 100%; }
+      .process-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-about { grid-column: auto; }
+      .mock-nav-links { display: none; }
+    }
+  </style>
 </head>
 
 <body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Digital Brand Lift home">
+        <span class="brand-mark">D</span>
+        <span>Digital Brand Lift<small>Build. Connect. Grow.</small></span>
+      </a>
 
-<header class="site-header">
-  <div class="container nav">
-    <a href="#home" class="logo" aria-label="Digital Brand Lift home">
-      <img src="logo.png" alt="Digital Brand Lift">
-    </a>
-
-    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#samples">Sample Work</a>
-      <a href="#packages">Packages</a>
-      <a href="#process">How It Works</a>
-      <a href="#faq">FAQs</a>
-      <a href="#contact">Contact</a>
-      <a href="#location">Our Location</a>
-    </nav>
-
-    <a class="btn btn-primary nav-contact" href="#contact">Get Started</a>
-  </div>
-</header>
-
-<main>
-
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <div class="eyebrow">Digital solutions for growing businesses</div>
-      <h1>Build your business presence <span>online.</span></h1>
-      <p class="hero-copy">
-        We help businesses present themselves professionally online through
-        website design, social media marketing and Google Business Profile setup.
-        Choose the service or package that fits your business and budget.
-      </p>
-      <div class="hero-buttons">
-        <a class="btn btn-primary" href="#packages">Explore Our Packages</a>
-        <a class="btn btn-outline" href="#contact">Talk to Us</a>
-      </div>
-      <p class="hero-note">Practical services · Clear pricing · Uganda and remote enquiries</p>
-    </div>
-
-    <div>
-      <div class="browser">
-        <div class="browser-bar">
-          <span class="browser-dot"></span>
-          <span class="browser-dot"></span>
-          <span class="browser-dot"></span>
-          <div class="browser-address">yourbusiness.ug</div>
-        </div>
-        <div class="demo-website">
-          <div class="demo-nav">
-            <div class="demo-brand">YOUR BUSINESS</div>
-            <div class="demo-nav-links">Home · Services · Contact</div>
-          </div>
-          <div class="demo-hero">
-            <div>
-              <h3>Welcome to your next opportunity.</h3>
-              <p>Show customers what makes your business special.</p>
-              <span class="demo-mini-btn">Get in touch</span>
-            </div>
-            <div class="demo-illustration">▣</div>
-          </div>
-          <div class="demo-bottom">
-            <div><strong>01</strong>Services</div>
-            <div><strong>02</strong>About us</div>
-            <div><strong>03</strong>Contact</div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-sticker">
-        Built for your business
-        <span>Online, everywhere.</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">What we do</div>
-      <h2>Practical digital services for growing businesses</h2>
-      <p>Choose an individual service or combine solutions to build a stronger online presence.</p>
-    </div>
-
-    <div class="services-grid">
-      <article class="service-card">
-        <div class="service-visual website">
-          <div class="mini-site">
-            <div class="mini-site-top"><span>YOUR BRAND</span><span>MENU</span></div>
-            <div class="mini-site-banner">Your business.<br>Beautifully online.</div>
-            <div class="mini-site-lines"><span></span><span></span><span></span></div>
-          </div>
-        </div>
-        <div class="service-content">
-          <h3>Website Design</h3>
-          <p>Get a professional, mobile-friendly website that introduces your business, presents your services and gives customers a simple way to contact you.</p>
-          <a class="service-link" href="#packages">Explore website options →</a>
-        </div>
-      </article>
-
-      <article class="service-card">
-        <div class="service-visual social">
-          <div class="social-mockup">
-            <div class="social-heading">YOUR BUSINESS SOCIAL</div>
-            <div class="social-grid">
-              <div class="social-tile">01</div><div class="social-tile">02</div><div class="social-tile">03</div>
-              <div class="social-tile">04</div><div class="social-tile">05</div><div class="social-tile">06</div>
-            </div>
-          </div>
-        </div>
-        <div class="service-content">
-          <h3>Social Media Marketing</h3>
-          <p>Present your business consistently with promotional designs, content planning and practical social media support.</p>
-          <a class="service-link" href="#packages">Explore social media options →</a>
-        </div>
-      </article>
-
-      <article class="service-card">
-        <div class="service-visual google">
-          <div class="google-mockup">
-            <div class="google-top"><strong>Business Profile</strong></div>
-            <div class="google-name">Your Business Name</div>
-            <div class="google-rating">Google profile demonstration</div>
-            <div class="google-category">Business · Local services</div>
-            <div class="google-buttons"><span>Call</span><span>Directions</span><span>Website</span></div>
-          </div>
-        </div>
-        <div class="service-content">
-          <h3>Google Business Profile Setup</h3>
-          <p>Help local customers discover your business on Google Search and Maps through a properly prepared business profile.</p>
-          <a class="service-link" href="#packages">Explore Google options →</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="samples">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Concept showcase</div>
-      <h2>See what your business could look like online</h2>
-      <p>These are sample design concepts created to demonstrate possible website styles. They are not presented as completed client projects.</p>
-    </div>
-
-    <div class="sample-grid">
-      <article class="sample-card">
-        <div class="sample-screen">
-          <div class="sample-browser">
-            <div class="sample-browser-bar"><span></span><span></span><span></span></div>
-            <div class="clinic-page">
-              <div class="clinic-nav">CARE CLINIC</div>
-              <div class="clinic-banner"><h4>Your health matters to us.</h4><p>Professional care, closer to home.</p></div>
-              <div class="clinic-blocks"><span></span><span></span><span></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="sample-info">
-          <span class="concept-badge">Concept 01 · Healthcare</span>
-          <h3>Clinic Website</h3>
-          <p>A clean layout for clinics to introduce their services, location and contact information.</p>
-        </div>
-      </article>
-
-      <article class="sample-card">
-        <div class="sample-screen">
-          <div class="sample-browser">
-            <div class="sample-browser-bar"><span></span><span></span><span></span></div>
-            <div class="restaurant-page">
-              <div class="restaurant-nav">THE LOCAL TABLE</div>
-              <div class="restaurant-banner"><h4>Good food.<br>Good moments.</h4><p>Discover something delicious.</p></div>
-              <div class="restaurant-blocks"><span></span><span></span><span></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="sample-info">
-          <span class="concept-badge">Concept 02 · Hospitality</span>
-          <h3>Restaurant Website</h3>
-          <p>A welcoming concept for restaurants and cafes to display menus and contact information.</p>
-        </div>
-      </article>
-
-      <article class="sample-card">
-        <div class="sample-screen">
-          <div class="sample-browser">
-            <div class="sample-browser-bar"><span></span><span></span><span></span></div>
-            <div class="salon-page">
-              <div class="salon-nav">THE STYLE STUDIO</div>
-              <div class="salon-banner"><h4>Your style.<br>Your confidence.</h4><p>Beauty and care, made personal.</p></div>
-              <div class="salon-blocks"><span></span><span></span><span></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="sample-info">
-          <span class="concept-badge">Concept 03 · Beauty</span>
-          <h3>Salon Website</h3>
-          <p>A stylish concept for salons and beauty businesses to showcase services and booking contacts.</p>
-        </div>
-      </article>
-    </div>
-    <p class="sample-caption">All previews are illustrative concepts, not verified client work.</p>
-  </div>
-</section>
-
-<section id="packages">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Flexible pricing</div>
-      <h2>Choose what works for your business</h2>
-      <p>You do not have to purchase everything. Compare individual services and combined packages, then choose the option that fits your goals and budget.</p>
-    </div>
-
-    <div class="pricing-subheading">
-      <h3>Individual services</h3>
-      <p>Choose only the service you need.</p>
-    </div>
-
-    <div class="package-grid">
-      <article class="package-card">
-        <span class="package-label">Website service</span>
-        <h3>Website Starter</h3>
-        <p class="package-description">A simple online home for your business.</p>
-        <div class="price">UGX 150,000</div>
-        <ul>
-          <li>One-page business website</li><li>Mobile-friendly layout</li><li>Business information and services</li><li>WhatsApp contact link</li><li>Basic search engine setup</li>
-        </ul>
-        <a class="btn btn-outline" href="#contact" data-package="Website Starter">Choose Website Service</a>
-      </article>
-
-      <article class="package-card">
-        <span class="package-label">Social media service</span>
-        <h3>Social Media Starter</h3>
-        <p class="package-description">A practical start to organised social media content.</p>
-        <div class="price">UGX 80,000</div>
-        <ul>
-          <li>Social profile review</li><li>5 promotional post designs</li><li>Basic content planning</li><li>Business contact information</li><li>One revision round</li>
-        </ul>
-        <a class="btn btn-outline" href="#contact" data-package="Social Media Starter">Choose Social Media</a>
-      </article>
-
-      <article class="package-card">
-        <span class="package-label">Google service</span>
-        <h3>Google Profile Setup</h3>
-        <p class="package-description">Help customers find your local business.</p>
-        <div class="price">UGX 60,000</div>
-        <ul>
-          <li>Google Business Profile setup assistance</li><li>Business information organisation</li><li>Category and service guidance</li><li>Location and contact details</li><li>Basic profile guidance</li>
-        </ul>
-        <a class="btn btn-outline" href="#contact" data-package="Google Profile Setup">Choose Google Service</a>
-      </article>
-    </div>
-
-    <div class="pricing-subheading">
-      <h3>Combined business packages</h3>
-      <p>Get multiple services together.</p>
-    </div>
-
-    <div class="package-grid">
-      <article class="package-card">
-        <span class="package-label">Essential combination</span>
-        <h3>Business Visibility</h3>
-        <p class="package-description">For businesses that want a website and a stronger local presence.</p>
-        <div class="price">UGX 190,000</div>
-        <span class="savings-badge">Combined service offer</span>
-        <ul>
-          <li>One-page business website</li><li>Google Business Profile setup assistance</li><li>Mobile-friendly website layout</li><li>WhatsApp contact link</li><li>Basic search setup</li>
-        </ul>
-        <a class="btn btn-outline" href="#contact" data-package="Business Visibility">Choose This Package</a>
-      </article>
-
-      <article class="package-card featured">
-        <span class="popular-badge">Complete option</span>
-        <span class="package-label">Three-service combination</span>
-        <h3>Digital Business Lift</h3>
-        <p class="package-description">A combined starting point for businesses building their online presence.</p>
-        <div class="price">UGX 250,000</div>
-        <span class="savings-badge">All three services together</span>
-        <ul>
-          <li>One-page business website</li><li>Google Business Profile setup assistance</li><li>5 social media promotional designs</li><li>WhatsApp contact integration</li><li>Basic search engine setup</li>
-        </ul>
-        <a class="btn btn-primary" href="#contact" data-package="Digital Business Lift">Choose This Package</a>
-      </article>
-
-      <article class="package-card">
-        <span class="package-label">Social + local visibility</span>
-        <h3>Local Growth Starter</h3>
-        <p class="package-description">For businesses focusing on local discovery and social content.</p>
-        <div class="price">UGX 120,000</div>
-        <span class="savings-badge">Two-service combination</span>
-        <ul>
-          <li>Google Business Profile setup assistance</li><li>5 social media promotional designs</li><li>Business information organisation</li><li>Basic content planning</li><li>Contact information guidance</li>
-        </ul>
-        <a class="btn btn-outline" href="#contact" data-package="Local Growth Starter">Choose This Package</a>
-      </article>
-    </div>
-
-    <div class="pricing-note">
-      <strong>Important:</strong> Prices are starting offers and should be confirmed before work begins. Domain registration, paid hosting, advertising budgets, premium subscriptions and other third-party charges are not included unless specifically agreed. Google profile verification and approval are controlled by Google.
-    </div>
-
-    <div class="monthly-section">
-      <div class="monthly-heading">
-        <h3>Ongoing support plans</h3>
-        <p>Choose an optional monthly plan after your initial setup.</p>
-      </div>
-
-      <div class="plan-tabs" role="tablist" aria-label="Monthly support plans">
-        <button class="plan-tab" type="button" role="tab" aria-selected="true" data-plan="basic">Basic Support</button>
-        <button class="plan-tab" type="button" role="tab" aria-selected="false" data-plan="growth">Growth Support</button>
-        <button class="plan-tab" type="button" role="tab" aria-selected="false" data-plan="active">Active Support</button>
-      </div>
-
-      <div class="plan-panel" id="planPanel" role="tabpanel">
-        <div>
-          <h4 id="planTitle">Basic Support</h4>
-          <p id="planDescription">Small website content updates and basic assistance when needed.</p>
-          <div class="plan-price" id="planPrice">UGX 30,000 <small>/ month</small></div>
-        </div>
-        <a class="btn btn-primary" href="#contact" id="planChoose">Ask About This Plan</a>
-      </div>
-      <p class="monthly-note">Monthly support is optional. The exact tasks, response time and monthly workload must be agreed before subscription. Advertising spend and third-party fees are separate.</p>
-    </div>
-  </div>
-</section>
-
-<section class="process" id="process">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">How it works</div>
-      <h2>A simple process from enquiry to delivery</h2>
-      <p>We keep the process straightforward so you know what to expect at every stage.</p>
-    </div>
-    <div class="process-grid">
-      <article class="process-item">
-        <div class="process-number">01</div>
-        <h3>Tell us what you need</h3>
-        <p>Share your business details, goals and the service or package you are interested in.</p>
-      </article>
-      <article class="process-item">
-        <div class="process-number">02</div>
-        <h3>Confirm the plan</h3>
-        <p>We discuss the scope, price, requirements and delivery expectations before starting.</p>
-      </article>
-      <article class="process-item">
-        <div class="process-number">03</div>
-        <h3>Review and receive</h3>
-        <p>Review the agreed work, request the included revisions and receive the completed deliverables.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Frequently asked questions</div>
-      <h2>Questions before getting started?</h2>
-      <p>Here are some useful details about our services and packages.</p>
-    </div>
-    <div class="faq-list">
-      <details>
-        <summary>Can I buy only one service?</summary>
-        <p>Yes. You can choose website design, social media marketing or Google Business Profile setup separately. Combined packages are optional.</p>
-      </details>
-      <details>
-        <summary>Are domain and hosting fees included?</summary>
-        <p>Not automatically. Domain registration, paid hosting and other third-party costs are separate unless specifically agreed in writing.</p>
-      </details>
-      <details>
-        <summary>Will my website work on phones?</summary>
-        <p>Our website designs are prepared to adapt to mobile phones, tablets and desktop screens.</p>
-      </details>
-      <details>
-        <summary>Can you guarantee Google Maps visibility?</summary>
-        <p>No. Google controls verification, approval, ranking and visibility. We provide setup assistance and guidance but cannot guarantee Google's decisions.</p>
-      </details>
-      <details>
-        <summary>How do I start?</summary>
-        <p>Choose a service or package and send an enquiry through WhatsApp. We will discuss your requirements before work begins.</p>
-      </details>
-      <details>
-        <summary>Do you accept custom requests?</summary>
-        <p>Yes. Send us your requirements and we can discuss whether the requested work is something we can provide.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Get in touch</div>
-      <h2>Let's discuss your business needs</h2>
-      <p>Tell us about your business and the digital service you are interested in.</p>
-    </div>
-
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Let's build something useful.</h3>
-        <p>Whether you need a website, social media support or help setting up your Google Business Profile, start by telling us about your business.</p>
-        <div class="contact-detail"><strong>WhatsApp</strong><br>+256 732 166 463</div>
-        <div class="contact-detail"><strong>Service area</strong><br>Uganda and remote enquiries</div>
-        <div class="contact-detail"><strong>Business</strong><br>Digital Brand Lift</div>
-        <a class="btn btn-green" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20would%20like%20to%20discuss%20your%20services." target="_blank" rel="noopener">Chat on WhatsApp</a>
-      </div>
-
-      <form class="contact-form" id="enquiryForm">
-        <h3>Send an enquiry</h3>
-        <div class="form-group">
-          <label for="customerName">Your name</label>
-          <input id="customerName" name="name" type="text" placeholder="Enter your name" autocomplete="name" required>
-        </div>
-        <div class="form-group">
-          <label for="businessName">Business name</label>
-          <input id="businessName" name="business" type="text" placeholder="Enter your business name" autocomplete="organization">
-        </div>
-        <div class="form-group">
-          <label for="customerPhone">Your phone number</label>
-          <input id="customerPhone" name="phone" type="tel" placeholder="Enter your phone number" autocomplete="tel" required>
-        </div>
-        <div class="form-group">
-          <label for="serviceChoice">What are you interested in?</label>
-          <select id="serviceChoice" name="service" required>
-            <option value="">Select a service or package</option>
-            <optgroup label="Individual Services">
-              <option>Website Starter</option>
-              <option>Social Media Starter</option>
-              <option>Google Profile Setup</option>
-            </optgroup>
-            <optgroup label="Combined Packages">
-              <option>Business Visibility</option>
-              <option>Digital Business Lift</option>
-              <option>Local Growth Starter</option>
-            </optgroup>
-            <optgroup label="Monthly Support">
-              <option>Basic Support Monthly Plan</option>
-              <option>Growth Support Monthly Plan</option>
-              <option>Active Support Monthly Plan</option>
-            </optgroup>
-            <option>Custom Request</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="customerMessage">Tell us more about your needs</label>
-          <textarea id="customerMessage" name="message" placeholder="Briefly describe what you need..."></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Send Enquiry on WhatsApp</button>
-        <p class="form-note">Your enquiry will open in WhatsApp for you to review and send.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<section id="location" class="location-section">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Find us on Google Maps</div>
-      <h2>Visit Digital Brand Lift</h2>
-      <p>Find our business location and explore directions using Google Maps.</p>
-    </div>
-    <div class="location-card">
-      <div class="location-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7579582483186!2d32.5816313!3d0.3151692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbd30c7d23e8d%3A0xcbb38e14da1daeab!2sDigital%20Brand%20Lift!5e0!3m2!1sen!2sug!4v1794740941897!5m2!1sen!2sug"
-          width="600" height="450" allowfullscreen loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
-          title="Digital Brand Lift location on Google Maps">
-        </iframe>
-      </div>
-      <div class="location-details">
-        <h3>Digital Brand Lift</h3>
-        <p>Find our business on Google Maps and get directions.</p>
-        <a class="btn btn-primary" href="https://maps.app.goo.gl/mRzhDhNqgzczYhLz8" target="_blank" rel="noopener">Get Directions</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <img class="footer-logo" src="logo.png" alt="Digital Brand Lift">
-        <p>Practical digital services that help businesses build their online presence and communicate with customers.</p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <a href="#services">Our Services</a>
-        <a href="#samples">Sample Work</a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#templates">Templates</a>
         <a href="#packages">Packages</a>
-        <a href="#process">How It Works</a>
-        <a href="#faq">FAQs</a>
-        <a href="#location">Our Location</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="https://wa.me/256732166463" target="_blank" rel="noopener">WhatsApp: +256 732 166 463</a>
-        <a href="#contact">Send an Enquiry</a>
-        <a href="https://maps.app.goo.gl/mRzhDhNqgzczYhLz8" target="_blank" rel="noopener">Find us on Google Maps</a>
+        <a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-outline btn-small" href="mailto:hello@digitalbrandlift.ug">Email Us</a>
+        <a class="btn btn-primary btn-small" href="#contact">Get a Quote</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
       </div>
     </div>
-    <div class="footer-bottom">
-      © <span id="year"></span> Digital Brand Lift. All rights reserved.
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Digital solutions for Uganda</span>
+          <h1>Make your business easier to <span class="gradient-text">find, trust and choose.</span></h1>
+          <p>Digital Brand Lift helps businesses build a stronger online presence through professional websites, social media marketing and Google Business Profile setup.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#contact">Start Your Project <span>→</span></a>
+            <a class="btn btn-outline" href="#services">Explore Services</a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><span class="proof-icon">✓</span> Clear pricing in UGX</div>
+            <div class="proof-item"><span class="proof-icon">✓</span> Mobile-friendly solutions</div>
+            <div class="proof-item"><span class="proof-icon">✓</span> Direct WhatsApp contact</div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Website design preview">
+          <div class="browser">
+            <div class="browser-bar">
+              <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+              <div class="browser-address">kampaladental.example</div>
+            </div>
+            <div class="mock-site">
+              <div class="mock-nav">
+                <div class="mock-logo"><span></span> KAMPALA DENTAL CARE</div>
+                <div class="mock-nav-links">SERVICES　 ABOUT　 CONTACT</div>
+              </div>
+              <div class="mock-hero">
+                <div>
+                  <h3>A healthier smile starts here.</h3>
+                  <p>Explore dental care services and request an appointment from your phone.</p>
+                  <span class="mock-button">BOOK AN APPOINTMENT</span>
+                </div>
+                <div class="mock-photo">✚</div>
+              </div>
+              <div class="mock-stats">
+                <div class="mock-stat"><strong>Services</strong><span>Easy to explore</span></div>
+                <div class="mock-stat"><strong>Booking</strong><span>Mobile friendly</span></div>
+                <div class="mock-stat"><strong>Contact</strong><span>One tap away</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card">
+            <strong>Designed for real customers</strong>
+            <span>Clear • Responsive • Useful</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div class="trust-item"><strong>Website Design</strong><span>Professional online presence</span></div>
+        <div class="trust-item"><strong>Social Media</strong><span>Consistent business content</span></div>
+        <div class="trust-item"><strong>Google Business</strong><span>Local search visibility setup</span></div>
+        <div class="trust-item"><strong>Uganda-focused</strong><span>Pricing in Ugandan shillings</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What we do</span>
+          <h2>Practical digital services that help your business <span class="gradient-text">get noticed.</span></h2>
+          <p>Choose an individual service or combine services in a package. We agree on the work, price and delivery timeline before a project begins.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">▣</div>
+            <h3>Website Design</h3>
+            <p>Give customers a clear place to learn about your business, explore your services and contact you from any device.</p>
+            <div class="price">UGX 150,000 <small>/ starting price</small></div>
+            <button class="btn btn-outline choose-item" data-choice="Website Design — UGX 150,000">Choose Service →</button>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">▦</div>
+            <h3>Social Media Marketing</h3>
+            <p>Present your business consistently with planned social content and creative posts designed around your offer.</p>
+            <div class="price">UGX 80,000 <small>/ starting price</small></div>
+            <button class="btn btn-outline choose-item" data-choice="Social Media Marketing — UGX 80,000">Choose Service →</button>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">⌖</div>
+            <h3>Google Business Profile Setup</h3>
+            <p>Help local customers discover your business information, location, opening hours and contact details on Google.</p>
+            <div class="price">UGX 60,000 <small>/ starting price</small></div>
+            <button class="btn btn-outline choose-item" data-choice="Google Business Profile Setup — UGX 60,000">Choose Service →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section templates-section" id="templates">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Design approach</span>
+          <h2>Industry Templates & <span class="gradient-text">Capabilities</span></h2>
+          <p>Explore sample directions showing how a well-structured digital experience can solve everyday customer problems. These are illustrative design concepts, not claims of completed client projects.</p>
+        </div>
+
+        <div class="template-grid">
+          <article class="template-card">
+            <div class="template-art clinic-art">
+              <div class="mini-window">
+                <div class="mini-top"><span>KAMPALA DENTAL CARE</span><span class="mini-pill">BOOK NOW</span></div>
+                <div class="mini-content">
+                  <div><strong>Care for your smile.</strong><small>Services, location and appointment enquiries in one place.</small></div>
+                  <div class="mini-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="template-info">
+              <span class="tag">Healthcare concept</span>
+              <h3 style="margin-top:12px">Clinic Website</h3>
+              <p>Helps patients find services, clinic hours and contact details, with a clear mobile appointment enquiry path.</p>
+              <button class="text-link preview-btn" data-template="clinic">Preview template details →</button>
+            </div>
+          </article>
+
+          <article class="template-card">
+            <div class="template-art restaurant-art">
+              <div class="mini-window">
+                <div class="mini-top"><span>NAKASERO BISTRO</span><span class="mini-pill">VIEW MENU</span></div>
+                <div class="mini-content">
+                  <div><strong>Good food. Great moments.</strong><small>Menu highlights, location and reservation enquiries.</small></div>
+                  <div class="mini-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="template-info">
+              <span class="tag">Hospitality concept</span>
+              <h3 style="margin-top:12px">Restaurant Website</h3>
+              <p>Makes menus easier to browse on phones and gives hungry customers a quick route to directions and enquiries.</p>
+              <button class="text-link preview-btn" data-template="restaurant">Preview template details →</button>
+            </div>
+          </article>
+
+          <article class="template-card">
+            <div class="template-art salon-art">
+              <div class="mini-window">
+                <div class="mini-top"><span>GLOW BEAUTY STUDIO</span><span class="mini-pill">ENQUIRE</span></div>
+                <div class="mini-content">
+                  <div><strong>Your style, your moment.</strong><small>Service menu, visual gallery and booking enquiries.</small></div>
+                  <div class="mini-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="template-info">
+              <span class="tag">Beauty concept</span>
+              <h3 style="margin-top:12px">Salon Website</h3>
+              <p>Showcases services and style inspiration while making it simple for customers to enquire about an appointment.</p>
+              <button class="text-link preview-btn" data-template="salon">Preview template details →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Choose your level</span>
+          <h2>Digital packages with <span class="gradient-text">clear scope.</span></h2>
+          <p>Compare the options and choose what fits your business. Final deliverables, access requirements and any extra costs are agreed before work starts.</p>
+        </div>
+
+        <div class="packages-grid">
+          <article class="package-card">
+            <span class="tag">Local presence</span>
+            <h3>Local Growth Starter</h3>
+            <p>A practical starting point for businesses that need stronger local visibility.</p>
+            <div class="package-price">UGX 120,000</div>
+            <ul class="package-list">
+              <li>Google Business Profile setup assistance</li>
+              <li>Business information and contact details</li>
+              <li>3 social media creative designs</li>
+              <li>Basic content direction</li>
+              <li>One revision round</li>
+            </ul>
+            <div class="delivery">Estimated delivery: 3–5 business days</div>
+            <button class="btn btn-outline choose-item" data-choice="Local Growth Starter Package — UGX 120,000">Choose This Package</button>
+          </article>
+
+          <article class="package-card featured">
+            <span class="tag">More visibility</span>
+            <span class="popular-label tag">Popular choice</span>
+            <h3>Business Visibility</h3>
+            <p>For businesses ready to improve local discovery and publish more consistently.</p>
+            <div class="package-price">UGX 190,000</div>
+            <ul class="package-list">
+              <li>Google Business Profile setup assistance</li>
+              <li>Business information and service details</li>
+              <li>6 social media creative designs</li>
+              <li>Captions for the agreed posts</li>
+              <li>One revision round</li>
+            </ul>
+            <div class="delivery">Estimated delivery: 5–7 business days</div>
+            <button class="btn btn-primary choose-item" data-choice="Business Visibility Package — UGX 190,000">Choose This Package</button>
+          </article>
+
+          <article class="package-card">
+            <span class="tag">Online presence</span>
+            <h3>Digital Business Lift</h3>
+            <p>A broader digital presence combining a business website with visibility essentials.</p>
+            <div class="package-price">UGX 250,000</div>
+            <ul class="package-list">
+              <li>Business website design (up to 5 pages)</li>
+              <li>Mobile-friendly layout</li>
+              <li>WhatsApp contact integration</li>
+              <li>Google Business Profile setup assistance</li>
+              <li>Basic on-page SEO structure</li>
+              <li>One revision round</li>
+            </ul>
+            <div class="delivery">Estimated delivery: 7–10 business days</div>
+            <button class="btn btn-outline choose-item" data-choice="Digital Business Lift Package — UGX 250,000">Choose This Package</button>
+          </article>
+        </div>
+        <p style="font-size:.76rem;margin-top:18px">Delivery estimates begin after the required content, business information and approvals have been received. Domain, hosting, advertising spend and third-party charges are not included unless specifically stated in your quotation.</p>
+      </div>
+    </section>
+
+    <section class="section templates-section" id="support">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">After launch</span>
+          <h2>Ongoing Support <span class="gradient-text">Plans</span></h2>
+          <p>Optional monthly support for businesses that want help keeping their digital presence updated. Choose a plan to see its scope.</p>
+        </div>
+
+        <div class="support-wrap">
+          <div class="support-tabs" role="tablist" aria-label="Support plans">
+            <button class="support-tab active" role="tab" aria-selected="true" data-plan="basic">Basic Support</button>
+            <button class="support-tab" role="tab" aria-selected="false" data-plan="growth">Growth Support</button>
+            <button class="support-tab" role="tab" aria-selected="false" data-plan="active">Active Support</button>
+          </div>
+          <div class="support-content" aria-live="polite">
+            <div>
+              <span class="tag" id="supportLabel">Essential care</span>
+              <h3 id="supportTitle" style="font-size:1.7rem;margin-top:13px">Basic Support</h3>
+              <p id="supportDescription">For businesses that need occasional updates and basic website or profile assistance.</p>
+              <div class="support-price" id="supportPrice">UGX 30,000 <small>/ month</small></div>
+              <button class="btn btn-primary choose-item" id="supportChoose" style="margin-top:20px" data-choice="Basic Support Plan — UGX 30,000 per month">Choose Basic Support</button>
+            </div>
+            <ul class="support-deliverables" id="supportDeliverables">
+              <li>Small text or contact detail updates</li>
+              <li>Basic website and profile checks</li>
+              <li>WhatsApp support for agreed requests</li>
+              <li>One small update request per month</li>
+            </ul>
+          </div>
+        </div>
+        <p style="font-size:.76rem;margin-top:15px">Support plans are optional and do not renew automatically through this website. Scope and payment arrangements are confirmed directly before each support period.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">A clear process</span>
+          <h2>From first enquiry to <span class="gradient-text">launch.</span></h2>
+          <p>You know what is being done, what it costs and what is needed from you at every stage.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step"><div class="step-number">01</div><h3>Tell us what you need</h3><p>Share your business details, goals and the service you are interested in.</p></div>
+          <div class="process-step"><div class="step-number">02</div><h3>Agree on the scope</h3><p>We confirm deliverables, price, timeline and any third-party costs.</p></div>
+          <div class="process-step"><div class="step-number">03</div><h3>Project begins</h3><p>A 50% deposit is paid before work starts. We then begin the agreed work.</p></div>
+          <div class="process-step"><div class="step-number">04</div><h3>Review and delivery</h3><p>You review the completed work and pay the remaining 50% upon final delivery.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section enquiry-section" id="contact">
+      <div class="container enquiry-grid">
+        <div>
+          <span class="eyebrow">Let's discuss your project</span>
+          <h2>Ready to give your business a <span class="gradient-text">digital lift?</span></h2>
+          <p style="margin-top:17px">Send an enquiry with a few details. Your message will be prepared in WhatsApp so you can review and send it directly.</p>
+
+          <div class="contact-points">
+            <div class="contact-point"><span>☏</span><div><strong>WhatsApp</strong><br><a href="https://wa.me/256732166463" target="_blank" rel="noopener">+256 732 166 463</a></div></div>
+            <div class="contact-point"><span>✉</span><div><strong>Email</strong><br><a href="mailto:hello@digitalbrandlift.ug">hello@digitalbrandlift.ug</a></div></div>
+            <div class="contact-point"><span>⌖</span><div><strong>Location</strong><br>Kampala, Uganda</div></div>
+          </div>
+
+          <div style="margin-top:28px;padding:19px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)">
+            <strong style="font-size:.9rem">Straightforward payment terms</strong>
+            <p style="font-size:.82rem;margin-top:8px">50% deposit before work begins and 50% upon final delivery. MTN Mobile Money, Airtel Money and bank transfer are accepted. Quotations can be approved through WhatsApp or email.</p>
+          </div>
+        </div>
+
+        <form class="enquiry-form" id="enquiryForm">
+          <h3 style="margin-bottom:22px">Project enquiry</h3>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="customerName">Your name *</label>
+              <input id="customerName" name="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-field">
+              <label for="businessName">Business name *</label>
+              <input id="businessName" name="business" type="text" placeholder="Your business name" required>
+            </div>
+            <div class="form-field">
+              <label for="customerPhone">Your phone number *</label>
+              <input id="customerPhone" name="phone" type="tel" placeholder="+256..." required>
+            </div>
+            <div class="form-field">
+              <label for="customerChoice">Service or package *</label>
+              <select id="customerChoice" name="choice" required>
+                <option value="">Select an option</option>
+                <optgroup label="Individual services">
+                  <option>Website Design — UGX 150,000</option>
+                  <option>Social Media Marketing — UGX 80,000</option>
+                  <option>Google Business Profile Setup — UGX 60,000</option>
+                </optgroup>
+                <optgroup label="Packages">
+                  <option>Local Growth Starter Package — UGX 120,000</option>
+                  <option>Business Visibility Package — UGX 190,000</option>
+                  <option>Digital Business Lift Package — UGX 250,000</option>
+                </optgroup>
+                <optgroup label="Monthly support">
+                  <option>Basic Support Plan — UGX 30,000 per month</option>
+                  <option>Growth Support Plan — UGX 60,000 per month</option>
+                  <option>Active Support Plan — UGX 100,000 per month</option>
+                </optgroup>
+                <option>Custom enquiry</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="customerMessage">Tell us about your project</label>
+              <textarea id="customerMessage" name="message" placeholder="What would you like Digital Brand Lift to help you with?"></textarea>
+            </div>
+          </div>
+          <p class="form-note">Your details are used to prepare your enquiry message. WhatsApp will open for you to review and send it.</p>
+          <button class="btn btn-primary" type="submit">Continue to WhatsApp <span>→</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <div class="container location-grid">
+        <div>
+          <span class="eyebrow">Based in Uganda</span>
+          <h2>Supporting businesses in <span class="gradient-text">Kampala and beyond.</span></h2>
+          <p style="margin-top:15px">Digital Brand Lift works with businesses looking to improve how customers find and interact with them online.</p>
+          <a class="btn btn-outline" style="margin-top:22px" href="https://www.google.com/maps/search/?api=1&query=Kampala%2C%20Uganda" target="_blank" rel="noopener">Open Google Maps ↗</a>
+        </div>
+        <div class="map-frame">
+          <iframe title="Map showing Kampala, Uganda" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kampala%2C%20Uganda&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="#home">
+            <span class="brand-mark">D</span>
+            <span>Digital Brand Lift<small>Build. Connect. Grow.</small></span>
+          </a>
+          <p>Helping Ugandan businesses strengthen their online presence through website design, social media marketing and Google Business Profile setup.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#services">Our Services</a>
+          <a href="#templates">Industry Templates</a>
+          <a href="#packages">Packages</a>
+          <a href="#support">Ongoing Support</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="https://wa.me/256732166463" target="_blank" rel="noopener">WhatsApp: +256 732 166 463</a>
+          <a href="mailto:hello@digitalbrandlift.ug">hello@digitalbrandlift.ug</a>
+          <a href="#location">Kampala, Uganda</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> Digital Brand Lift. All rights reserved.</span>
+        <span>Clear scope. Transparent pricing. Practical digital solutions.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/256732166463" target="_blank" rel="noopener" aria-label="Chat with Digital Brand Lift on WhatsApp">◉</a>
+
+  <!-- Industry template preview modal -->
+  <div class="modal" id="templateModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close preview">×</button>
+      <span class="eyebrow">Industry template preview</span>
+      <h3 id="modalTitle">Clinic Website Concept</h3>
+      <p id="modalDescription"></p>
+      <ul class="modal-features" id="modalFeatures"></ul>
+      <button class="btn btn-primary" id="modalEnquire">Enquire about a website</button>
     </div>
   </div>
-</footer>
 
-<a class="whatsapp-float" href="https://wa.me/256732166463?text=Hello%20Digital%20Brand%20Lift%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">WhatsApp</a>
+  <script>
+    // Mobile navigation: open, close and close after choosing a link.
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
 
-<script>
-(() => {
-  "use strict";
-
-  const menuBtn = document.getElementById("menuBtn");
-  const navLinks = document.getElementById("navLinks");
-
-  menuBtn.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    menuBtn.setAttribute("aria-expanded", String(isOpen));
-    menuBtn.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
-    menuBtn.textContent = isOpen ? "✕" : "☰";
-  });
-
-  function closeMenu() {
-    navLinks.classList.remove("open");
-    menuBtn.setAttribute("aria-expanded", "false");
-    menuBtn.setAttribute("aria-label", "Open navigation menu");
-    menuBtn.textContent = "☰";
-  }
-
-  navLinks.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", closeMenu);
-  });
-
-  document.addEventListener("click", event => {
-    if (!navLinks.contains(event.target) && !menuBtn.contains(event.target)) {
-      closeMenu();
-    }
-  });
-
-  const serviceSelect = document.getElementById("serviceChoice");
-  const messageField = document.getElementById("customerMessage");
-
-  function selectPackage(packageName) {
-    const option = Array.from(serviceSelect.options).find(item =>
-      item.value === packageName || item.textContent.trim() === packageName
-    );
-
-    if (option) {
-      serviceSelect.value = option.value;
-    } else {
-      serviceSelect.value = "Custom Request";
-      messageField.value = "I am interested in: " + packageName;
+    function closeMenu() {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+      menuToggle.textContent = "☰";
     }
 
-    document.getElementById("contact").scrollIntoView({ behavior:"smooth" });
-  }
-
-  document.querySelectorAll("[data-package]").forEach(button => {
-    button.addEventListener("click", () => {
-      selectPackage(button.dataset.package);
-    });
-  });
-
-  const plans = {
-    basic: {
-      title:"Basic Support",
-      description:"Small website content updates and basic assistance when needed.",
-      price:"UGX 30,000",
-      package:"Basic Support Monthly Plan"
-    },
-    growth: {
-      title:"Growth Support",
-      description:"Regular website updates and agreed basic digital support.",
-      price:"UGX 60,000",
-      package:"Growth Support Monthly Plan"
-    },
-    active: {
-      title:"Active Support",
-      description:"More frequent content updates and agreed ongoing digital assistance.",
-      price:"UGX 100,000",
-      package:"Active Support Monthly Plan"
-    }
-  };
-
-  const planTabs = document.querySelectorAll(".plan-tab");
-
-  function activatePlan(tab) {
-    const plan = plans[tab.dataset.plan];
-    if (!plan) return;
-
-    planTabs.forEach(item => {
-      item.setAttribute("aria-selected", String(item === tab));
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+      menuToggle.textContent = isOpen ? "×" : "☰";
     });
 
-    document.getElementById("planTitle").textContent = plan.title;
-    document.getElementById("planDescription").textContent = plan.description;
-    document.getElementById("planPrice").innerHTML = plan.price + " <small>/ month</small>";
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
 
-    const chooseButton = document.getElementById("planChoose");
-    chooseButton.dataset.package = plan.package;
-    chooseButton.textContent = "Ask About This Plan";
-  }
+    document.addEventListener("click", event => {
+      if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        closeMenu();
+      }
+    });
 
-  planTabs.forEach(tab => {
-    tab.addEventListener("click", () => activatePlan(tab));
-  });
+    // Package and service buttons select the exact matching enquiry option.
+    const choiceSelect = document.getElementById("customerChoice");
 
-  document.getElementById("planChoose").addEventListener("click", event => {
-    event.preventDefault();
-    selectPackage(event.currentTarget.dataset.package);
-  });
-
-  document.getElementById("enquiryForm").addEventListener("submit", event => {
-    event.preventDefault();
-
-    const name = document.getElementById("customerName").value.trim();
-    const business = document.getElementById("businessName").value.trim();
-    const phone = document.getElementById("customerPhone").value.trim();
-    const service = serviceSelect.value;
-    const message = messageField.value.trim();
-
-    if (!name || !phone || !service) {
-      alert("Please complete your name, phone number and service selection.");
-      return;
+    function selectEnquiry(choice) {
+      const option = Array.from(choiceSelect.options).find(item => item.text.trim() === choice.trim());
+      if (option) choiceSelect.value = option.value;
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => document.getElementById("customerName").focus({ preventScroll: true }), 650);
     }
 
-    const lines = [
-      "Hello Digital Brand Lift,",
-      "",
-      "I would like to make an enquiry.",
-      "",
-      "Name: " + name,
-      "Business: " + (business || "Not provided"),
-      "Phone: " + phone,
-      "Service: " + service,
-      "Message: " + (message || "No additional details"),
-      "",
-      "Please share the next steps."
-    ];
+    document.querySelectorAll(".choose-item").forEach(button => {
+      button.addEventListener("click", () => {
+        selectEnquiry(button.dataset.choice);
+      });
+    });
 
-    const whatsappURL = "https://wa.me/256732166463?text=" + encodeURIComponent(lines.join("\n"));
-    window.open(whatsappURL, "_blank");
-  });
+    // Working support plan tabs.
+    const supportPlans = {
+      basic: {
+        label: "Essential care",
+        title: "Basic Support",
+        description: "For businesses that need occasional updates and basic website or profile assistance.",
+        price: "UGX 30,000",
+        button: "Choose Basic Support",
+        choice: "Basic Support Plan — UGX 30,000 per month",
+        items: [
+          "Small text or contact detail updates",
+          "Basic website and profile checks",
+          "WhatsApp support for agreed requests",
+          "One small update request per month"
+        ]
+      },
+      growth: {
+        label: "Regular updates",
+        title: "Growth Support",
+        description: "For businesses that need more regular website and online profile updates.",
+        price: "UGX 60,000",
+        button: "Choose Growth Support",
+        choice: "Growth Support Plan — UGX 60,000 per month",
+        items: [
+          "Up to three agreed small website updates",
+          "Google Business Profile information updates",
+          "Content and link checks",
+          "Monthly support review by WhatsApp"
+        ]
+      },
+      active: {
+        label: "More active assistance",
+        title: "Active Support",
+        description: "For businesses that want a higher level of agreed monthly assistance across their digital presence.",
+        price: "UGX 100,000",
+        button: "Choose Active Support",
+        choice: "Active Support Plan — UGX 100,000 per month",
+        items: [
+          "Up to five agreed small website updates",
+          "Google Business Profile updates and checks",
+          "Assistance with agreed social media content updates",
+          "Priority response for support requests",
+          "Monthly activity summary"
+        ]
+      }
+    };
 
-  document.getElementById("year").textContent = new Date().getFullYear();
-})();
-</script>
+    const supportTabs = document.querySelectorAll(".support-tab");
+    const supportLabel = document.getElementById("supportLabel");
+    const supportTitle = document.getElementById("supportTitle");
+    const supportDescription = document.getElementById("supportDescription");
+    const supportPrice = document.getElementById("supportPrice");
+    const supportDeliverables = document.getElementById("supportDeliverables");
+    const supportChoose = document.getElementById("supportChoose");
 
+    function showSupportPlan(planName) {
+      const plan = supportPlans[planName];
+      if (!plan) return;
+
+      supportLabel.textContent = plan.label;
+      supportTitle.textContent = plan.title;
+      supportDescription.textContent = plan.description;
+      supportPrice.innerHTML = plan.price + " <small>/ month</small>";
+      supportChoose.textContent = plan.button + " →";
+      supportChoose.dataset.choice = plan.choice;
+      supportDeliverables.innerHTML = plan.items.map(item => `<li>${item}</li>`).join("");
+
+      supportTabs.forEach(tab => {
+        const active = tab.dataset.plan === planName;
+        tab.classList.toggle("active", active);
+        tab.setAttribute("aria-selected", String(active));
+      });
+    }
+
+    supportTabs.forEach(tab => {
+      tab.addEventListener("click", () => showSupportPlan(tab.dataset.plan));
+    });
+
+    // Industry template preview modal.
+    const templateDetails = {
+      clinic: {
+        title: "Clinic Website Concept",
+        description: "A patient-friendly layout designed to make essential clinic information easier to find and appointment enquiries easier to start.",
+        features: [
+          "Clear overview of clinic services",
+          "Opening hours, location and contact information",
+          "Mobile-first appointment enquiry button",
+          "Frequently asked questions and patient information"
+        ]
+      },
+      restaurant: {
+        title: "Restaurant Website Concept",
+        description: "A menu-led layout designed to help customers decide what to order, find the restaurant and make an enquiry quickly.",
+        features: [
+          "Easy-to-scan menu and featured dishes",
+          "Opening hours and location details",
+          "WhatsApp enquiry or reservation contact",
+          "Mobile-friendly layout for customers on the move"
+        ]
+      },
+      salon: {
+        title: "Salon Website Concept",
+        description: "A visual service layout designed to present treatments clearly and guide potential customers towards an appointment enquiry.",
+        features: [
+          "Service list and treatment descriptions",
+          "Gallery area for approved business photos",
+          "Location, opening hours and contact details",
+          "WhatsApp appointment enquiry link"
+        ]
+      }
+    };
+
+    const modal = document.getElementById("templateModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDescription = document.getElementById("modalDescription");
+    const modalFeatures = document.getElementById("modalFeatures");
+
+    function openTemplateModal(templateName) {
+      const details = templateDetails[templateName];
+      if (!details) return;
+      modalTitle.textContent = details.title;
+      modalDescription.textContent = details.description;
+      modalFeatures.innerHTML = details.features.map(item => `<li>${item}</li>`).join("");
+      modal.classList.add("open");
+      document.body.classList.add("modal-open");
+      document.getElementById("modalClose").focus();
+    }
+
+    function closeTemplateModal() {
+      modal.classList.remove("open");
+      document.body.classList.remove("modal-open");
+    }
+
+    document.querySelectorAll(".preview-btn").forEach(button => {
+      button.addEventListener("click", () => openTemplateModal(button.dataset.template));
+    });
+
+    document.getElementById("modalClose").addEventListener("click", closeTemplateModal);
+    modal.addEventListener("click", event => {
+      if (event.target === modal) closeTemplateModal();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        closeTemplateModal();
+        closeMenu();
+      }
+    });
+    document.getElementById("modalEnquire").addEventListener("click", () => {
+      closeTemplateModal();
+      selectEnquiry("Website Design — UGX 150,000");
+    });
+
+    // Format all form fields into a WhatsApp enquiry message.
+    document.getElementById("enquiryForm").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const name = document.getElementById("customerName").value.trim();
+      const business = document.getElementById("businessName").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+      const choice = document.getElementById("customerChoice").value.trim();
+      const message = document.getElementById("customerMessage").value.trim();
+
+      if (!name || !business || !phone || !choice) {
+        alert("Please complete your name, business name, phone number and service/package.");
+        return;
+      }
+
+      const whatsappMessage = [
+        "Hello Digital Brand Lift,",
+        "",
+        "I would like to make a project enquiry.",
+        "",
+        "Name: " + name,
+        "Business: " + business,
+        "Phone: " + phone,
+        "Selected service/package: " + choice,
+        "Message: " + (message || "I would like to discuss the details."),
+        "",
+        "Please share the next steps. Thank you."
+      ].join("\n");
+
+      const whatsappURL = "https://wa.me/256732166463?text=" + encodeURIComponent(whatsappMessage);
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    });
+
+    // Current year in footer.
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
