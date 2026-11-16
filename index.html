@@ -1,12 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0b1220">
-  <meta name="description" content="Digital Brand Lift helps Ugandan businesses grow online with professional website design, social media marketing and Google Business Profile setup.">
-  <title>Digital Brand Lift | Digital Solutions for Ugandan Businesses</title>
+  <meta name="description" content="Digital Brand Lift engineers fast, conversion-focused websites, Google Business Profiles, and brand growth systems for businesses in Uganda and worldwide.">
+  <meta name="keywords" content="website design Uganda, web design agency Kampala, conversion web design, Google Business Profile optimization, international web developer">
+  <meta name="robots" content="index, follow">
+  <title>Digital Brand Lift | High-Converting Websites &amp; Local Visibility</title>
+
+  <meta property="og:title" content="Digital Brand Lift | High-Converting Websites & Local Visibility">
+  <meta property="og:description" content="Conversion-focused websites, Google Business optimization, and brand assets built to turn visitors into paying clients. Serving Uganda & worldwide.">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Digital Brand Lift",
+    "description": "Conversion-focused website design, social media brand assets, and Google Business Profile optimization for local and international businesses.",
+    "areaServed": ["Uganda", "Worldwide"],
+    "telephone": "+256732166463",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kampala",
+      "addressCountry": "UG"
+    }
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,13 +70,13 @@
       line-height: 1.2;
       letter-spacing: -.035em;
     }
-    h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); }
-    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h1 { font-size: clamp(2.5rem, 5.5vw, 4.5rem); }
+    h2 { font-size: clamp(1.95rem, 4vw, 2.9rem); }
     h3 { font-size: 1.25rem; }
     p { color: var(--muted); }
     .container { width: min(1160px, 91%); margin: auto; }
-    .section { padding: 100px 0; }
-    .section-head { max-width: 690px; margin-bottom: 42px; }
+    .section { padding: 96px 0; }
+    .section-head { max-width: 710px; margin-bottom: 42px; }
     .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
     .section-head p { margin-top: 14px; font-size: 1.02rem; }
     .eyebrow {
@@ -108,7 +129,7 @@
       box-shadow: 0 7px 24px rgba(66,214,160,.18);
     }
     .brand small { display: block; color: var(--muted); font: 600 .58rem "Inter",sans-serif; letter-spacing: .14em; text-transform: uppercase; }
-    .nav-links { display: flex; align-items: center; gap: 27px; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
     .nav-links a { color: #c6d1df; font-size: .84rem; font-weight: 700; transition: .2s; }
     .nav-links a:hover { color: var(--green); }
     .nav-actions { display: flex; align-items: center; gap: 10px; }
@@ -130,10 +151,10 @@
       box-shadow: 0 0 0 50px rgba(98,168,255,.025), 0 0 0 100px rgba(98,168,255,.02);
       pointer-events: none;
     }
-    .hero-grid { display: grid; grid-template-columns: 1.04fr .96fr; align-items: center; gap: 55px; position: relative; z-index: 1; }
-    .hero-copy p { max-width: 570px; margin: 23px 0 29px; font-size: 1.08rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 55px; position: relative; z-index: 1; }
+    .hero-copy p { max-width: 575px; margin: 22px 0 28px; font-size: 1.06rem; }
     .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; }
-    .hero-proof { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 33px; }
+    .hero-proof { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 32px; }
     .proof-item { display: flex; align-items: center; gap: 9px; color: #c9d5e4; font-size: .78rem; font-weight: 700; }
     .proof-icon { width: 27px; height: 27px; display: grid; place-items: center; border-radius: 8px; background: rgba(66,214,160,.12); color: var(--green); }
 
@@ -168,7 +189,7 @@
     .floating-card {
       position: absolute; right: -20px; bottom: -25px; padding: 14px 17px;
       border: 1px solid var(--line); border-radius: 14px; background: #17243a;
-      box-shadow: var(--shadow); min-width: 175px;
+      box-shadow: var(--shadow); min-width: 195px;
     }
     .floating-card strong { display: block; font-size: .8rem; }
     .floating-card span { color: var(--green); font-size: .7rem; font-weight: 700; }
@@ -181,12 +202,33 @@
     .trust-item strong { display: block; color: var(--text); font-size: .88rem; }
     .trust-item span { color: var(--muted); font-size: .72rem; }
 
+    /* Currency Switcher */
+    .currency-bar {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 16px; padding: 16px 22px; margin-bottom: 34px;
+      border: 1px solid var(--line); border-radius: 16px; background: var(--surface);
+    }
+    .currency-info strong { display: block; font-size: .92rem; color: var(--text); }
+    .currency-info span { font-size: .78rem; color: var(--muted); }
+    .currency-toggle {
+      display: inline-flex; padding: 4px; border-radius: 11px;
+      background: #0b1220; border: 1px solid var(--line);
+    }
+    .currency-btn {
+      padding: 9px 16px; border: 0; border-radius: 8px; background: transparent;
+      color: var(--muted); font-size: .8rem; font-weight: 800; transition: .2s;
+    }
+    .currency-btn.active {
+      background: linear-gradient(110deg, var(--blue2), #2b9cce);
+      color: white;
+    }
+
     /* Services */
     .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
     .service-card, .package-card, .support-card {
       padding: 27px; border: 1px solid var(--line); border-radius: var(--radius);
       background: linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));
-      transition: .25s ease;
+      transition: .25s ease; display: flex; flex-direction: column;
     }
     .service-card:hover, .package-card:hover { transform: translateY(-6px); border-color: rgba(98,168,255,.45); }
     .service-icon {
@@ -195,7 +237,7 @@
       background: rgba(98,168,255,.12); color: var(--blue); font-size: 1.4rem;
     }
     .service-card p { margin: 12px 0 18px; font-size: .9rem; }
-    .price { font-family: "Plus Jakarta Sans",sans-serif; font-weight: 800; font-size: 1.45rem; color: var(--text); }
+    .price { margin-top: auto; font-family: "Plus Jakarta Sans",sans-serif; font-weight: 800; font-size: 1.45rem; color: var(--text); }
     .price small { font: 600 .72rem "Inter",sans-serif; color: var(--muted); }
     .service-card .btn { width: 100%; margin-top: 21px; }
 
@@ -204,7 +246,7 @@
     .template-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 19px; }
     .template-card {
       overflow: hidden; border: 1px solid var(--line); border-radius: 18px;
-      background: var(--surface); transition: .25s;
+      background: var(--surface); transition: .25s; display: flex; flex-direction: column;
     }
     .template-card:hover { transform: translateY(-5px); border-color: var(--blue); }
     .template-art { height: 190px; padding: 16px; display: flex; align-items: center; justify-content: center; }
@@ -220,14 +262,14 @@
     .mini-block { height: 68px; border-radius: 7px; background: linear-gradient(135deg,#c5e5f5,#eaf5fa); }
     .restaurant-art .mini-block { background: linear-gradient(135deg,#d68e53,#f2d2a9); }
     .salon-art .mini-block { background: linear-gradient(135deg,#bb83bd,#f2d8ec); }
-    .template-info { padding: 21px; }
+    .template-info { padding: 21px; flex: 1; display: flex; flex-direction: column; }
     .template-info p { font-size: .84rem; margin: 9px 0 15px; }
-    .text-link { color: var(--blue); font-size: .82rem; font-weight: 800; background: none; border: 0; }
+    .text-link { margin-top: auto; align-self: flex-start; color: var(--blue); font-size: .82rem; font-weight: 800; background: none; border: 0; }
     .text-link:hover { color: var(--green); }
 
     /* Packages */
     .packages-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; align-items: stretch; }
-    .package-card { display: flex; flex-direction: column; position: relative; }
+    .package-card { position: relative; }
     .package-card.featured { border-color: rgba(66,214,160,.55); background: linear-gradient(160deg,rgba(66,214,160,.09),rgba(255,255,255,.025)); }
     .popular-label { position: absolute; top: 18px; right: 18px; }
     .package-card h3 { margin: 12px 0 9px; }
@@ -256,6 +298,28 @@
     .support-deliverables li { padding: 9px 0; color: #d0d9e5; border-bottom: 1px solid var(--line); font-size: .88rem; }
     .support-deliverables li:before { content: "✓"; color: var(--green); margin-right: 10px; font-weight: 900; }
 
+    /* Founder / Leadership */
+    .founder-card {
+      display: grid; grid-template-columns: 220px 1fr; gap: 34px; align-items: center;
+      padding: 34px; border: 1px solid var(--line); border-radius: 22px;
+      background: linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
+    }
+    .founder-avatar {
+      width: 100%; aspect-ratio: 1/1; border-radius: 18px;
+      border: 1px solid rgba(98,168,255,.35);
+      background: linear-gradient(135deg, #17243a, #1d2d46);
+      display: grid; place-items: center; text-align: center; padding: 16px;
+      overflow: hidden;
+    }
+    .founder-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 14px; }
+    .founder-avatar span { font-size: .82rem; font-weight: 700; color: var(--blue); }
+    .founder-meta { color: var(--green); font-size: .82rem; font-weight: 700; margin: 6px 0 14px; }
+    .founder-pillars { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .founder-pillars span {
+      padding: 7px 12px; border-radius: 9px; background: rgba(255,255,255,.04);
+      border: 1px solid var(--line); font-size: .76rem; font-weight: 700; color: #d6e0ed;
+    }
+
     /* Process */
     .process-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 17px; }
     .process-step { padding: 22px; border-top: 2px solid rgba(98,168,255,.55); background: rgba(255,255,255,.025); border-radius: 0 0 13px 13px; }
@@ -268,7 +332,7 @@
     .enquiry-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 55px; align-items: start; }
     .contact-points { margin-top: 28px; display: grid; gap: 13px; }
     .contact-point { display: flex; align-items: center; gap: 12px; color: #d6e0ed; font-size: .88rem; }
-    .contact-point span { width: 37px; height: 37px; display: grid; place-items: center; border-radius: 11px; background: var(--surface2); color: var(--green); }
+    .contact-point span { width: 37px; height: 37px; display: grid; place-items: center; border-radius: 11px; background: var(--surface2); color: var(--green); flex-shrink: 0; }
     .contact-point a { color: var(--blue); }
     .enquiry-form { padding: 30px; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); }
     .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
@@ -281,10 +345,10 @@
       font-size: .87rem; transition: .2s;
     }
     .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(98,168,255,.1); }
-    .form-field select option { background: #0d1727; }
-    .form-field textarea { min-height: 115px; resize: vertical; }
-    .form-note { font-size: .72rem; margin: 12px 0 17px; }
-    .enquiry-form .btn { width: 100%; }
+    .form-field select option, .form-field select optgroup { background: #0d1727; color: white; }
+    .form-field textarea { min-height: 110px; resize: vertical; }
+    .form-note { font-size: .74rem; margin: 10px 0 17px; }
+    .form-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
     /* Location */
     .location-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 35px; align-items: center; }
@@ -367,9 +431,13 @@
       .trust-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
       .packages-grid, .services-grid, .template-grid { grid-template-columns: 1fr; }
       .package-card > p { min-height: 0; }
+      .founder-card { grid-template-columns: 1fr; text-align: center; }
+      .founder-avatar { max-width: 180px; margin: auto; }
+      .founder-pillars { justify-content: center; }
       .support-wrap { padding: 20px; }
       .support-tabs { display: grid; grid-template-columns: 1fr; }
-      .form-grid { grid-template-columns: 1fr; gap: 0; }
+      .form-grid, .form-actions { grid-template-columns: 1fr; gap: 0; }
+      .form-actions { gap: 10px; }
       .form-field.full { grid-column: auto; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
       .footer-about { grid-column: 1/-1; }
@@ -400,15 +468,16 @@
 
       <nav class="nav-links" id="navLinks" aria-label="Main navigation">
         <a href="#services">Services</a>
-        <a href="#templates">Templates</a>
+        <a href="#templates">Solutions</a>
         <a href="#packages">Packages</a>
+        <a href="#leadership">Leadership</a>
         <a href="#support">Support</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-actions">
-        <a class="btn btn-outline btn-small" href="mailto:hello@digitalbrandlift.ug">Email Us</a>
-        <a class="btn btn-primary btn-small" href="#contact">Get a Quote</a>
+        <a class="btn btn-outline btn-small" href="mailto:digitalbrandlift@gmail.com">Email Us</a>
+        <a class="btn btn-primary btn-small" href="#contact">Start a Project</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
       </div>
     </div>
@@ -418,17 +487,17 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Digital solutions for Uganda</span>
-          <h1>Make your business easier to <span class="gradient-text">find, trust and choose.</span></h1>
-          <p>Digital Brand Lift helps businesses build a stronger online presence through professional websites, social media marketing and Google Business Profile setup.</p>
+          <span class="eyebrow">Web Engineering &amp; Local Growth · GMT+3</span>
+          <h1>Websites engineered to make your business <span class="gradient-text">trusted and chosen.</span></h1>
+          <p>Digital Brand Lift builds fast, conversion-focused websites, Google Business Profiles, and brand content systems that turn online traffic into real customer inquiries—in Uganda and worldwide.</p>
           <div class="hero-buttons">
             <a class="btn btn-primary" href="#contact">Start Your Project <span>→</span></a>
-            <a class="btn btn-outline" href="#services">Explore Services</a>
+            <a class="btn btn-outline" href="#packages">View Packages &amp; Rates</a>
           </div>
           <div class="hero-proof">
-            <div class="proof-item"><span class="proof-icon">✓</span> Clear pricing in UGX</div>
-            <div class="proof-item"><span class="proof-icon">✓</span> Mobile-friendly solutions</div>
-            <div class="proof-item"><span class="proof-icon">✓</span> Direct WhatsApp contact</div>
+            <div class="proof-item"><span class="proof-icon">✓</span> 3–10 day structured delivery</div>
+            <div class="proof-item"><span class="proof-icon">✓</span> UGX &amp; USD international billing</div>
+            <div class="proof-item"><span class="proof-icon">✓</span> Direct founder execution</div>
           </div>
         </div>
 
@@ -436,31 +505,31 @@
           <div class="browser">
             <div class="browser-bar">
               <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
-              <div class="browser-address">kampaladental.example</div>
+              <div class="browser-address">kampaladentalcare.com</div>
             </div>
             <div class="mock-site">
               <div class="mock-nav">
                 <div class="mock-logo"><span></span> KAMPALA DENTAL CARE</div>
-                <div class="mock-nav-links">SERVICES　 ABOUT　 CONTACT</div>
+                <div class="mock-nav-links">SERVICES  ABOUT  CONTACT</div>
               </div>
               <div class="mock-hero">
                 <div>
                   <h3>A healthier smile starts here.</h3>
-                  <p>Explore dental care services and request an appointment from your phone.</p>
+                  <p>Explore dental care services and request an appointment from any device.</p>
                   <span class="mock-button">BOOK AN APPOINTMENT</span>
                 </div>
                 <div class="mock-photo">✚</div>
               </div>
               <div class="mock-stats">
-                <div class="mock-stat"><strong>Services</strong><span>Easy to explore</span></div>
-                <div class="mock-stat"><strong>Booking</strong><span>Mobile friendly</span></div>
-                <div class="mock-stat"><strong>Contact</strong><span>One tap away</span></div>
+                <div class="mock-stat"><strong>Fast Load</strong><span>Clean, modern code</span></div>
+                <div class="mock-stat"><strong>Booking</strong><span>Mobile-first flow</span></div>
+                <div class="mock-stat"><strong>Leads</strong><span>One-tap contact</span></div>
               </div>
             </div>
           </div>
           <div class="floating-card">
-            <strong>Designed for real customers</strong>
-            <span>Clear • Responsive • Useful</span>
+            <strong>Built for conversion</strong>
+            <span>Fast • Responsive • Measurable</span>
           </div>
         </div>
       </div>
@@ -468,44 +537,55 @@
 
     <section class="trust-strip">
       <div class="container trust-grid">
-        <div class="trust-item"><strong>Website Design</strong><span>Professional online presence</span></div>
-        <div class="trust-item"><strong>Social Media</strong><span>Consistent business content</span></div>
-        <div class="trust-item"><strong>Google Business</strong><span>Local search visibility setup</span></div>
-        <div class="trust-item"><strong>Uganda-focused</strong><span>Pricing in Ugandan shillings</span></div>
+        <div class="trust-item"><strong>Conversion Websites</strong><span>Fast, mobile-first architecture</span></div>
+        <div class="trust-item"><strong>Google Maps SEO</strong><span>High-intent local search discovery</span></div>
+        <div class="trust-item"><strong>Brand Creative Systems</strong><span>Consistent social positioning</span></div>
+        <div class="trust-item"><strong>Global &amp; Local Ready</strong><span>Uganda &amp; remote clients worldwide</span></div>
       </div>
     </section>
 
     <section class="section" id="services">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">What we do</span>
-          <h2>Practical digital services that help your business <span class="gradient-text">get noticed.</span></h2>
-          <p>Choose an individual service or combine services in a package. We agree on the work, price and delivery timeline before a project begins.</p>
+          <span class="eyebrow">Core Capabilities</span>
+          <h2>Practical digital infrastructure that drives <span class="gradient-text">client inquiries.</span></h2>
+          <p>Engage us for a single targeted deliverable or combine services into an end-to-end growth package. Scope, pricing, and delivery timelines are locked in before work begins.</p>
+        </div>
+
+        <div class="currency-bar">
+          <div class="currency-info">
+            <strong>Select Billing Currency</strong>
+            <span id="currencySubtext">Showing local Ugandan rates (MTN MoMo, Airtel Money &amp; Bank Transfer accepted)</span>
+          </div>
+          <div class="currency-toggle" role="group" aria-label="Currency selector">
+            <button type="button" class="currency-btn active" data-curr="UGX">UGX (Uganda)</button>
+            <button type="button" class="currency-btn" data-curr="USD">USD (International)</button>
+          </div>
         </div>
 
         <div class="services-grid">
           <article class="service-card">
             <div class="service-icon">▣</div>
-            <h3>Website Design</h3>
-            <p>Give customers a clear place to learn about your business, explore your services and contact you from any device.</p>
-            <div class="price">UGX 150,000 <small>/ starting price</small></div>
-            <button class="btn btn-outline choose-item" data-choice="Website Design — UGX 150,000">Choose Service →</button>
+            <h3>Website Design &amp; Build</h3>
+            <p>A fast, mobile-first website structured around clear positioning, SEO fundamentals, and frictionless WhatsApp or email lead capture.</p>
+            <div class="price" data-ugx="UGX 150,000" data-usd="$150 USD">UGX 150,000 <small>/ starting rate</small></div>
+            <button class="btn btn-outline choose-item" data-choice-key="service-web">Select Service →</button>
           </article>
 
           <article class="service-card">
             <div class="service-icon">▦</div>
-            <h3>Social Media Marketing</h3>
-            <p>Present your business consistently with planned social content and creative posts designed around your offer.</p>
-            <div class="price">UGX 80,000 <small>/ starting price</small></div>
-            <button class="btn btn-outline choose-item" data-choice="Social Media Marketing — UGX 80,000">Choose Service →</button>
+            <h3>Social Media Brand Kit</h3>
+            <p>Cohesive visual templates, promotional graphics, and structured content planning designed to establish brand authority.</p>
+            <div class="price" data-ugx="UGX 80,000" data-usd="$90 USD">UGX 80,000 <small>/ starting rate</small></div>
+            <button class="btn btn-outline choose-item" data-choice-key="service-social">Select Service →</button>
           </article>
 
           <article class="service-card">
             <div class="service-icon">⌖</div>
-            <h3>Google Business Profile Setup</h3>
-            <p>Help local customers discover your business information, location, opening hours and contact details on Google.</p>
-            <div class="price">UGX 60,000 <small>/ starting price</small></div>
-            <button class="btn btn-outline choose-item" data-choice="Google Business Profile Setup — UGX 60,000">Choose Service →</button>
+            <h3>Google Business Optimization</h3>
+            <p>Rank higher in local Google Search and Maps with properly structured categories, service catalogs, and high-trust profile details.</p>
+            <div class="price" data-ugx="UGX 60,000" data-usd="$75 USD">UGX 60,000 <small>/ starting rate</small></div>
+            <button class="btn btn-outline choose-item" data-choice-key="service-google">Select Service →</button>
           </article>
         </div>
       </div>
@@ -514,9 +594,9 @@
     <section class="section templates-section" id="templates">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Design approach</span>
-          <h2>Industry Templates & <span class="gradient-text">Capabilities</span></h2>
-          <p>Explore sample directions showing how a well-structured digital experience can solve everyday customer problems. These are illustrative design concepts, not claims of completed client projects.</p>
+          <span class="eyebrow">Industry Architectures</span>
+          <h2>Production-ready solutions built for <span class="gradient-text">real business workflows.</span></h2>
+          <p>Inspect how we structure high-converting digital storefronts across healthcare, hospitality, and personal care—ready to customize and deploy for your brand.</p>
         </div>
 
         <div class="template-grid">
@@ -531,10 +611,10 @@
               </div>
             </div>
             <div class="template-info">
-              <span class="tag">Healthcare concept</span>
-              <h3 style="margin-top:12px">Clinic Website</h3>
-              <p>Helps patients find services, clinic hours and contact details, with a clear mobile appointment enquiry path.</p>
-              <button class="text-link preview-btn" data-template="clinic">Preview template details →</button>
+              <span class="tag">Healthcare Architecture</span>
+              <h3 style="margin-top:12px">Medical &amp; Clinic Platform</h3>
+              <p>Built to establish immediate patient trust, present specialist treatments clearly, and route mobile appointment requests.</p>
+              <button class="text-link preview-btn" data-template="clinic">Inspect architecture specs →</button>
             </div>
           </article>
 
@@ -549,10 +629,10 @@
               </div>
             </div>
             <div class="template-info">
-              <span class="tag">Hospitality concept</span>
-              <h3 style="margin-top:12px">Restaurant Website</h3>
-              <p>Makes menus easier to browse on phones and gives hungry customers a quick route to directions and enquiries.</p>
-              <button class="text-link preview-btn" data-template="restaurant">Preview template details →</button>
+              <span class="tag">Hospitality Architecture</span>
+              <h3 style="margin-top:12px">Restaurant &amp; Bistro Storefront</h3>
+              <p>Engineered for fast mobile menu browsing, instant Google Maps directions, and direct table or takeaway inquiries.</p>
+              <button class="text-link preview-btn" data-template="restaurant">Inspect architecture specs →</button>
             </div>
           </article>
 
@@ -567,10 +647,10 @@
               </div>
             </div>
             <div class="template-info">
-              <span class="tag">Beauty concept</span>
-              <h3 style="margin-top:12px">Salon Website</h3>
-              <p>Showcases services and style inspiration while making it simple for customers to enquire about an appointment.</p>
-              <button class="text-link preview-btn" data-template="salon">Preview template details →</button>
+              <span class="tag">Beauty &amp; Wellness Architecture</span>
+              <h3 style="margin-top:12px">Salon &amp; Studio Booking Site</h3>
+              <p>Showcases treatment menus, pricing tiers, and portfolio galleries while converting visitors into booked appointments.</p>
+              <button class="text-link preview-btn" data-template="salon">Inspect architecture specs →</button>
             </div>
           </article>
         </div>
@@ -580,72 +660,100 @@
     <section class="section" id="packages">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Choose your level</span>
-          <h2>Digital packages with <span class="gradient-text">clear scope.</span></h2>
-          <p>Compare the options and choose what fits your business. Final deliverables, access requirements and any extra costs are agreed before work starts.</p>
+          <span class="eyebrow">Structured Packages</span>
+          <h2>Complete digital packages with <span class="gradient-text">clear deliverables.</span></h2>
+          <p>Choose the level that matches your growth stage. Every package includes transparent scope, defined turnaround, and direct founder communication.</p>
         </div>
 
         <div class="packages-grid">
           <article class="package-card">
-            <span class="tag">Local presence</span>
+            <span class="tag">Local Discovery</span>
             <h3>Local Growth Starter</h3>
-            <p>A practical starting point for businesses that need stronger local visibility.</p>
-            <div class="package-price">UGX 120,000</div>
+            <p>Ideal for businesses focused on dominating local Google Maps searches and social credibility.</p>
+            <div class="package-price" data-ugx="UGX 120,000" data-usd="$135 USD">UGX 120,000</div>
             <ul class="package-list">
-              <li>Google Business Profile setup assistance</li>
-              <li>Business information and contact details</li>
-              <li>3 social media creative designs</li>
-              <li>Basic content direction</li>
-              <li>One revision round</li>
+              <li>Complete Google Business Profile optimization</li>
+              <li>Verified business categories, hours &amp; service catalog</li>
+              <li>3 custom social media promotional creatives</li>
+              <li>30-day content &amp; posting roadmap</li>
+              <li>Two structured revision rounds</li>
             </ul>
-            <div class="delivery">Estimated delivery: 3–5 business days</div>
-            <button class="btn btn-outline choose-item" data-choice="Local Growth Starter Package — UGX 120,000">Choose This Package</button>
+            <div class="delivery">Turnaround: 3–5 business days</div>
+            <button class="btn btn-outline choose-item" data-choice-key="pkg-starter">Select Local Growth Starter</button>
           </article>
 
           <article class="package-card featured">
-            <span class="tag">More visibility</span>
-            <span class="popular-label tag">Popular choice</span>
+            <span class="tag">Brand + Local Search</span>
+            <span class="popular-label tag">High Demand</span>
             <h3>Business Visibility</h3>
-            <p>For businesses ready to improve local discovery and publish more consistently.</p>
-            <div class="package-price">UGX 190,000</div>
+            <p>Built for businesses ready to capture local search traffic and publish consistent brand campaigns.</p>
+            <div class="package-price" data-ugx="UGX 190,000" data-usd="$210 USD">UGX 190,000</div>
             <ul class="package-list">
-              <li>Google Business Profile setup assistance</li>
-              <li>Business information and service details</li>
-              <li>6 social media creative designs</li>
-              <li>Captions for the agreed posts</li>
-              <li>One revision round</li>
+              <li>Complete Google Business Profile optimization</li>
+              <li>Full service catalog &amp; local SEO keyword alignment</li>
+              <li>6 custom social media promotional creatives</li>
+              <li>Conversion-focused copy &amp; captions for all posts</li>
+              <li>Two structured revision rounds</li>
             </ul>
-            <div class="delivery">Estimated delivery: 5–7 business days</div>
-            <button class="btn btn-primary choose-item" data-choice="Business Visibility Package — UGX 190,000">Choose This Package</button>
+            <div class="delivery">Turnaround: 5–7 business days</div>
+            <button class="btn btn-primary choose-item" data-choice-key="pkg-visibility">Select Business Visibility</button>
           </article>
 
           <article class="package-card">
-            <span class="tag">Online presence</span>
+            <span class="tag">Full-Stack Presence</span>
             <h3>Digital Business Lift</h3>
-            <p>A broader digital presence combining a business website with visibility essentials.</p>
-            <div class="package-price">UGX 250,000</div>
+            <p>Our complete digital foundation combining a multi-page website with local search authority.</p>
+            <div class="package-price" data-ugx="UGX 250,000" data-usd="$290 USD">UGX 250,000</div>
             <ul class="package-list">
-              <li>Business website design (up to 5 pages)</li>
-              <li>Mobile-friendly layout</li>
-              <li>WhatsApp contact integration</li>
-              <li>Google Business Profile setup assistance</li>
-              <li>Basic on-page SEO structure</li>
-              <li>One revision round</li>
+              <li>Custom responsive website (up to 5 pages)</li>
+              <li>Mobile-first performance &amp; clean UI architecture</li>
+              <li>Direct WhatsApp &amp; email lead capture integration</li>
+              <li>Complete Google Business Profile optimization</li>
+              <li>Technical on-page SEO &amp; Open Graph setup</li>
+              <li>Two structured revision rounds</li>
             </ul>
-            <div class="delivery">Estimated delivery: 7–10 business days</div>
-            <button class="btn btn-outline choose-item" data-choice="Digital Business Lift Package — UGX 250,000">Choose This Package</button>
+            <div class="delivery">Turnaround: 7–10 business days</div>
+            <button class="btn btn-outline choose-item" data-choice-key="pkg-lift">Select Digital Business Lift</button>
           </article>
         </div>
-        <p style="font-size:.76rem;margin-top:18px">Delivery estimates begin after the required content, business information and approvals have been received. Domain, hosting, advertising spend and third-party charges are not included unless specifically stated in your quotation.</p>
+        <p style="font-size:.78rem;margin-top:20px">Timelines begin upon receipt of kickoff deposit and required brand assets. Custom domain registration, paid hosting, and ad spend are billed separately at exact provider cost with zero markup.</p>
       </div>
     </section>
 
-    <section class="section templates-section" id="support">
+    <section class="section templates-section" id="leadership">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">After launch</span>
+          <span class="eyebrow">Leadership &amp; Accountability</span>
+          <h2>Direct execution from <span class="gradient-text">brief to launch.</span></h2>
+          <p>No outsourced layers or account-manager delays—you collaborate directly with the builder responsible for your project.</p>
+        </div>
+
+        <div class="founder-card">
+          <div class="founder-avatar">
+            <!-- Replace the span below with <img src="founder.jpg" alt="Founder of Digital Brand Lift"> once uploaded -->
+            <span>Founder Portrait<br><small style="color:var(--muted);font-weight:500;">(Upload founder.jpg)</small></span>
+          </div>
+          <div>
+            <h3>[Your Name]</h3>
+            <div class="founder-meta">Founder &amp; Lead Web Developer · Digital Brand Lift (GMT+3)</div>
+            <p>I built Digital Brand Lift on a straightforward principle: ambitious businesses deserve fast, reliable, conversion-engineered websites without inflated agency overhead. Every project is personally architected with transparent pricing, fixed delivery windows, and clear communication from kickoff to handover.</p>
+            <div class="founder-pillars">
+              <span>✓ Direct Founder Communication</span>
+              <span>✓ Fixed Scope &amp; Deadlines</span>
+              <span>✓ Clean, Fast-Loading Code</span>
+              <span>✓ Uganda &amp; Global Remote Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Post-Launch Care</span>
           <h2>Ongoing Support <span class="gradient-text">Plans</span></h2>
-          <p>Optional monthly support for businesses that want help keeping their digital presence updated. Choose a plan to see its scope.</p>
+          <p>Optional month-to-month support to keep your website, Google profile, and content updated without hiring in-house staff.</p>
         </div>
 
         <div class="support-wrap">
@@ -660,32 +768,32 @@
               <h3 id="supportTitle" style="font-size:1.7rem;margin-top:13px">Basic Support</h3>
               <p id="supportDescription">For businesses that need occasional updates and basic website or profile assistance.</p>
               <div class="support-price" id="supportPrice">UGX 30,000 <small>/ month</small></div>
-              <button class="btn btn-primary choose-item" id="supportChoose" style="margin-top:20px" data-choice="Basic Support Plan — UGX 30,000 per month">Choose Basic Support</button>
+              <button class="btn btn-primary choose-item" id="supportChoose" style="margin-top:20px" data-choice-key="support-basic">Choose Basic Support →</button>
             </div>
             <ul class="support-deliverables" id="supportDeliverables">
               <li>Small text or contact detail updates</li>
               <li>Basic website and profile checks</li>
-              <li>WhatsApp support for agreed requests</li>
-              <li>One small update request per month</li>
+              <li>WhatsApp &amp; email support for agreed requests</li>
+              <li>One scheduled update request per month</li>
             </ul>
           </div>
         </div>
-        <p style="font-size:.76rem;margin-top:15px">Support plans are optional and do not renew automatically through this website. Scope and payment arrangements are confirmed directly before each support period.</p>
+        <p style="font-size:.76rem;margin-top:15px">Support retainers are optional and month-to-month with no auto-renewal traps. Exact scope is confirmed before each billing cycle.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section templates-section">
       <div class="container">
         <div class="section-head center">
-          <span class="eyebrow">A clear process</span>
-          <h2>From first enquiry to <span class="gradient-text">launch.</span></h2>
-          <p>You know what is being done, what it costs and what is needed from you at every stage.</p>
+          <span class="eyebrow">Execution Workflow</span>
+          <h2>From project brief to <span class="gradient-text">live launch.</span></h2>
+          <p>A disciplined 4-step delivery framework so you always know what happens next.</p>
         </div>
         <div class="process-grid">
-          <div class="process-step"><div class="step-number">01</div><h3>Tell us what you need</h3><p>Share your business details, goals and the service you are interested in.</p></div>
-          <div class="process-step"><div class="step-number">02</div><h3>Agree on the scope</h3><p>We confirm deliverables, price, timeline and any third-party costs.</p></div>
-          <div class="process-step"><div class="step-number">03</div><h3>Project begins</h3><p>A 50% deposit is paid before work starts. We then begin the agreed work.</p></div>
-          <div class="process-step"><div class="step-number">04</div><h3>Review and delivery</h3><p>You review the completed work and pay the remaining 50% upon final delivery.</p></div>
+          <div class="process-step"><div class="step-number">01</div><h3>Submit Project Brief</h3><p>Share your business goals, target market, and preferred package via our inquiry form or WhatsApp.</p></div>
+          <div class="process-step"><div class="step-number">02</div><h3>Scope &amp; Timeline Lock</h3><p>We confirm exact deliverables, total investment, and launch date in writing before any payment.</p></div>
+          <div class="process-step"><div class="step-number">03</div><h3>Build &amp; Optimization</h3><p>Upon the 50% kickoff deposit, we engineer your website, profile, or brand creatives with progress check-ins.</p></div>
+          <div class="process-step"><div class="step-number">04</div><h3>Review &amp; Handover</h3><p>You inspect the completed build, request included revisions, settle the 50% balance, and launch.</p></div>
         </div>
       </div>
     </section>
@@ -693,66 +801,73 @@
     <section class="section enquiry-section" id="contact">
       <div class="container enquiry-grid">
         <div>
-          <span class="eyebrow">Let's discuss your project</span>
+          <span class="eyebrow">Start a Project</span>
           <h2>Ready to give your business a <span class="gradient-text">digital lift?</span></h2>
-          <p style="margin-top:17px">Send an enquiry with a few details. Your message will be prepared in WhatsApp so you can review and send it directly.</p>
+          <p style="margin-top:17px">Complete the project brief to send your inquiry via WhatsApp or Email. We respond within 4 business hours (GMT+3).</p>
 
           <div class="contact-points">
-            <div class="contact-point"><span>☏</span><div><strong>WhatsApp</strong><br><a href="https://wa.me/256732166463" target="_blank" rel="noopener">+256 732 166 463</a></div></div>
-            <div class="contact-point"><span>✉</span><div><strong>Email</strong><br><a href="mailto:hello@digitalbrandlift.ug">hello@digitalbrandlift.ug</a></div></div>
-            <div class="contact-point"><span>⌖</span><div><strong>Location</strong><br>Kampala, Uganda</div></div>
+            <div class="contact-point"><span>☏</span><div><strong>WhatsApp Direct</strong><br><a href="https://wa.me/256732166463" target="_blank" rel="noopener">+256 732 166 463</a></div></div>
+            <div class="contact-point"><span>✉</span><div><strong>Business Email</strong><br><a href="mailto:digitalbrandlift@gmail.com">digitalbrandlift@gmail.com</a></div></div>
+            <div class="contact-point"><span>⌖</span><div><strong>Headquarters &amp; Reach</strong><br>Kampala, Uganda · Serving Clients Worldwide</div></div>
           </div>
 
-          <div style="margin-top:28px;padding:19px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)">
-            <strong style="font-size:.9rem">Straightforward payment terms</strong>
-            <p style="font-size:.82rem;margin-top:8px">50% deposit before work begins and 50% upon final delivery. MTN Mobile Money, Airtel Money and bank transfer are accepted. Quotations can be approved through WhatsApp or email.</p>
+          <div style="margin-top:28px;padding:20px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025)">
+            <strong style="font-size:.92rem;color:var(--text)">Local &amp; International Payment Terms</strong>
+            <p style="font-size:.82rem;margin-top:8px">50% deposit to initiate work and 50% upon final approval before handover. We accept <strong>Wise, International Bank Transfer, Card Payments, MTN Mobile Money, and Airtel Money</strong>.</p>
           </div>
         </div>
 
         <form class="enquiry-form" id="enquiryForm">
-          <h3 style="margin-bottom:22px">Project enquiry</h3>
+          <h3 style="margin-bottom:22px">Project Inquiry Brief</h3>
           <div class="form-grid">
             <div class="form-field">
               <label for="customerName">Your name *</label>
-              <input id="customerName" name="name" type="text" placeholder="Enter your name" required>
+              <input id="customerName" name="name" type="text" placeholder="Enter your full name" required>
             </div>
             <div class="form-field">
               <label for="businessName">Business name *</label>
-              <input id="businessName" name="business" type="text" placeholder="Your business name" required>
+              <input id="businessName" name="business" type="text" placeholder="Your company or brand" required>
             </div>
             <div class="form-field">
-              <label for="customerPhone">Your phone number *</label>
-              <input id="customerPhone" name="phone" type="tel" placeholder="+256..." required>
+              <label for="customerEmail">Email address *</label>
+              <input id="customerEmail" name="email" type="email" placeholder="you@company.com" required>
             </div>
             <div class="form-field">
+              <label for="customerPhone">Phone / WhatsApp *</label>
+              <input id="customerPhone" name="phone" type="tel" placeholder="+256... or +1..." required>
+            </div>
+            <div class="form-field full">
               <label for="customerChoice">Service or package *</label>
               <select id="customerChoice" name="choice" required>
-                <option value="">Select an option</option>
+                <option value="">Select a service or package</option>
                 <optgroup label="Individual services">
-                  <option>Website Design — UGX 150,000</option>
-                  <option>Social Media Marketing — UGX 80,000</option>
-                  <option>Google Business Profile Setup — UGX 60,000</option>
+                  <option value="service-web">Website Design — UGX 150,000</option>
+                  <option value="service-social">Social Media Brand Kit — UGX 80,000</option>
+                  <option value="service-google">Google Business Optimization — UGX 60,000</option>
                 </optgroup>
-                <optgroup label="Packages">
-                  <option>Local Growth Starter Package — UGX 120,000</option>
-                  <option>Business Visibility Package — UGX 190,000</option>
-                  <option>Digital Business Lift Package — UGX 250,000</option>
+                <optgroup label="Complete packages">
+                  <option value="pkg-starter">Local Growth Starter — UGX 120,000</option>
+                  <option value="pkg-visibility">Business Visibility — UGX 190,000</option>
+                  <option value="pkg-lift">Digital Business Lift — UGX 250,000</option>
                 </optgroup>
                 <optgroup label="Monthly support">
-                  <option>Basic Support Plan — UGX 30,000 per month</option>
-                  <option>Growth Support Plan — UGX 60,000 per month</option>
-                  <option>Active Support Plan — UGX 100,000 per month</option>
+                  <option value="support-basic">Basic Support Plan — UGX 30,000 / mo</option>
+                  <option value="support-growth">Growth Support Plan — UGX 60,000 / mo</option>
+                  <option value="support-active">Active Support Plan — UGX 100,000 / mo</option>
                 </optgroup>
-                <option>Custom enquiry</option>
+                <option value="custom">Custom Project / Enterprise Request</option>
               </select>
             </div>
             <div class="form-field full">
-              <label for="customerMessage">Tell us about your project</label>
-              <textarea id="customerMessage" name="message" placeholder="What would you like Digital Brand Lift to help you with?"></textarea>
+              <label for="customerMessage">Project goals &amp; target timeline</label>
+              <textarea id="customerMessage" name="message" placeholder="Briefly describe your business, what you need built, and your target launch date..."></textarea>
             </div>
           </div>
-          <p class="form-note">Your details are used to prepare your enquiry message. WhatsApp will open for you to review and send it.</p>
-          <button class="btn btn-primary" type="submit">Continue to WhatsApp <span>→</span></button>
+          <p class="form-note">Choose your preferred channel below—your brief is automatically formatted for instant review.</p>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" data-channel="whatsapp">Send via WhatsApp <span>→</span></button>
+            <button class="btn btn-outline" type="button" id="emailSubmitBtn">Send via Email <span>✉</span></button>
+          </div>
         </form>
       </div>
     </section>
@@ -760,9 +875,9 @@
     <section class="section" id="location">
       <div class="container location-grid">
         <div>
-          <span class="eyebrow">Based in Uganda</span>
-          <h2>Supporting businesses in <span class="gradient-text">Kampala and beyond.</span></h2>
-          <p style="margin-top:15px">Digital Brand Lift works with businesses looking to improve how customers find and interact with them online.</p>
+          <span class="eyebrow">Operations Base</span>
+          <h2>Headquartered in <span class="gradient-text">Kampala, working globally.</span></h2>
+          <p style="margin-top:15px">Digital Brand Lift partners with local enterprises across Uganda and remote clients worldwide to build high-performing digital assets.</p>
           <a class="btn btn-outline" style="margin-top:22px" href="https://www.google.com/maps/search/?api=1&query=Kampala%2C%20Uganda" target="_blank" rel="noopener">Open Google Maps ↗</a>
         </div>
         <div class="map-frame">
@@ -780,45 +895,46 @@
             <span class="brand-mark">D</span>
             <span>Digital Brand Lift<small>Build. Connect. Grow.</small></span>
           </a>
-          <p>Helping Ugandan businesses strengthen their online presence through website design, social media marketing and Google Business Profile setup.</p>
+          <p>Engineering fast, conversion-focused websites, Google Business Profiles, and brand systems for businesses in Uganda and worldwide.</p>
         </div>
         <div class="footer-col">
           <h4>Explore</h4>
-          <a href="#services">Our Services</a>
-          <a href="#templates">Industry Templates</a>
-          <a href="#packages">Packages</a>
+          <a href="#services">Core Capabilities</a>
+          <a href="#templates">Industry Architectures</a>
+          <a href="#packages">Packages &amp; Rates</a>
+          <a href="#leadership">Leadership</a>
           <a href="#support">Ongoing Support</a>
         </div>
         <div class="footer-col">
-          <h4>Get in touch</h4>
+          <h4>Direct Contact</h4>
           <a href="https://wa.me/256732166463" target="_blank" rel="noopener">WhatsApp: +256 732 166 463</a>
-          <a href="mailto:hello@digitalbrandlift.ug">hello@digitalbrandlift.ug</a>
-          <a href="#location">Kampala, Uganda</a>
+          <a href="mailto:digitalbrandlift@gmail.com">digitalbrandlift@gmail.com</a>
+          <a href="#location">Kampala, Uganda (GMT+3)</a>
         </div>
       </div>
       <div class="footer-bottom">
         <span>© <span id="currentYear"></span> Digital Brand Lift. All rights reserved.</span>
-        <span>Clear scope. Transparent pricing. Practical digital solutions.</span>
+        <span>Clear scope. Transparent pricing. Direct execution.</span>
       </div>
     </div>
   </footer>
 
   <a class="whatsapp-float" href="https://wa.me/256732166463" target="_blank" rel="noopener" aria-label="Chat with Digital Brand Lift on WhatsApp">◉</a>
 
-  <!-- Industry template preview modal -->
+  <!-- Industry architecture preview modal -->
   <div class="modal" id="templateModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-box">
       <button class="modal-close" id="modalClose" aria-label="Close preview">×</button>
-      <span class="eyebrow">Industry template preview</span>
-      <h3 id="modalTitle">Clinic Website Concept</h3>
+      <span class="eyebrow">Production Architecture Specs</span>
+      <h3 id="modalTitle">Medical &amp; Clinic Platform</h3>
       <p id="modalDescription"></p>
       <ul class="modal-features" id="modalFeatures"></ul>
-      <button class="btn btn-primary" id="modalEnquire">Enquire about a website</button>
+      <button class="btn btn-primary" id="modalEnquire">Request This Architecture</button>
     </div>
   </div>
 
   <script>
-    // Mobile navigation: open, close and close after choosing a link.
+    // Mobile navigation
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
 
@@ -846,65 +962,64 @@
       }
     });
 
-    // Package and service buttons select the exact matching enquiry option.
-    const choiceSelect = document.getElementById("customerChoice");
+    // Currency & Pricing Catalog (UGX <-> USD)
+    let activeCurrency = "UGX";
+    let activeSupportPlan = "basic";
 
-    function selectEnquiry(choice) {
-      const option = Array.from(choiceSelect.options).find(item => item.text.trim() === choice.trim());
-      if (option) choiceSelect.value = option.value;
-      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-      setTimeout(() => document.getElementById("customerName").focus({ preventScroll: true }), 650);
-    }
+    const catalogLabels = {
+      "service-web": { UGX: "Website Design — UGX 150,000", USD: "Website Design — $150 USD" },
+      "service-social": { UGX: "Social Media Brand Kit — UGX 80,000", USD: "Social Media Brand Kit — $90 USD" },
+      "service-google": { UGX: "Google Business Optimization — UGX 60,000", USD: "Google Business Optimization — $75 USD" },
+      "pkg-starter": { UGX: "Local Growth Starter — UGX 120,000", USD: "Local Growth Starter — $135 USD" },
+      "pkg-visibility": { UGX: "Business Visibility — UGX 190,000", USD: "Business Visibility — $210 USD" },
+      "pkg-lift": { UGX: "Digital Business Lift — UGX 250,000", USD: "Digital Business Lift — $290 USD" },
+      "support-basic": { UGX: "Basic Support Plan — UGX 30,000 / mo", USD: "Basic Support Plan — $35 USD / mo" },
+      "support-growth": { UGX: "Growth Support Plan — UGX 60,000 / mo", USD: "Growth Support Plan — $70 USD / mo" },
+      "support-active": { UGX: "Active Support Plan — UGX 100,000 / mo", USD: "Active Support Plan — $115 USD / mo" }
+    };
 
-    document.querySelectorAll(".choose-item").forEach(button => {
-      button.addEventListener("click", () => {
-        selectEnquiry(button.dataset.choice);
-      });
-    });
-
-    // Working support plan tabs.
     const supportPlans = {
       basic: {
         label: "Essential care",
         title: "Basic Support",
         description: "For businesses that need occasional updates and basic website or profile assistance.",
-        price: "UGX 30,000",
+        price: { UGX: "UGX 30,000", USD: "$35 USD" },
         button: "Choose Basic Support",
-        choice: "Basic Support Plan — UGX 30,000 per month",
+        choiceKey: "support-basic",
         items: [
           "Small text or contact detail updates",
           "Basic website and profile checks",
-          "WhatsApp support for agreed requests",
-          "One small update request per month"
+          "WhatsApp & email support for agreed requests",
+          "One scheduled update request per month"
         ]
       },
       growth: {
         label: "Regular updates",
         title: "Growth Support",
         description: "For businesses that need more regular website and online profile updates.",
-        price: "UGX 60,000",
+        price: { UGX: "UGX 60,000", USD: "$70 USD" },
         button: "Choose Growth Support",
-        choice: "Growth Support Plan — UGX 60,000 per month",
+        choiceKey: "support-growth",
         items: [
-          "Up to three agreed small website updates",
-          "Google Business Profile information updates",
-          "Content and link checks",
-          "Monthly support review by WhatsApp"
+          "Up to three agreed website updates per month",
+          "Google Business Profile information & post updates",
+          "Performance, link, and mobile responsiveness checks",
+          "Monthly progress check-in via WhatsApp or email"
         ]
       },
       active: {
-        label: "More active assistance",
+        label: "Priority management",
         title: "Active Support",
-        description: "For businesses that want a higher level of agreed monthly assistance across their digital presence.",
-        price: "UGX 100,000",
+        description: "For businesses that want high-touch monthly assistance across their entire digital presence.",
+        price: { UGX: "UGX 100,000", USD: "$115 USD" },
         button: "Choose Active Support",
-        choice: "Active Support Plan — UGX 100,000 per month",
+        choiceKey: "support-active",
         items: [
-          "Up to five agreed small website updates",
-          "Google Business Profile updates and checks",
-          "Assistance with agreed social media content updates",
-          "Priority response for support requests",
-          "Monthly activity summary"
+          "Up to five agreed website updates per month",
+          "Google Business Profile optimization & review monitoring",
+          "Assistance with monthly social media content rollout",
+          "Priority same-day response for support requests",
+          "Monthly visibility & activity summary"
         ]
       }
     };
@@ -918,15 +1033,16 @@
     const supportChoose = document.getElementById("supportChoose");
 
     function showSupportPlan(planName) {
+      activeSupportPlan = planName;
       const plan = supportPlans[planName];
       if (!plan) return;
 
       supportLabel.textContent = plan.label;
       supportTitle.textContent = plan.title;
       supportDescription.textContent = plan.description;
-      supportPrice.innerHTML = plan.price + " <small>/ month</small>";
+      supportPrice.innerHTML = plan.price[activeCurrency] + " <small>/ month</small>";
       supportChoose.textContent = plan.button + " →";
-      supportChoose.dataset.choice = plan.choice;
+      supportChoose.dataset.choiceKey = plan.choiceKey;
       supportDeliverables.innerHTML = plan.items.map(item => `<li>${item}</li>`).join("");
 
       supportTabs.forEach(tab => {
@@ -940,36 +1056,90 @@
       tab.addEventListener("click", () => showSupportPlan(tab.dataset.plan));
     });
 
-    // Industry template preview modal.
+    function updateCurrencyUI(curr) {
+      activeCurrency = curr;
+
+      document.querySelectorAll(".currency-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.curr === curr);
+      });
+
+      const subtext = document.getElementById("currencySubtext");
+      if (subtext) {
+        subtext.textContent = curr === "UGX"
+          ? "Showing local Ugandan rates (MTN MoMo, Airtel Money & Bank Transfer accepted)"
+          : "Showing international USD rates (Wise, International Bank Transfer & Card payments accepted)";
+      }
+
+      document.querySelectorAll(".price[data-ugx]").forEach(el => {
+        const val = curr === "UGX" ? el.dataset.ugx : el.dataset.usd;
+        el.innerHTML = `${val} <small>/ starting rate</small>`;
+      });
+
+      document.querySelectorAll(".package-price[data-ugx]").forEach(el => {
+        el.textContent = curr === "UGX" ? el.dataset.ugx : el.dataset.usd;
+      });
+
+      const choiceSelect = document.getElementById("customerChoice");
+      Array.from(choiceSelect.options).forEach(opt => {
+        if (catalogLabels[opt.value]) {
+          opt.textContent = catalogLabels[opt.value][curr];
+        }
+      });
+
+      showSupportPlan(activeSupportPlan);
+    }
+
+    document.querySelectorAll(".currency-btn").forEach(btn => {
+      btn.addEventListener("click", () => updateCurrencyUI(btn.dataset.curr));
+    });
+
+    // Package and service buttons select the exact matching enquiry option
+    const choiceSelect = document.getElementById("customerChoice");
+
+    function selectEnquiry(choiceKey) {
+      if (choiceKey) {
+        choiceSelect.value = choiceKey;
+      }
+      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+      setTimeout(() => document.getElementById("customerName").focus({ preventScroll: true }), 650);
+    }
+
+    document.querySelectorAll(".choose-item").forEach(button => {
+      button.addEventListener("click", () => {
+        selectEnquiry(button.dataset.choiceKey);
+      });
+    });
+
+    // Industry architecture preview modal
     const templateDetails = {
       clinic: {
-        title: "Clinic Website Concept",
-        description: "A patient-friendly layout designed to make essential clinic information easier to find and appointment enquiries easier to start.",
+        title: "Medical & Clinic Platform Architecture",
+        description: "A high-trust clinical architecture designed to present medical specialties clearly and streamline mobile appointment bookings.",
         features: [
-          "Clear overview of clinic services",
-          "Opening hours, location and contact information",
-          "Mobile-first appointment enquiry button",
-          "Frequently asked questions and patient information"
+          "Structured department and treatment directory",
+          "Operating hours, Google Maps pin, and emergency contact bar",
+          "One-tap mobile appointment booking via WhatsApp or form",
+          "Patient FAQ accordion and trust credentials layout"
         ]
       },
       restaurant: {
-        title: "Restaurant Website Concept",
-        description: "A menu-led layout designed to help customers decide what to order, find the restaurant and make an enquiry quickly.",
+        title: "Restaurant & Bistro Storefront Architecture",
+        description: "A mobile-first hospitality architecture built to turn local search visitors into table reservations and direct orders.",
         features: [
-          "Easy-to-scan menu and featured dishes",
-          "Opening hours and location details",
-          "WhatsApp enquiry or reservation contact",
-          "Mobile-friendly layout for customers on the move"
+          "Fast-loading digital food and beverage menu",
+          "Opening hours, neighborhood directions, and Maps integration",
+          "Direct WhatsApp table booking and takeaway inquiry flow",
+          "High-impact visual dish highlights optimized for mobile screens"
         ]
       },
       salon: {
-        title: "Salon Website Concept",
-        description: "A visual service layout designed to present treatments clearly and guide potential customers towards an appointment enquiry.",
+        title: "Salon & Studio Booking Architecture",
+        description: "A clean visual service layout engineered to showcase treatments, pricing tiers, and portfolio lookbooks.",
         features: [
-          "Service list and treatment descriptions",
-          "Gallery area for approved business photos",
-          "Location, opening hours and contact details",
-          "WhatsApp appointment enquiry link"
+          "Categorized service menu with transparent pricing",
+          "Curated lookbook gallery for client transformations",
+          "Studio location, hours, and instant appointment inquiry flow",
+          "Social media integration for seamless brand consistency"
         ]
       }
     };
@@ -1011,43 +1181,62 @@
     });
     document.getElementById("modalEnquire").addEventListener("click", () => {
       closeTemplateModal();
-      selectEnquiry("Website Design — UGX 150,000");
+      selectEnquiry("service-web");
     });
 
-    // Format all form fields into a WhatsApp enquiry message.
-    document.getElementById("enquiryForm").addEventListener("submit", event => {
-      event.preventDefault();
-
+    // Form validation & formatted message builder (WhatsApp + Email)
+    function buildEnquiryPayload() {
       const name = document.getElementById("customerName").value.trim();
       const business = document.getElementById("businessName").value.trim();
+      const email = document.getElementById("customerEmail").value.trim();
       const phone = document.getElementById("customerPhone").value.trim();
-      const choice = document.getElementById("customerChoice").value.trim();
+      const selectedOption = choiceSelect.options[choiceSelect.selectedIndex];
+      const choiceText = choiceSelect.value ? selectedOption.text.trim() : "";
       const message = document.getElementById("customerMessage").value.trim();
 
-      if (!name || !business || !phone || !choice) {
-        alert("Please complete your name, business name, phone number and service/package.");
-        return;
+      if (!name || !business || !email || !phone || !choiceText) {
+        alert("Please complete your name, business name, email, phone number, and service/package.");
+        return null;
       }
 
-      const whatsappMessage = [
+      const body = [
         "Hello Digital Brand Lift,",
         "",
-        "I would like to make a project enquiry.",
+        "I would like to initiate a project inquiry.",
         "",
         "Name: " + name,
         "Business: " + business,
-        "Phone: " + phone,
-        "Selected service/package: " + choice,
-        "Message: " + (message || "I would like to discuss the details."),
+        "Email: " + email,
+        "Phone / WhatsApp: " + phone,
+        "Billing Currency: " + activeCurrency,
+        "Selected Service/Package: " + choiceText,
+        "Project Details: " + (message || "Please share availability and next steps."),
         "",
-        "Please share the next steps. Thank you."
+        "Thank you."
       ].join("\n");
 
-      const whatsappURL = "https://wa.me/256732166463?text=" + encodeURIComponent(whatsappMessage);
+      return { name, business, choiceText, body };
+    }
+
+    document.getElementById("enquiryForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const payload = buildEnquiryPayload();
+      if (!payload) return;
+
+      const whatsappURL = "https://wa.me/256732166463?text=" + encodeURIComponent(payload.body);
       window.open(whatsappURL, "_blank", "noopener,noreferrer");
     });
 
-    // Current year in footer.
+    document.getElementById("emailSubmitBtn").addEventListener("click", () => {
+      const payload = buildEnquiryPayload();
+      if (!payload) return;
+
+      const subject = `Project Inquiry: ${payload.business} (${payload.choiceText})`;
+      const mailtoURL = `mailto:digitalbrandlift@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(payload.body)}`;
+      window.location.href = mailtoURL;
+    });
+
+    // Current year in footer
     document.getElementById("currentYear").textContent = new Date().getFullYear();
   </script>
 </body>
