@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://digitalbrandliftwithus.netlify.app/sitemap.xml
+Sitemap: https://digitalbrandlift2.xonearma.workers.dev/sitemap.xml
