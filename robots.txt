@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://digitalbrandlift2.xonearma.workers.dev/sitemap.xml
+Sitemap: https://xonearma-jpg.github.io/Digitalbrandlift/sitemap.xml
