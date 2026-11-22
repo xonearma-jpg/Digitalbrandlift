@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://xonearma-jpg.github.io/Digitalbrandlift/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://xonearma-jpg.github.io/Digitalbrandlift/website-design-uganda.html</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/about.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/packages.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/contact.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/privacy.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/terms.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/services/web-design.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/services/google-seo.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/services/social-media.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/templates/clinic-website.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/templates/restaurant-website.html</loc></url>
+<url><loc>https://xonearma-jpg.github.io/Digitalbrandlift/templates/salon-website.html</loc></url>
 </urlset>
