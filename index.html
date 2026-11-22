@@ -724,9 +724,6 @@
     .form-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
     /* Location */
-    .location-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 35px; align-items: center; }
-    .map-frame { overflow: hidden; min-height: 330px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
-    .map-frame iframe { width: 100%; height: 330px; display: block; border: 0; filter: grayscale(.2) contrast(1.05); }
 
     /* Footer */
     footer { border-top: 1px solid var(--line); padding: 55px 0 25px; background: #080e19; }
@@ -1404,20 +1401,6 @@
       </div>
     </section>
 
-    <!-- Local SEO Map Section -->
-    <section class="section" id="location">
-      <div class="container location-grid">
-        <div>
-          <span class="eyebrow">Operations Base · Local SEO</span>
-          <h2>Based in <span class="gradient-text">Kampala, working globally.</span></h2>
-          <p style="margin-top:15px">Digital Brand Lift partners with local businesses across Kampala and Uganda—and remote clients worldwide—to build fast websites, Google Business Profiles, and social media marketing support.</p>
-          <a class="btn btn-outline" style="margin-top:22px" href="https://www.google.com/maps/search/?api=1&amp;query=Kampala%2C%20Uganda" target="_blank" rel="noopener">Open in Google Maps ↗</a>
-        </div>
-        <div class="map-frame">
-          <iframe title="Google Map of Kampala, Uganda — Digital Brand Lift service area" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kampala%2C%20Uganda&amp;output=embed"></iframe>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- Footer -->
@@ -1444,7 +1427,7 @@
           <h4>Contact Digital Brand Lift</h4>
           <a href="https://wa.me/256732166463" target="_blank" rel="noopener">WhatsApp: +256 732 166 463</a>
           <a href="mailto:digitalbrandlift@gmail.com">digitalbrandlift@gmail.com</a>
-          <a href="#location">Kampala, Central Region, Uganda</a>
+          <span>Kampala, Central Region, Uganda</span>
           <a href="#contact">Request a Project Quote</a>
         </div>
       </div>
