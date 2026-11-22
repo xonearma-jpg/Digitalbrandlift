@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://xonearma-jpg.github.io/Digitalbrandlift/sitemap.xml
